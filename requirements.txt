@@ -1,0 +1,9 @@
+pandas
+numpy
+scipy
+scikit-learn
+requests
+python-dotenv
+truststore
+snowballstemmer
+openpyxl

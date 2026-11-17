@@ -1,0 +1,48 @@
+# Chave do TMDB (nunca versionar)
+.env
+.env.*
+
+# Pastas de dados (dados de terceiros: TMDB, JustWatch, MovieLens)
+data/
+site/data/
+dados_externos/
+site_v*_congelado/
+amostras/
+*amostra*
+
+# Todos os CSV são tratados como dados, menos os conjuntos de pedidos e expressões (sem dados do TMDB)
+*.csv
+!pedidos_*.csv
+!expressoes_etiquetas.csv
+!expressoes_treino.csv
+!expressoes_teste.csv
+!vocabulario_piloto.csv
+
+# JSON de dados (os pesos do motor são configuração e ficam)
+*.json
+!pesos_t*.json
+
+# Planilhas de avaliação (têm sinopses e notas) e logs de download
+*.xlsx
+*.xls
+*.log
+
+# Saídas de teste com dados (capturas de tela, referências com títulos e top 5)
+site_teste/capturas*/
+site_teste/*.json
+*.png
+*.jpg
+!docs/*.png
+!docs/*.gif
+
+# Lotes de etiquetas da IA (ligados a filmes do catálogo)
+ia_lotes/
+piloto_lotes/
+
+# Arquivos temporários
+__pycache__/
+*.pyc
+~$*
+.vscode/
+.DS_Store
+Thumbs.db

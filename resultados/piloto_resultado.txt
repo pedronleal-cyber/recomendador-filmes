@@ -1,0 +1,33 @@
+======================================================================
+TESTE ÀS CEGAS: etiquetas do Claude x Tag Genome (GLMER), 150 filmes, 150 etiquetas do vocabulário
+======================================================================
+Etiquetas por filme (Claude): média 11.2
+
+a) Correlação por filme (só nas etiquetas do vocabulário):
+                                                   crua  própria do filme
+   Claude                                         0.537             0.567
+   Emprestar dos 20 vizinhos (diagnóstico)        0.750             0.633
+   Chute bobo (média geral para todo filme)       0.496             0.000
+   'própria do filme' = correlação com o que o filme tem de diferente da média (a que importa).
+   Distribuição Claude (própria do filme): -1.0 a 0.2: 0%, 0.2 a 0.4: 9%, 0.4 a 0.6: 55%, 0.6 a 1.0: 36%
+
+b) Etiquetas de clima: quantos dos 5 filmes com maior nota (entre os 150) estão
+   entre os 10 maiores do Tag Genome. Ao acaso: 0.33 de 5.
+   Etiqueta              Claude  Vizinhos   Filmes c/ etiqueta (Claude)
+   feel-good              2.5/5       1/5                            25
+   bleak                  1.0/5       0/5                             6
+   reflective             3.2/5       0/5                             8
+   funny                  2.9/5       3/5                            57
+   sad                    1.4/5       1/5                            17
+   tense                  2.5/5       1/5                            34
+   thought-provoking      3.0/5       2/5                             7
+   heartwarming           2.3/5       2/5                            11
+   twist ending           5.0/5       1/5                            11
+   absurd                 3.2/5       4/5                            19
+   Média                  2.7/5     1.5/5
+
+c) Calibração: nota real média (GLMER) conforme a nota do Claude:
+   Claude 0.0: nota real média 0.17  (20823 pares)
+   Claude 0.3: nota real média 0.40  (596 pares)
+   Claude 0.6: nota real média 0.54  (721 pares)
+   Claude 0.9: nota real média 0.76  (360 pares)

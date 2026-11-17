@@ -1,0 +1,245 @@
+============================================================================
+1) TABELA DE SINÔNIMOS (sinonimos_ml32m.csv)
+============================================================================
+436 linhas: 149 exatas, 43 de grafia, 244 manuais. Etiquetas do vocabulário com pelo menos 1 forma no ml-32m: 150 de 150.
+Sem nenhuma forma no ml-32m (3+ filmes): nenhuma
+Variantes manuais descartadas: 25 (ex.: feel-good <- feel-good movie (só 1 filme(s)); feel-good <- cheerful (só 1 filme(s)); tear jerker <- tissues (só 0 filme(s)); bittersweet <- bitter-sweet (só 2 filme(s)); touching <- touching (já mapeada para 'heartwarming'); emotional <- emotionally powerful (só 0 filme(s)); melancholic <- melancholia (só 0 filme(s)); downbeat <- sad ending (já mapeada para 'sad'))
+razao_tag_genome = nota média do Tag Genome para a etiqueta nos filmes que têm a variante, dividida pela
+média geral. Perto de 1 = a variante não indica nada; quanto maior, melhor.
+
+Amostra de 40 linhas (as 10 primeiras são as duvidosas):
+etiqueta_vocabulario    variante                   filmes nossos razão TG  observação
+life & death            death                        1922    866      1.1  DUVIDOSO: 'death' marca qualquer morte na trama
+romantic                romance                      1700    704      2.2  DUVIDOSO: 'romance' é gênero, não clima
+love story              love                         1644    555      1.2  DUVIDOSO: 'love' é amplo (amor de família, amizade)
+family drama            family                       1239    523      1.4  DUVIDOSO: 'family' é usado também para filme infantil
+war                     world war ii                  714    113      5.6  DUVIDOSO: período específico, não 'guerra' no geral
+slow paced              slow                          678    395      3.5  DUVIDOSO: 'slow' às vezes é crítica ('chato')
+police investigation    detective                     617    189      1.9  DUVIDOSO: detetive particular não é polícia
+kids and family         children                      541    217      2.7  DUVIDOSO: 'children' pode marcar personagens crianças, não público
+first contact           aliens                        391    191      2.7  DUVIDOSO: 'aliens' inclui invasão e terror, não só primeiro contato
+dialogue driven         dialogue                      382    264      1.8  DUVIDOSO: 'dialogue' pode ser elogio ao diálogo
+suspenseful             suspense                     1174    498      2.4  manual
+family drama            family relationships          925    328      1.4  manual
+gory                    gore                          904    432      3.0  manual
+true story              based on a true story         832    344      4.0  manual
+surreal                 surrealism                    774    344      2.3  manual
+satirical               satire                        764    296      3.1  manual
+dark humor              dark comedy                   742    295      3.8  manual
+twist ending            surprise ending               739    503      1.3  manual
+dark humor              black comedy                  739    401      2.9  manual
+sports                  sport                         629     99     11.6  grafia
+police investigation    investigation                 620    256      1.8  manual
+organized crime         gangster                      589    177      3.9  manual
+heist                   robbery                       553    186      3.5  manual
+tear jerker             crying                        501    250      1.1  manual
+espionage               spy                           482    187      7.0  manual
+chase                   car chase                     480    294      1.9  manual
+ghosts                  ghost                         477    144      5.8  grafia
+paranoid                paranoia                      460    271      2.6  manual
+brutal                  brutality                     440    288      3.1  manual
+neo-noir                film noir                     419     54      6.3  manual
+mental illness          insanity                      399    185      1.9  manual
+zombies                 zombie                        378     82     21.4  grafia
+vampires                vampire                       357     71     37.4  grafia
+depressing              depression                    352    138      3.2  manual
+religion                christianity                  348    112      7.5  manual
+organized crime         mafia                         325    109      5.1  manual
+betrayal                double cross                  310    206      1.5  manual
+addiction               alcoholism                    292     87      2.3  manual
+eerie                   haunting                      281     67      2.7  manual
+twist ending            plot twist                    280    191      2.0  manual
+
+Variantes com razão Tag Genome abaixo de 1,5 (indicam pouco; candidatas a sair): 14
+  tear jerker <- crying (1.15); quirky <- weird (1.43); light <- lighthearted (1.21); light <- light-hearted (0.96); unlikely friendships <- buddy movie (1.34); love story <- lovestory (1.42); love story <- love (1.25); family drama <- family relationships (1.4); family drama <- family (1.36); social commentary <- class (1.43); life & death <- life and death (1.24); life & death <- death (1.1); life & death <- mortality (1.31); twist ending <- surprise ending (1.32)
+
+============================================================================
+2) CONFERÊNCIA: etiquetas da IA (100 filmes recentes) x ml-32m
+============================================================================
+Filmes do piloto: 100; com pelo menos 5 pessoas etiquetando no ml-32m: 99
+  Sem dados suficientes no ml-32m: Homem-Aranha: De Volta ao Lar
+
+a) Correlação por filme (150 etiquetas): crua 0.555; própria do filme 0.515 (chute bobo = média do ml-32m para todo filme: crua 0.273, própria 0)
+   Distribuição (própria do filme): -1.0 a 0.2: 4%, 0.2 a 0.4: 14%, 0.4 a 0.6: 47%, 0.6 a 1.0: 34%
+   Etiquetas com nota > 0 no ml-32m por filme (média): 8.5; etiquetas da IA por filme: 11.7
+
+b) Clima: dos 5 filmes com maior nota da IA, quantos estão no top 10 do ml-32m (entre 99).
+   Ao acaso: 0.51. Empates desfeitos ao acaso (média de 2.000 sorteios).
+   etiqueta              acerto  filmes c/ nota ml>0  filmes c/ etiqueta IA
+   feel-good              2.1/5                    5                     19  (menos de 10 filmes com nota no ml-32m: top 10 inclui zeros)
+   bleak                  1.0/5                    4                      5  (menos de 10 filmes com nota no ml-32m: top 10 inclui zeros)
+   reflective             0.3/5                    2                      2  (menos de 10 filmes com nota no ml-32m: top 10 inclui zeros)
+   funny                  4.3/5                   34                     37
+   sad                    4.3/5                   13                     21
+   tense                  1.9/5                    5                     27  (menos de 10 filmes com nota no ml-32m: top 10 inclui zeros)
+   thought-provoking      3.2/5                    6                      8  (menos de 10 filmes com nota no ml-32m: top 10 inclui zeros)
+   heartwarming           2.5/5                    7                      6  (menos de 10 filmes com nota no ml-32m: top 10 inclui zeros)
+   twist ending           4.0/5                   16                     13
+   absurd                 1.2/5                    7                      3  (menos de 10 filmes com nota no ml-32m: top 10 inclui zeros)
+   Média: 2.5/5
+
+c) Concordância por etiqueta (só etiquetas usadas 5+ vezes por algum dos lados):
+   'IA confirmada' = quando a IA deu 0,6 ou 0,9, o ml-32m também tem a etiqueta (2+ pessoas).
+   'ml lembrada'   = quando o ml-32m tem a etiqueta com nota 0,05+, a IA também deu a etiqueta.
+   etiqueta                    IA confirmada   ml lembrada
+   philosophical                   100% de 2      67% de 3
+   post-apocalyptic                100% de 4     100% de 4
+   time travel                     100% de 4      56% de 9
+   artificial intelligence         100% de 3      60% de 5
+   father daughter relationship      100% de 4     100% de 3
+   campy                           100% de 1      20% de 5
+   magic                           100% de 5      75% de 8
+   racism                          100% de 2     100% de 5
+   nonlinear                       100% de 4     100% de 4
+   fairy tale                      100% de 3     100% de 3
+   neo-noir                        100% de 2      67% de 3
+   gory                            100% de 2      50% de 8
+   multiple storylines             100% de 2      20% de 5
+   superhero                      100% de 31     97% de 30
+   first contact                   100% de 1      14% de 7
+   space                           91% de 11     91% de 11
+   dystopia                         88% de 8     58% de 12
+   true story                       88% de 8     100% de 6
+   slow paced                       86% de 7      62% de 8
+   sad                              86% de 7      83% de 6
+   romantic                        83% de 12     77% de 13
+   revenge                          83% de 6      80% de 5
+   music                           82% de 11      86% de 7
+   twist ending                    82% de 11     67% de 15
+   disturbing                       80% de 5     100% de 4
+   suspenseful                      80% de 5      67% de 6
+   social commentary                78% de 9      89% de 9
+   funny                           76% de 21     81% de 26
+   dark humor                       75% de 8      75% de 4
+   mythology                        75% de 4     100% de 3
+   organized crime                  75% de 4      75% de 4
+   technology                       75% de 4     100% de 5
+   chase                            75% de 4      67% de 3
+   alternate reality                75% de 4      75% de 4
+   war                             71% de 14     90% de 10
+   cute                             67% de 3     100% de 3
+   satirical                        67% de 3      67% de 3
+   gritty                           67% de 6      38% de 8
+   police investigation             67% de 3     100% de 2
+   twists & turns                   67% de 3      75% de 4
+   parenthood                       67% de 3     100% de 2
+   life & death                     67% de 3      50% de 4
+   monster                          67% de 6     100% de 4
+   family drama                     67% de 9      75% de 8
+   memory                           60% de 5     100% de 3
+   friendship                      60% de 15      80% de 5
+   love story                      60% de 10      75% de 8
+   survival                        60% de 10     100% de 5
+   atmospheric                      57% de 7     40% de 10
+   thought-provoking                57% de 7     100% de 4
+   period piece                    55% de 11     100% de 4
+   end of the world                 50% de 2      20% de 5
+   epic                            50% de 12     100% de 4
+   espionage                        50% de 2      33% de 3
+   whimsical                        50% de 4      50% de 4
+   heartwarming                     50% de 6      60% de 5
+   mental illness                   50% de 4     100% de 3
+   alien invasion                   50% de 2      33% de 3
+   murder mystery                   50% de 4     100% de 1
+   cerebral                         50% de 6      75% de 4
+   surreal                          50% de 2      25% de 4
+   dark                            50% de 10     70% de 10
+   witty                           46% de 13      62% de 8
+   coming of age                   45% de 11      80% de 5
+   animals                          43% de 7      60% de 5
+   stylized                        42% de 19      67% de 6
+   sacrifice                       42% de 12     100% de 1
+   loneliness                       40% de 5      50% de 2
+   intense                         40% de 10      44% de 9
+   brutal                          40% de 10      67% de 3
+   emotional                       39% de 18      75% de 8
+   teen movie                       38% de 8     100% de 2
+   politics                         38% de 8      67% de 6
+   bittersweet                      33% de 9      40% de 5
+   visually stunning               33% de 30     75% de 12
+   supernatural                     33% de 3      50% de 2
+   fast paced                       33% de 9     100% de 1
+   creepy                           33% de 3      50% de 2
+   inspirational                    33% de 6      50% de 6
+   hilarious                        33% de 3      50% de 2
+   claustrophobic                   33% de 6     100% de 1
+   quirky                           33% de 3      50% de 2
+   nostalgic                       31% de 13     100% de 3
+   good versus evil                30% de 10     100% de 2
+   tear jerker                      25% de 4     100% de 2
+   feel-good                       25% de 12     100% de 2
+   dialogue driven                  25% de 4      67% de 3
+   unlikely friendships             25% de 4     100% de 1
+   tense                           24% de 17     100% de 4
+   betrayal                         20% de 5     100% de 1
+   melancholic                      20% de 5     100% de 1
+   kids and family                 18% de 11      50% de 2
+   character study                  14% de 7     100% de 1
+   touching                         14% de 7             -
+   identity                        10% de 10             -
+   action packed                    2% de 48     100% de 1
+   visceral                          0% de 6             -
+   grim                              0% de 4       0% de 1
+   bleak                             0% de 4       0% de 2
+   light                             0% de 5             -
+   silly                             0% de 3      17% de 6
+   humanity                          0% de 5             -
+   mindfuck                                -       0% de 5
+
+d) Discordâncias fortes: IA deu 0,9 e ninguém (2+) usou: 83; ml-32m com nota 0,15+ e a IA não deu: 58
+     IA 0 / ml-32m 0.51   Planeta dos Macacos: O Confronto          end of the world
+     IA 0 / ml-32m 0.49   No Limite do Amanhã                       time travel
+     IA 0 / ml-32m 0.49   Garota Exemplar                           mindfuck
+     IA 0 / ml-32m 0.42   1917                                      suspenseful
+     IA 0 / ml-32m 0.42   Parasita                                  intense
+     IA 0 / ml-32m 0.42   Entre Facas e Segredos                    dark humor
+     IA 0 / ml-32m 0.39   Venom                                     first contact
+     IA 0 / ml-32m 0.39   Fragmentado                               mindfuck
+     IA 0 / ml-32m 0.36   Corra!                                    mindfuck
+     IA 0 / ml-32m 0.33   John Wick 3: Parabellum                   gory
+     IA 0 / ml-32m 0.33   Blade Runner 2049                         existentialism
+     IA 0 / ml-32m 0.33   Os Oito Odiados                           funny
+     IA 0,9 / ml-32m 0    Vingadores: Guerra Infinita               action packed
+     IA 0,9 / ml-32m 0    Vingadores: Ultimato                      action packed
+     IA 0,9 / ml-32m 0    Coringa                                   bleak
+     IA 0,9 / ml-32m 0    Coringa                                   loneliness
+     IA 0,9 / ml-32m 0    Vingadores: Era de Ultron                 action packed
+     IA 0,9 / ml-32m 0    Mad Max: Estrada da Fúria                 action packed
+     IA 0,9 / ml-32m 0    Capitão América: Guerra Civil             action packed
+     IA 0,9 / ml-32m 0    Doutor Estranho                           visually stunning
+     IA 0,9 / ml-32m 0    Divertida Mente                           heartwarming
+     IA 0,9 / ml-32m 0    Viva: A Vida é Uma Festa                  touching
+     IA 0,9 / ml-32m 0    Viva: A Vida é Uma Festa                  kids and family
+     IA 0,9 / ml-32m 0    Parasita                                  tense
+
+============================================================================
+3) COBERTURA COMBINADA DOS 6.000 FILMES
+============================================================================
+Tag Genome: 3353 | ml-32m com 5+ etiquetas (quaisquer) de 2+ pessoas: 4407 | ml-32m com 5+ etiquetas DO VOCABULÁRIO de 2+ pessoas: 1537 | IA (piloto): 100
+Com pelo menos uma fonte boa: 4791 (80%); SEM nenhuma: 1209
+Versão estrita (ml-32m só conta com 5+ etiquetas do vocabulário): com fonte 3778 (63%); sem nenhuma: 2222
+Só o ml-32m cobre (sem Tag Genome nem IA): 1338
+
+Filmes SEM nenhuma fonte, por ano (versão principal / versão estrita):
+  1962: 1/1 de 14   1964: 2/2 de 9   1966: 1/1 de 11   1967: 0/1 de 13   1968: 1/1 de 12   1971: 1/1 de 18
+  1973: 1/1 de 25   1974: 2/2 de 14   1975: 1/1 de 12   1976: 2/2 de 17   1977: 0/1 de 15   1978: 1/1 de 16
+  1979: 1/1 de 22   1981: 1/1 de 25   1982: 0/1 de 29   1983: 1/2 de 30   1984: 1/1 de 34   1985: 1/1 de 46
+  1990: 1/2 de 47   1991: 1/2 de 46   1992: 1/1 de 55   1993: 3/3 de 78   1994: 0/1 de 63   1995: 4/4 de 85
+  1996: 2/2 de 67   1997: 2/3 de 82   1998: 4/4 de 98   2000: 3/5 de 97   2001: 3/3 de 108   2002: 5/6 de 118
+  2003: 4/5 de 126   2004: 5/6 de 139   2005: 4/4 de 148   2006: 9/10 de 165   2007: 6/8 de 167   2008: 6/8 de 169
+  2009: 8/13 de 185   2010: 20/25 de 196   2011: 19/27 de 191   2012: 36/50 de 186   2013: 46/83 de 213   2014: 55/164 de 233
+  2015: 51/181 de 219   2016: 54/169 de 220   2017: 68/185 de 242   2018: 65/190 de 249   2019: 69/170 de 217   2020: 66/125 de 156
+  2021: 65/149 de 178   2022: 90/152 de 171   2023: 118/142 de 146   2024: 122/122 de 122   2025: 107/107 de 107   2026: 69/69 de 69
+Por década (principal): 1960s: 5, 1970s: 9, 1980s: 4, 1990s: 18, 2000s: 53, 2010s: 483, 2020s: 637
+
+Lista salva em filmes_sem_fonte.csv (1209 filmes, mais votados primeiro). Os 10 mais votados:
+   Deadpool & Wolverine (2024) — 9819 votos
+   365 Dias (2020) — 9629 votos
+   xXx: Reativado (2017) — 9377 votos
+   Duna: Parte Dois (2024) — 8944 votos
+   Devoradores de Estrelas (2026) — 8805 votos
+   After (2019) — 8593 votos
+   Velozes & Furiosos: Hobbs & Shaw (2019) — 8032 votos
+   Divertida Mente 2 (2024) — 7152 votos
+   Robô Selvagem (2024) — 6844 votos
+   A Substância (2024) — 6771 votos

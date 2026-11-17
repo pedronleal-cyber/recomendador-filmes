@@ -1,0 +1,7 @@
+Página só para o autor (NÃO publicar). Mostra a idade dos dados do TMDB e as frases não entendidas
+guardadas no navegador quando o site roda no computador.
+
+Como abrir (na pasta do projeto, só no próprio computador):
+    python -m http.server 8765 --bind 127.0.0.1
+Depois: http://127.0.0.1:8765/site/  (o site)  e  http://127.0.0.1:8765/admin_local/admin.html  (esta página).
+As frases só aparecem aqui se o site também foi usado por esse mesmo endereço (127.0.0.1:8765).

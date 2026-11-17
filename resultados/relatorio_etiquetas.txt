@@ -1,0 +1,71 @@
+============================================================================
+0) SINÔNIMOS APROVADOS (sinonimos_ml32m_aprovados.csv)
+============================================================================
+Duvidosos na proposta: 28. Removidos: 4 (4 por decisão direta, 0 pela regra razão<1,5 + palavra única + 1000+ filmes).
+   - love story <- love (razão 1.25, 1644 filmes; decisão direta)
+   - family drama <- family (razão 1.36, 1239 filmes; decisão direta)
+   - life & death <- death (razão 1.1, 1922 filmes; decisão direta)
+   - first contact <- aliens (razão 2.72, 391 filmes; decisão direta)
+Duvidosos mantidos: 24: happy->feel-good, sweet->heartwarming, powerful->poignant, dark fantasy->dark, realistic->gritty, gripping->intense, intelligent->cerebral, clever->witty, weird->quirky, romance->romantic, cheesy->campy, class->social commentary, world war ii->war, race->racism, detective->police investigation, comic book->superhero, biopic->true story, open ending->enigmatic, beautiful->visually stunning, dialogue->dialogue driven, ensemble cast->multiple storylines, historical->period piece, slow->slow paced, children->kids and family
+Linhas na tabela aprovada: 432 (de 436)
+
+============================================================================
+1) TABELA ÚNICA (etiquetas_unificadas.csv)
+============================================================================
+526845 linhas, 5224 filmes, 150 etiquetas do vocabulário.
+   ia          500 filmes,    5338 linhas (nota original de 0.30 a 0.90; média por filme 10.7 etiquetas)
+   ml32m      4418 filmes,   18557 linhas (nota original de 0.00 a 1.00; média por filme 4.2 etiquetas)
+   tagenome   3353 filmes,  502950 linhas (nota original de 0.00 a 1.00; média por filme 150.0 etiquetas)
+   Tag Genome guarda as 150 etiquetas de cada filme (nota graduada); ml-32m e IA guardam só as que
+   apareceram (ml-32m: 2+ pessoas; IA: 10 a 15 por filme). Filmes com mais de uma fonte têm uma linha por fonte.
+   Exemplo (Interestelar):
+      ia        time travel  nota original 0.6     -> posição 0.992
+      ia        space        nota original 0.9     -> posição 0.988
+      ia        emotional    nota original 0.9     -> posição 0.982
+      ml32m     space        nota original 0.4886  -> posição 0.996
+      ml32m     time travel  nota original 0.4355  -> posição 0.9883
+      ml32m     emotional    nota original 0.0349  -> posição 0.9768
+
+============================================================================
+3) COBERTURA DAS FONTES
+============================================================================
+Combinações de fontes (TG = Tag Genome; ML = ml-32m com 5+ etiquetas de 2+ pessoas; IA = Claude):
+   TG+ML       2970  (50%)
+   ML          1338  (22%)
+   nenhuma      808  (13%)
+   IA           401  (7%)
+   TG           383  (6%)
+   ML+IA         99  (2%)
+Com alguma fonte: 5191 (87%). Sem nenhuma: 808.
+
+Cobertura por década (% com pelo menos uma fonte | sem fonte):
+   1920s      13 filmes   100% com fonte |    0 sem
+   1930s      22 filmes   100% com fonte |    0 sem
+   1940s      31 filmes   100% com fonte |    0 sem
+   1950s      62 filmes   100% com fonte |    0 sem
+   1960s     102 filmes    95% com fonte |    5 sem
+   1970s     162 filmes    94% com fonte |    9 sem
+   1980s     363 filmes    99% com fonte |    3 sem
+   1990s     707 filmes    98% com fonte |   15 sem
+   2000s    1422 filmes    97% com fonte |   45 sem
+   2010s    2166 filmes    83% com fonte |  360 sem
+   2020s     948 filmes    61% com fonte |  371 sem
+Sem fonte por ano (2010+): 2010: 17, 2011: 18, 2012: 29, 2013: 36, 2014: 40, 2015: 36, 2016: 35, 2017: 55, 2018: 47, 2019: 47, 2020: 47, 2021: 46, 2022: 61, 2023: 63, 2024: 57, 2025: 61, 2026: 36
+Lista atualizada dos que ainda faltam: filmes_sem_fonte_atual.csv (808 filmes).
+
+Amostra de 15 filmes novos etiquetados pela IA (sorteados entre os 400 desta rodada):
+   Ela Dança, Eu Danço 5: Tudo ou Nada (2014): music 0.9, teen movie 0.6, light 0.6, feel-good 0.6, friendship 0.6, romantic 0.3, underdog 0.3, visually stunning 0.3, chick flick 0.3, love story 0.3
+   O Contador 2 (2025): action packed 0.6, murder mystery 0.6, conspiracy 0.6, family drama 0.6, funny 0.3, witty 0.3, brutal 0.3, complex 0.3, unlikely friendships 0.3, police investigation 0.3
+   Os Rejeitados (2023): bittersweet 0.9, character study 0.9, unlikely friendships 0.9, period piece 0.9, christmas 0.6, funny 0.6, melancholic 0.6, witty 0.6, heartwarming 0.6, loneliness 0.6, touching 0.6, nostalgic 0.6
+   Arthur e a Guerra dos Dois Mundos (2010): kids and family 0.9, fairy tale 0.6, magic 0.6, silly 0.6, light 0.6, good versus evil 0.3, campy 0.3, monster 0.3, funny 0.3, whimsical 0.3
+   Uma Família de Dois (2016): father daughter relationship 0.9, parenthood 0.9, tear jerker 0.9, emotional 0.9, funny 0.6, bittersweet 0.6, touching 0.6, heartwarming 0.6, sad 0.6, family drama 0.6, sentimental 0.3
+   Saltburn (2023): obsession 0.9, dark humor 0.9, disturbing 0.9, stylized 0.9, twist ending 0.9, social commentary 0.6, satirical 0.6, visually stunning 0.6, identity 0.6, dark 0.6, mental illness 0.3, character study 0.3
+   O Massacre da Serra Elétrica 3D: A Lenda Continua (2013): gory 0.9, brutal 0.9, campy 0.6, serial killer 0.6, family drama 0.3, scary 0.3, revenge 0.3, creepy 0.3, small town 0.3, silly 0.3
+   Furiosa: Uma Saga Mad Max (2024): post-apocalyptic 0.9, revenge 0.9, epic 0.9, action packed 0.9, visually stunning 0.9, dystopia 0.9, chase 0.9, brutal 0.6, stylized 0.6, survival 0.6, gritty 0.6, slow paced 0.3, character study 0.3
+   Destruição Final 2 (2026): end of the world 0.9, post-apocalyptic 0.9, survival 0.9, family drama 0.9, road trip 0.6, tense 0.6, parenthood 0.6, emotional 0.3, action packed 0.3, bleak 0.3
+   MaXXXine (2024): stylized 0.9, serial killer 0.9, period piece 0.9, gory 0.6, neo-noir 0.6, dark 0.6, nostalgic 0.6, murder mystery 0.6, identity 0.3, campy 0.3, brutal 0.3
+   A Noite das Bruxas (2023): murder mystery 0.9, atmospheric 0.9, period piece 0.9, supernatural 0.6, ghosts 0.6, creepy 0.6, eerie 0.6, police investigation 0.3, dark 0.3, twist ending 0.3
+   Demon Slayer: Kimetsu no Yaiba Castelo Infinito (2025): action packed 0.9, visually stunning 0.9, supernatural 0.9, emotional 0.9, sacrifice 0.6, friendship 0.6, epic 0.6, monster 0.6, good versus evil 0.6, fast paced 0.6, sad 0.3
+   O Assassino (2023): character study 0.9, stylized 0.9, cynical 0.9, dark humor 0.6, revenge 0.6, slow paced 0.6, tense 0.6, neo-noir 0.6, meditative 0.3, organized crime 0.3, brutal 0.3
+   Rebel Moon - Parte 1: A Menina do Fogo (2023): space 0.9, stylized 0.9, action packed 0.6, epic 0.6, visually stunning 0.6, war 0.6, good versus evil 0.3, campy 0.3, slow paced 0.3, dark 0.3
+   A Longa Marcha: Caminhe ou Morra (2025): dystopia 0.9, survival 0.9, friendship 0.9, bleak 0.9, disturbing 0.6, emotional 0.6, brutal 0.6, coming of age 0.6, tense 0.6, sad 0.6, intense 0.6, social commentary 0.3

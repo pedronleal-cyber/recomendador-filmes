@@ -1,0 +1,400 @@
+
+=== Abordagem H50: nota de acerto ===
+26 de 40 pedidos com pelo menos 1 filme bom no top 5 (65%)
+
+Por estilo:
+  curto       5/5  (100%)
+  vago        1/5  (20%)
+  abstrato    2/6  (33%)
+  gíria       3/5  (60%)
+  referência  4/5  (80%)
+  casal       1/3  (33%)
+  detalhado   5/6  (83%)
+  filtro      5/5  (100%)
+
+Pedidos que caíram no aviso "não entendi": 0 []
+
+Pedidos que erraram:
+
+  #6 [vago] quero algo leve pra ver hoje à noite, sem precisar pensar muito
+     temas: leve / alto astral
+     temas negados: pensar / reflexivo
+     1. Shang-Chi e a Lenda dos Dez Anéis (2021)
+     2. O Fabuloso Destino de Amélie Poulain (2001)
+     3. Ligeiramente Grávidos (2007)
+     4. Forrest Gump: O Contador de Histórias (1994)
+     5. Jurassic World: O Mundo dos Dinossauros (2015)
+
+  #8 [vago] algo que me deixe pensando depois que acabar
+     temas: pensar / reflexivo
+     1. Sociedade dos Poetas Mortos (1989)
+     2. Jerry Maguire: A Grande Virada (1996)
+     3. Ender's Game: O Jogo do Exterminador (2013)
+     4. Questão de Tempo (2013)
+     5. Barbie (2023)
+
+  #9 [vago] filme tenso que prende do começo ao fim
+     temas: tenso
+     1. Nós (2019)
+     2. O Destino de uma Nação (2017)
+     3. Corra! (2017)
+     4. Sobrenatural: Capítulo 2 (2013)
+     5. Velozes e Furiosos: Desafio em Tóquio (2006)
+
+  #10 [vago] quero rir até doer
+     filtros: generos=['Comédia']
+     temas: rir / engraçado
+     1. Sim Senhor (2008)
+     2. South Park: Maior, Melhor e Sem Cortes (1999)
+     3. Megarromântico (2019)
+     4. Zumbilândia (2009)
+     5. Borat: Fita de Cinema Seguinte (2020)
+
+  #11 [abstrato] ação, carros, mulheres fortes e alguém que perdeu um ente querido
+     filtros: generos=['Ação']
+     temas: perda / luto | carros / corrida | mulheres fortes
+     1. John Wick - De Volta ao Jogo (2014)
+     2. 60 Segundos (2000)
+     3. Need for Speed: O Filme (2014)
+     4. Ford vs Ferrari (2019)
+     5. Velozes & Furiosos 5: Operação Rio (2011)
+
+  #12 [abstrato] um filme sobre alguém que perdeu uma pessoa e tenta seguir em frente
+     temas: perda / luto
+     1. O Sétimo Selo (1957)
+     2. Assim na Terra Como no Inferno (2014)
+     3. Homem-Aranha 2 (2004)
+     4. Ad Astra - Rumo às Estrelas (2019)
+     5. Na Mira do Chefe (2008)
+
+  #13 [abstrato] uma história de amizade entre dois homens bem diferentes
+     temas: amizade | pessoas diferentes
+     1. O Cão e a Raposa (1981)
+     2. Guerra é Guerra! (2012)
+     3. Irmão Urso (2003)
+     4. O Franco Atirador (1978)
+     5. Star Trek (2009)
+
+  #15 [abstrato] filme sobre superar um grande trauma
+     temas: trauma | superação
+     1. Os Novos Mutantes (2020)
+     2. Abismo do Medo (2005)
+     3. WALL-E (2008)
+     4. Backrooms: Um Não-Lugar (2026)
+     5. Divertida Mente (2015)
+
+  #17 [gíria] mano, quero um filme de porrada com uns vilão foda
+     filtros: generos=['Ação']
+     temas: vilão | luta / porrada
+     1. O Grande Mestre (2008)
+     2. Megamente (2010)
+     3. Em Ritmo de Fuga (2017)
+     4. Operação Big Hero (2014)
+     5. Kung Fu Panda 4 (2024)
+
+  #20 [gíria] filme de zoeira pra ver com os amigos
+     filtros: generos=['Comédia']
+     temas: rir / engraçado | amizade
+     1. Gente Grande (2010)
+     2. Super Mario Galaxy: O Filme (2026)
+     3. Missão Madrinha de Casamento (2011)
+     4. Guerra é Guerra! (2012)
+     5. Madagascar 2 (2008)
+
+  #24 [referência] algo no estilo Tarantino
+     1. É o Fim (2013)
+     2. Um Dia de Fúria (1993)
+     3. O Corvo (1994)
+     4. Fargo: Uma Comédia de Erros (1996)
+     5. Os Imperdoáveis (1992)
+
+  #27 [casal] filme pra ver com minha namorada, que não seja muito pesado e tenha romance e um pouco de ação
+     filtros: generos=['Romance', 'Ação']
+     temas: romance / amor
+     temas negados: sombrio / pesado
+     1. Scott Pilgrim Contra o Mundo (2010)
+     2. Aliados (2016)
+     3. Malévola (2014)
+     4. Guerra é Guerra! (2012)
+     5. Amor à Queima-Roupa (1993)
+
+  #29 [casal] suspense pra ver a dois, sem muito sangue
+     filtros: generos=['Thriller']
+     temas negados: sangue / violência
+     1. Eu Sou a Lenda (2007)
+     2. Chamada de Emergência (2013)
+     3. Jack Reacher: O Último Tiro (2012)
+     4. Predadores (2010)
+     5. Planeta Terror (2007)
+
+  #34 [detalhado] super-herói mas com um lado sombrio
+     temas: super-herói | sombrio / pesado
+     1. Thunderbolts* (2025)
+     2. Homem-Formiga e a Vespa (2018)
+     3. Birdman ou (A Inesperada Virtude da Ignorância) (2014)
+     4. Homem-Aranha: Sem Volta Para Casa (2021)
+     5. Kick-Ass 2 (2013)
+
+Resultados salvos em resultados_H50.csv
+
+=== Abordagem H70: nota de acerto ===
+30 de 40 pedidos com pelo menos 1 filme bom no top 5 (75%)
+
+Por estilo:
+  curto       5/5  (100%)
+  vago        1/5  (20%)
+  abstrato    4/6  (67%)
+  gíria       4/5  (80%)
+  referência  4/5  (80%)
+  casal       1/3  (33%)
+  detalhado   6/6  (100%)
+  filtro      5/5  (100%)
+
+Pedidos que caíram no aviso "não entendi": 0 []
+
+Pedidos que erraram:
+
+  #6 [vago] quero algo leve pra ver hoje à noite, sem precisar pensar muito
+     temas: leve / alto astral
+     temas negados: pensar / reflexivo
+     1. Ligeiramente Grávidos (2007)
+     2. O Fabuloso Destino de Amélie Poulain (2001)
+     3. Forrest Gump: O Contador de Histórias (1994)
+     4. Sonic: O Filme (2020)
+     5. Jurassic World: O Mundo dos Dinossauros (2015)
+
+  #8 [vago] algo que me deixe pensando depois que acabar
+     temas: pensar / reflexivo
+     1. Sociedade dos Poetas Mortos (1989)
+     2. Como Treinar o Seu Dragão 3 (2019)
+     3. Questão de Tempo (2013)
+     4. Jerry Maguire: A Grande Virada (1996)
+     5. Ender's Game: O Jogo do Exterminador (2013)
+
+  #9 [vago] filme tenso que prende do começo ao fim
+     temas: tenso
+     1. O Destino de uma Nação (2017)
+     2. Nós (2019)
+     3. Sobrenatural: Capítulo 2 (2013)
+     4. Corra! (2017)
+     5. Os 12 Macacos (1995)
+
+  #10 [vago] quero rir até doer
+     filtros: generos=['Comédia']
+     temas: rir / engraçado
+     1. Sim Senhor (2008)
+     2. South Park: Maior, Melhor e Sem Cortes (1999)
+     3. Megarromântico (2019)
+     4. Zumbilândia (2009)
+     5. Borat: Fita de Cinema Seguinte (2020)
+
+  #11 [abstrato] ação, carros, mulheres fortes e alguém que perdeu um ente querido
+     filtros: generos=['Ação']
+     temas: perda / luto | carros / corrida | mulheres fortes
+     1. Aves de Rapina: Arlequina e sua Emancipação Fantabulosa (2020)
+     2. Matrix Reloaded (2003)
+     3. Ford vs Ferrari (2019)
+     4. Velozes & Furiosos 5: Operação Rio (2011)
+     5. John Wick - De Volta ao Jogo (2014)
+
+  #15 [abstrato] filme sobre superar um grande trauma
+     temas: trauma | superação
+     1. WALL-E (2008)
+     2. Divertida Mente (2015)
+     3. O Último Samurai (2003)
+     4. Os Novos Mutantes (2020)
+     5. Abismo do Medo (2005)
+
+  #17 [gíria] mano, quero um filme de porrada com uns vilão foda
+     filtros: generos=['Ação']
+     temas: vilão | luta / porrada
+     1. Operação Big Hero (2014)
+     2. Kung Fu Panda 4 (2024)
+     3. O Demolidor (1993)
+     4. Kung Fu Panda (2008)
+     5. Kung Fu Panda 2 (2011)
+
+  #24 [referência] algo no estilo Tarantino
+     1. É o Fim (2013)
+     2. O Tigre e o Dragão (2000)
+     3. O Corvo (1994)
+     4. Fogo Contra Fogo (1995)
+     5. Amnésia (2000)
+
+  #27 [casal] filme pra ver com minha namorada, que não seja muito pesado e tenha romance e um pouco de ação
+     filtros: generos=['Romance', 'Ação']
+     temas: romance / amor
+     temas negados: sombrio / pesado
+     1. Aliados (2016)
+     2. Malévola (2014)
+     3. Guerra é Guerra! (2012)
+     4. Scott Pilgrim Contra o Mundo (2010)
+     5. Amor à Queima-Roupa (1993)
+
+  #29 [casal] suspense pra ver a dois, sem muito sangue
+     filtros: generos=['Thriller']
+     temas negados: sangue / violência
+     1. Eu Sou a Lenda (2007)
+     2. Chamada de Emergência (2013)
+     3. Jack Reacher: O Último Tiro (2012)
+     4. Predadores (2010)
+     5. Planeta Terror (2007)
+
+Resultados salvos em resultados_H70.csv
+
+=== Abordagem H50 (validacao): nota de acerto ===
+25 de 30 pedidos com pelo menos 1 filme bom no top 5 (83%)
+
+Por estilo:
+  curto       13/13  (100%)
+  detalhado   4/5  (80%)
+  gíria       1/2  (50%)
+  abstrato    4/4  (100%)
+  referência  0/1  (0%)
+  vago        3/3  (100%)
+  casal       0/2  (0%)
+
+Pedidos que caíram no aviso "não entendi": 0 []
+
+Pedidos que erraram:
+
+  #49 [detalhado] filme sobre hackers e tecnologia
+     temas: futuro / tecnologia
+     1. Minority Report: A Nova Lei (2002)
+     2. A Vigilante do Amanhã: Ghost in the Shell (2017)
+     3. Gigantes de Aço (2011)
+     4. Controle Absoluto (2008)
+     5. O Exterminador do Futuro (1984)
+
+  #55 [gíria] comédia com humor ácido, bem sarcástico
+     filtros: generos=['Comédia']
+     temas: rir / engraçado
+     1. Megarromântico (2019)
+     2. R.I.P.D.: Agentes do Além (2013)
+     3. Todo Mundo em Pânico (2000)
+     4. South Park: Maior, Melhor e Sem Cortes (1999)
+     5. Todo Mundo em Pânico 2 (2001)
+
+  #59 [referência] comédia de família tipo Esqueceram de Mim
+     filtros: generos=['Comédia', 'Família']
+     temas: rir / engraçado | criança / família
+     1. Esqueceram de Mim 2: Perdido em Nova York (1992)
+     2. Esqueceram de Mim 3 (1997)
+     3. O Grinch (2018)
+     4. Madagascar 2 (2008)
+     5. A Guerra dos Dálmatas (1961)
+
+  #67 [casal] filme de golpe engraçado pra ver em casal
+     filtros: generos=['Comédia']
+     temas: rir / engraçado | assalto / golpe
+     1. As Branquelas (2004)
+     2. Todos Menos Você (2023)
+     3. Triângulo da Tristeza (2022)
+     4. Que Mal Eu Fiz a Deus? (2014)
+     5. O Caminho para El Dorado (2000)
+
+  #69 [casal] aventura no espaço com humor, pra ver com meu namorado
+     filtros: generos=['Comédia', 'Aventura']
+     temas: rir / engraçado | romance / amor | aventura | espaço
+     1. Gato de Botas 2: O Último Pedido (2022)
+     2. Jumanji: Bem-Vindo à Selva (2017)
+     3. A Princesa Prometida (1987)
+     4. Amor e Monstros (2020)
+     5. Austin Powers: O Agente ‘Bond’ Cama (1999)
+
+Resultados salvos em resultados_H50_validacao.csv
+
+=== Abordagem H70 (validacao): nota de acerto ===
+24 de 30 pedidos com pelo menos 1 filme bom no top 5 (80%)
+
+Por estilo:
+  curto       13/13  (100%)
+  detalhado   4/5  (80%)
+  gíria       1/2  (50%)
+  abstrato    3/4  (75%)
+  referência  0/1  (0%)
+  vago        3/3  (100%)
+  casal       0/2  (0%)
+
+Pedidos que caíram no aviso "não entendi": 0 []
+
+Pedidos que erraram:
+
+  #49 [detalhado] filme sobre hackers e tecnologia
+     temas: futuro / tecnologia
+     1. Minority Report: A Nova Lei (2002)
+     2. A Vigilante do Amanhã: Ghost in the Shell (2017)
+     3. Gigantes de Aço (2011)
+     4. Controle Absoluto (2008)
+     5. O Exterminador do Futuro (1984)
+
+  #54 [abstrato] um filme sobre pai e filho com relação complicada
+     temas: pais e filhos
+     1. A Árvore da Vida (2011)
+     2. Lembranças (2010)
+     3. Uma Babá Quase Perfeita (1993)
+     4. Precisamos Falar Sobre o Kevin (2011)
+     5. Pai em Dose Dupla (2015)
+
+  #55 [gíria] comédia com humor ácido, bem sarcástico
+     filtros: generos=['Comédia']
+     temas: rir / engraçado
+     1. Megarromântico (2019)
+     2. R.I.P.D.: Agentes do Além (2013)
+     3. Todo Mundo em Pânico (2000)
+     4. South Park: Maior, Melhor e Sem Cortes (1999)
+     5. O Máskara (1994)
+
+  #59 [referência] comédia de família tipo Esqueceram de Mim
+     filtros: generos=['Comédia', 'Família']
+     temas: rir / engraçado | criança / família
+     1. Esqueceram de Mim 2: Perdido em Nova York (1992)
+     2. Esqueceram de Mim 3 (1997)
+     3. Kung Fu Panda 4 (2024)
+     4. Madagascar 2 (2008)
+     5. O Grinch (2018)
+
+  #67 [casal] filme de golpe engraçado pra ver em casal
+     filtros: generos=['Comédia']
+     temas: rir / engraçado | assalto / golpe
+     1. Tiras, Só Que Não (2014)
+     2. A Balada de Buster Scruggs (2018)
+     3. As Panteras: Detonando (2003)
+     4. As Branquelas (2004)
+     5. Todos Menos Você (2023)
+
+  #69 [casal] aventura no espaço com humor, pra ver com meu namorado
+     filtros: generos=['Comédia', 'Aventura']
+     temas: rir / engraçado | romance / amor | aventura | espaço
+     1. Gato de Botas 2: O Último Pedido (2022)
+     2. Jumanji: Bem-Vindo à Selva (2017)
+     3. A Princesa Prometida (1987)
+     4. Austin Powers: O Agente ‘Bond’ Cama (1999)
+     5. Ilha dos Cachorros (2018)
+
+Resultados salvos em resultados_H70_validacao.csv
+
+=== Acertos por estilo treino ===
+                   A       B     H50     H70
+curto            5/5     4/5     5/5     5/5
+vago             3/5     0/5     1/5     1/5
+abstrato         3/6     1/6     2/6     4/6
+gíria            4/5     0/5     3/5     4/5
+referência       4/5     3/5     4/5     4/5
+casal            1/3     0/3     1/3     1/3
+detalhado        6/6     1/6     5/6     6/6
+filtro           5/5     4/5     5/5     5/5
+TOTAL          31/40   13/40   26/40   30/40
+%                78%     32%     65%     75%
+
+=== Acertos por estilo validacao ===
+                   A       B     H50     H70
+curto           9/13   12/13   13/13   13/13
+detalhado        4/5     4/5     4/5     4/5
+gíria            1/2     1/2     1/2     1/2
+abstrato         3/4     2/4     4/4     3/4
+referência       0/1     1/1     0/1     0/1
+vago             3/3     1/3     3/3     3/3
+casal            0/2     0/2     0/2     0/2
+TOTAL          20/30   21/30   25/30   24/30
+%                67%     70%     83%     80%

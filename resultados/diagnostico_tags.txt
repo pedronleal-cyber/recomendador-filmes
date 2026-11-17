@@ -1,0 +1,103 @@
+======================================================================
+1) COBERTURA DO TAG GENOME POR DÉCADA (filmes_v2.csv)
+======================================================================
+Década      Filmes  Com etiqueta     %
+1920s           13            13  100%
+1930s           22            22  100%
+1940s           31            31  100%
+1950s           62            62  100%
+1960s          102            96   94%
+1970s          162           151   93%
+1980s          363           357   98%
+1990s          707           685   97%
+2000s         1422          1354   95%
+2010s         2166           581   27%
+2020s          949             0    0%
+(fora da tabela: 1 filme(s) antes de 1920 ou sem ano, 1 com etiqueta)
+TOTAL         6000          3353   56%
+
+Detalhe 2010 a 2021 (ano: com etiqueta / filmes):
+  2010: 171/196  2011: 160/191  2012: 134/186  2013: 115/213  2014: 1/233  2015: 0/219  2016: 0/220  2017: 0/242  2018: 0/249  2019: 0/217  2020: 0/156  2021: 0/178
+
+======================================================================
+2) COBERTURA DO GABARITO (filmes de boas_respostas com etiqueta)
+======================================================================
+Contagem por citação (um filme citado em 2 pedidos conta 2 vezes).
+'fora' = o título não está no filmes_v2.csv.
+
+Arquivo                  Citações  Com etiq.  Sem etiq.  Fora v2   % com  Únicos  % únicos
+pedidos_teste.csv             429        318        111        0     74%     302       74%
+pedidos_validacao.csv         564        368        196        0     65%     476       66%
+pedidos_final.csv             291        189        102        0     65%     213       64%
+pedidos_final2.csv            291        206         85        0     71%     239       72%
+
+Pedidos em que MENOS da metade das boas respostas tem etiqueta: 14
+  #1 [curto] (pedidos_teste.csv) 4/10 com etiqueta — filme de ação com carros
+       sem etiqueta: Mad Max: Estrada da Fúria | Velozes & Furiosos 7 | Em Ritmo de Fuga | Ford vs Ferrari | Velozes & Furiosos 8 | Need for Speed: O Filme
+  #18 [gíria] (pedidos_teste.csv) 6/13 com etiqueta — bora de terror que dê medo de verdade, nada de susto bobo
+       sem etiqueta: Hereditário | Midsommar: O Mal Não Espera a Noite | A Bruxa | Corrente do Mal | O Babadook | Um Lugar Silencioso | Corra!
+  #42 [curto] (pedidos_validacao.csv) 5/14 com etiqueta — super-herói divertido, sem muito drama
+       sem etiqueta: Guardiões da Galáxia | Deadpool | Homem-Formiga | Thor: Ragnarok | Homem-Aranha: De Volta ao Lar | Shazam! | Operação Big Hero | Guardiões da Galáxia - Vol. 2 | Homem-Formiga e a Vespa
+  #43 [curto] (pedidos_validacao.csv) 1/4 com etiqueta — filme de tubarão
+       sem etiqueta: Águas Rasas | Megatubarão | Megatubarão 2
+  #45 [curto] (pedidos_validacao.csv) 2/6 com etiqueta — cinebiografia de músico
+       sem etiqueta: Bohemian Rhapsody | Rocketman | Elvis | Straight Outta Compton: A História do N.W.A.
+  #68 [vago] (pedidos_validacao.csv) 16/35 com etiqueta — terror psicológico que me deixe angustiado
+       sem etiqueta: Hereditário | Midsommar: O Mal Não Espera a Noite | mãe! | O Babadook | O Farol | Aniquilação | Nós | Corra! | O Homem Duplicado | Jogo Perigoso | Fragmentado | A Bruxa | Corrente do Mal | O Homem nas Trevas | Sorria | Noites Brutais | X: A Marca da Morte | Hush: A Morte Ouve | Um Lugar Silencioso
+  #69 [casal] (pedidos_validacao.csv) 12/29 com etiqueta — aventura no espaço com humor, pra ver com meu namorado
+       sem etiqueta: Guardiões da Galáxia | Guardiões da Galáxia - Vol. 2 | Thor: Ragnarok | Lightyear | Valerian e a Cidade dos Mil Planetas | Guardiões da Galáxia: Vol. 3 | Star Wars: O Despertar da Força | Jogador N° 1 | Perdido em Marte | O Destino de Júpiter | Ad Astra - Rumo às Estrelas | Han Solo: Uma História Star Wars | Rogue One: Uma História Star Wars | Thor: Amor e Trovão | Capitã Marvel | As Marvels | Vingadores: Guerra Infinita
+  #71 [detalhado] (pedidos_final.csv) 7/15 com etiqueta — hoje queria ver um filme de ação, que tivesse um romance e que também tivesse um drama
+       sem etiqueta: John Wick - De Volta ao Jogo | John Wick: Um Novo Dia para Matar | John Wick 3: Parabellum | John Wick 4: Baba Yaga | Homem-Aranha: Através do Aranhaverso | Top Gun: Maverick | Mulher-Maravilha | Homem-Aranha: No Aranhaverso
+  #72 [vago] (pedidos_final.csv) 4/15 com etiqueta — quero ficar alegre
+       sem etiqueta: A Família Mitchell e a Revolta das Máquinas | As Aventuras de Paddington 2 | Tudo em Todo o Lugar ao Mesmo Tempo | As Aventuras de Paddington | Divertida Mente | Zootopia: Essa Cidade é o Bicho | Um Senhor Estagiário | Sing - Quem Canta Seus Males Espanta | Encanto | Moana: Um Mar de Aventuras | Homem-Aranha: No Aranhaverso
+  #75 [detalhado] (pedidos_final.csv) 4/15 com etiqueta — um terror mas que seja reflexivo também, não algo clichê que o terror seja bruxa, satanismo e coisas assim
+       sem etiqueta: Corra! | O Farol | O Babadook | Nós | Corrente do Mal | Um Lugar Silencioso | Aniquilação | Não! Não Olhe! | Fragmentado | O Homem nas Trevas | Sob a Pele
+  #87 [vago] (pedidos_final.csv) 7/15 com etiqueta — qualquer coisa que me faça ficar vidrado na tela
+       sem etiqueta: O Abutre | Joias Brutas | Parasita | Whiplash: Em Busca da Perfeição | Garota Exemplar | Coringa | Sicario: Terra de Ninguém | Bom Comportamento
+  #95 [referência] (pedidos_final2.csv) 3/13 com etiqueta — algo tipo Parasita, crítica social
+       sem etiqueta: Coringa | Entre Facas e Segredos | Glass Onion: Um Mistério Knives Out | Corra! | Triângulo da Tristeza | Nós | O Abutre | O Menu | Não Olhe para Cima | Roma
+  #99 [curto] (pedidos_final2.csv) 7/15 com etiqueta — multiverso, realidades alternativas
+       sem etiqueta: Tudo em Todo o Lugar ao Mesmo Tempo | Homem-Aranha: No Aranhaverso | Homem-Aranha: Através do Aranhaverso | Doutor Estranho no Multiverso da Loucura | Homem-Aranha: Sem Volta Para Casa | The Flash | Vingadores: Ultimato | Tenet
+  #102 [vago] (pedidos_final2.csv) 6/15 com etiqueta — algo bonito de ver, fotografia incrível
+       sem etiqueta: Blade Runner 2049 | O Regresso | Mad Max: Estrada da Fúria | Interestelar | La La Land: Cantando Estações | O Grande Hotel Budapeste | 1917 | Moonlight: Sob a Luz do Luar | Roma
+
+======================================================================
+3) TESTE DE "EMPRESTAR ETIQUETAS"
+======================================================================
+Filmes etiquetados: 3353. Validação: 300 sorteados (semente 42); vizinhos procurados só entre os outros 3053.
+Estimativa = média das etiquetas dos 20 vizinhos mais parecidos (palavras-chave + gêneros + década, TF-IDF + cosseno).
+
+a) Correlação média por filme (estimativa x etiquetas reais, nas 1.084 etiquetas):
+   Estimativa pelos vizinhos:                    0.772  (mediana 0.785)
+   Chute bobo (todo filme = média geral):        0.591
+   Só o que é próprio do filme (tirando a média): 0.608  (chute bobo aqui = 0)
+   -> A correlação 'crua' é alta até para o chute bobo, porque algumas etiquetas são altas em quase
+      todo filme. A linha 'só o que é próprio do filme' é a que mostra se a estimativa sabe algo.
+   Distribuição (só o que é próprio do filme): -1.0 a 0.2: 3%, 0.2 a 0.4: 14%, 0.4 a 0.6: 25%, 0.6 a 1.0: 58%
+
+b) Etiquetas de clima: quantos dos 5 filmes com a nota REAL mais alta (entre os 300)
+   aparecem também no top 5 da ESTIMATIVA. Ao acaso, o esperado seria 0.08 de 5.
+   Etiqueta             Top 5 certo  Top 20 certo  Spearman   Top 5 real -> top 5 estimado
+   feel-good                   1/5          7/20      0.56   Um Grande Garoto, Gênio Indomável, A Luta pela Esperança -> Duelo de Titãs, Gol!: O Sonho Impossív, Um Sonho Possível
+   dark                        1/5          4/20      0.63   Batman, O Estranho Sem Nome, Segredos de Sangue -> Mulher-Gato, Hannibal, a Origem do , Batman: O Cavaleiro de
+   reflective                  1/5          9/20      0.58   O Exército das Sombras, A Conversação, Andrei Rublev -> O Exército das Sombras, Pacto de Sangue, O Piano
+   funny                       0/5          7/20      0.68   Super Tiras, Sexta-feira em Apuros, Top Secret! Superconfi -> Todo Mundo em Pânico 4, O Casamento dos Meus S, O Pai da Noiva
+   sad                         2/5          6/20      0.64   Mary e Max: Uma Amizad, Filadélfia, O Lutador -> Patch Adams: O Amor é , O Exército das Sombras, Brilho Eterno de uma M
+   depressing                  0/5          6/20      0.61   A Estrada, Nebraska, O Lutador -> Patch Adams: O Amor é , Álbum de Família, Brilho Eterno de uma M
+   tense                       0/5          7/20      0.65   Alien: O Oitavo Passag, O Enigma de Outro Mund, O Exterminador do Futu -> Pacto de Sangue, Hannibal, a Origem do , Era Uma Vez na América
+   thought-provoking           2/5          6/20      0.56   Gênio Indomável, Brilho Eterno de uma M, Preso na Escuridão -> Brilho Eterno de uma M, Patch Adams: O Amor é , Tratamento de Choque
+   heartwarming                1/5         10/20      0.58   Um Grande Garoto, Gênio Indomável, A Bela e a Fera -> A Bela e a Fera, A Guerra dos Dálmatas, Frozen: Uma Aventura C
+   atmospheric                 1/5          7/20      0.63   Alien: O Oitavo Passag, Pacto de Sangue, Andrei Rublev -> Pacto de Sangue, Atriz Milenar, Psicose
+   Média: 0.9/5 no top 5 e 6.9/20 no top 20 (ao acaso: 0.08/5 e 1.3/20).
+
+c) Os filmes SEM etiqueta acham vizinhos tão parecidos quanto os da validação?
+   Similaridade média com os 20 vizinhos — validação: 0.147; filmes sem etiqueta: 0.150
+   Sem etiqueta de 2015+: 0.147 (2096 filmes); sem etiqueta antes de 2015: 0.164 (551 filmes)
+   Qualidade na validação conforme a similaridade dos vizinhos (só o que é próprio do filme):
+     similaridade 0.00 a 0.15: 180 filmes, correlação 0.580
+     similaridade 0.15 a 0.25: 113 filmes, correlação 0.639
+     similaridade 0.25 a 1.00:   7 filmes, correlação 0.827
+   Filmes sem etiqueta com similaridade abaixo de 0,15: 59%
+   Década nos sem etiqueta de 2020+: nenhum filme etiquetado é dos anos 2020, então a ficha 'd:2020' não ajuda a achar vizinhos.
+
+Fonte das etiquetas: MovieLens Tag Genome 2021 (GLMER), CC BY-NC 3.0. Vig et al. (2012); Kotkov et al. (2021).

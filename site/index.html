@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Que filme ver?</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E%F0%9F%8E%AC%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <header class="topo">
+    <h1>Que filme ver hoje?</h1>
+    <p class="subtitulo">Descreva o filme que você quer ver, do seu jeito. A gente sugere 5 e diz onde assistir no Brasil.</p>
+  </header>
+
+  <main>
+    <form id="busca" class="busca" autocomplete="off">
+      <label for="pedido" class="oculto">Seu pedido</label>
+      <textarea id="pedido" rows="3" maxlength="300"
+        placeholder="Ex.: uma comédia leve pra ver com a família, ou um suspense com final surpreendente"></textarea>
+      <button type="submit" id="botao" disabled>Carregando filmes…</button>
+    </form>
+
+    <div class="exemplos" aria-label="Exemplos de pedidos">
+      <span>Experimente:</span>
+      <button type="button" class="exemplo">quero ficar alegre</button>
+      <button type="button" class="exemplo">algo tipo Parasita, crítica social</button>
+      <button type="button" class="exemplo">terror pra ver de dia</button>
+      <button type="button" class="exemplo">filme coreano</button>
+    </div>
+
+    <div id="aviso" class="aviso" hidden></div>
+
+    <section id="controles" class="controles" hidden aria-label="Ordenar e filtrar">
+      <div class="linha-controles">
+        <label>Ordenar por
+          <select id="ordem">
+            <option value="melhor">Melhor correspondência</option>
+            <option value="nota">Nota mais alta</option>
+            <option value="recentes">Mais recentes</option>
+            <option value="votos">Mais votados</option>
+          </select>
+        </label>
+        <label>Nota mínima
+          <select id="f-nota"><option value="0">Qualquer</option><option value="7">7+</option><option value="8">8+</option></select>
+        </label>
+        <label>Ano
+          <select id="f-ano"><option value="0">Qualquer</option><option value="2000">A partir de 2000</option>
+            <option value="2015">A partir de 2015</option><option value="2020">A partir de 2020</option></select>
+        </label>
+        <label>Duração
+          <select id="f-duracao"><option value="0">Qualquer</option><option value="100">Até 1h40</option><option value="120">Até 2h</option></select>
+        </label>
+      </div>
+      <details class="assinaturas">
+        <summary><label class="so-assinatura"><input type="checkbox" id="f-assinatura"> Só filmes na minha assinatura</label>
+          <span class="dica">(escolher serviços)</span></summary>
+        <div id="servicos" class="servicos"></div>
+        <p class="nota-local">Sua escolha fica guardada só neste navegador.</p>
+      </details>
+      <p id="contagem" class="contagem" role="status"></p>
+    </section>
+
+    <ol id="resultados" class="resultados"></ol>
+    <button type="button" id="mais" class="mais" hidden>Ver mais 5</button>
+    <div id="feedback-fim"></div>
+    <p id="status" class="status" role="status"></p>
+  </main>
+
+  <footer class="rodape">
+    <p>Dados de filmes: TMDB. Onde assistir: JustWatch (via TMDB). Etiquetas: MovieLens (GroupLens, Universidade de Minnesota) – uso não comercial; este site não é endossado pela Universidade de Minnesota. Algumas etiquetas foram estimadas por IA offline.</p>
+    <p class="tmdb"><img src="img/tmdb-logo.svg" alt="TMDB" class="logo-tmdb" width="82" height="11"> <span lang="en">This website uses TMDB and the TMDB APIs but is not endorsed, certified, or otherwise approved by TMDB.</span></p>
+    <p class="citacoes">MovieLens 32M: F. M. Harper e J. A. Konstan (2015), “The MovieLens Datasets: History and Context”, ACM TiiS 5(4). Tag Genome 2021 (CC BY-NC 3.0): J. Vig, S. Sen e J. Riedl (2012), “The Tag Genome”, ACM TiiS 2(3); D. Kotkov, A. Maslov e M. Neovius (2021), SIGIR. Filmes parecidos: recomendados do TMDB.</p>
+    <p><a href="LICENCAS.html">Licenças, créditos e citações</a></p>
+    <p class="privacidade">Sem login, sem anúncios, sem rastreamento. Se você clicar em 👍 ou 👎, a frase que escreveu e os filmes sugeridos são enviados para o criador do site. Nenhum dado pessoal é coletado. Se escrever um comentário opcional, ele também é enviado. As capas dos filmes são carregadas diretamente do TMDB.</p>
+  </footer>
+
+  <script src="motor.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

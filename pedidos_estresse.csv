@@ -1,0 +1,162 @@
+﻿numero,categoria,pedido
+201,emocao,tô triste e queria algo que me abraçasse
+202,emocao,quero chorar bastante
+203,emocao,"tô estressado do trabalho, quero relaxar"
+204,emocao,quero me sentir motivado
+205,emocao,tô com saudade de casa
+206,emocao,quero algo que me dê esperança
+207,emocao,"tô ansioso, preciso de algo calmo"
+208,emocao,quero me arrepiar
+209,emocao,quero algo emocionante de verdade
+210,emocao,estou com o coração partido
+211,emocao,quero rir sem pensar
+212,emocao,preciso de inspiração
+213,emocao,"tô sem energia, algo leve"
+214,emocao,quero algo que me deixe pra cima
+215,emocao,quero me sentir adolescente de novo
+216,emocao,tô com raiva e quero ver algo intenso
+217,ocasiao,noite de pipoca com os amigos
+218,ocasiao,filme pra ver em família no natal
+219,ocasiao,primeiro encontro
+220,ocasiao,pra ver com minha avó
+221,ocasiao,domingo de preguiça
+222,ocasiao,pra ver com criança de 5 anos
+223,ocasiao,madrugada sozinho
+224,ocasiao,algo que todo mundo da família goste
+225,ocasiao,"viagem de avião, algo que prenda"
+226,ocasiao,dia de chuva forte
+227,ocasiao,"véspera de prova, algo curto"
+228,ocasiao,festa do pijama
+229,ocasiao,pra ver com meu irmão adolescente
+230,ocasiao,"sexta à noite com a galera, bagunça"
+231,ocasiao,quero algo pra ver cozinhando
+232,genero,comédia romântica diferente
+233,genero,terror psicológico sem sustos
+234,genero,ação com muita luta
+235,genero,drama pesado baseado em fatos reais
+236,genero,suspense policial antigo
+237,genero,ficção científica com viagem no tempo
+238,genero,fantasia épica com dragões
+239,genero,animação pra adulto
+240,genero,faroeste moderno
+241,genero,documentário sobre natureza
+242,genero,musical divertido
+243,genero,guerra no Vietnã
+244,genero,filme de espaço sem alienígena
+245,genero,romance histórico
+246,genero,comédia absurda
+247,genero,thriller de advogado
+248,genero,super-herói que não é da Marvel
+249,genero,filme de vampiro
+250,genero,ação de artes marciais
+251,genero,drama familiar emocionante
+252,pais_epoca,filme francês
+253,pais_epoca,algo italiano clássico
+254,pais_epoca,"cinema japonês, não animação"
+255,pais_epoca,filme espanhol de terror
+256,pais_epoca,indiano com música
+257,pais_epoca,filme alemão sobre guerra
+258,pais_epoca,anos 90
+259,pais_epoca,filme dos anos 70
+260,pais_epoca,lançamento recente
+261,pais_epoca,filme de 2023
+262,pais_epoca,filme mudo
+263,pais_epoca,preto e branco
+264,pais_epoca,"cinema nórdico, clima frio"
+265,pais_epoca,filme argentino
+266,pais_epoca,filme mexicano
+267,pessoas,filme do Christopher Nolan
+268,pessoas,com Leonardo DiCaprio
+269,pessoas,dirigido pelo Spielberg
+270,pessoas,filme da Meryl Streep
+271,pessoas,com o Keanu Reeves
+272,pessoas,filme do Miyazaki
+273,pessoas,filmes com a Emma Stone
+274,pessoas,algo do Scorsese
+275,pessoas,com Tom Hanks
+276,pessoas,Denis Villeneuve
+277,pessoas,filme com a Scarlett Johansson
+278,pessoas,Wes Anderson
+279,pessoas,com o Adam Sandler
+280,pessoas,filme do Hitchcock
+281,pessoas,quero algo do Kubrick
+282,referencia,parecido com Matrix
+283,referencia,tipo O Poderoso Chefão
+284,referencia,como Coringa
+285,referencia,no estilo de Pulp Fiction
+286,referencia,algo como Toy Story
+287,referencia,parecido com Duna
+288,referencia,tipo Titanic
+289,referencia,como Ratatouille
+290,referencia,similar a Cisne Negro
+291,referencia,tipo O Senhor dos Anéis
+292,referencia,como Forrest Gump
+293,referencia,no estilo Studio Ghibli
+294,referencia,parecido com Vingadores
+295,referencia,tipo Jogos Vorazes
+296,referencia,como Bastardos Inglórios
+297,negacao_filtro,comédia sem palavrão
+298,negacao_filtro,terror que não seja de fantasma
+299,negacao_filtro,sem romance
+300,negacao_filtro,nada de guerra
+301,negacao_filtro,ação sem super-herói
+302,negacao_filtro,filme que não seja americano
+303,negacao_filtro,animação que não seja da Disney
+304,negacao_filtro,drama sem final triste
+305,negacao_filtro,filme que não seja muito longo
+306,negacao_filtro,menos de 90 minutos
+307,negacao_filtro,até 1h30
+308,negacao_filtro,que esteja na Netflix
+309,negacao_filtro,que tenha no Prime Video
+310,negacao_filtro,tem na Max?
+311,negacao_filtro,nota acima de 8
+312,negacao_filtro,filme bem avaliado
+313,negacao_filtro,filme pouco conhecido
+314,negacao_filtro,clássico que todo mundo já viu
+315,negacao_filtro,filme de 2010 pra cá
+316,negacao_filtro,que passe no Disney+
+317,abstrato,filme que me faça refletir sobre a morte
+318,abstrato,sobre perda e luto
+319,abstrato,sobre liberdade
+320,abstrato,sobre ambição e poder
+321,abstrato,sobre amizade verdadeira
+322,abstrato,sobre solidão na cidade grande
+323,abstrato,sobre amor próprio
+324,abstrato,sobre ser diferente
+325,abstrato,sobre vícios
+326,abstrato,sobre guerra e humanidade
+327,abstrato,sobre inteligência e loucura
+328,abstrato,sobre fé
+329,abstrato,sobre juventude e rebeldia
+330,abstrato,sobre corrupção política
+331,abstrato,sobre o fim do mundo e esperança
+332,abstrato,sobre pais e filhos
+333,abstrato,sobre mentiras e traição
+334,abstrato,sobre justiça e vingança
+335,abstrato,sobre sonhos e ambição
+336,abstrato,sobre sobrevivência em situação extrema
+337,giria_ruido,filme topzera
+338,giria_ruido,algo bem massa
+339,giria_ruido,bagulho de terror
+340,giria_ruido,quero algo que dê medo
+341,giria_ruido,comedia romantica
+342,giria_ruido,filme de aksão
+343,giria_ruido,ficsão cientifica
+344,giria_ruido,suspence
+345,giria_ruido,qro um filme de rir
+346,giria_ruido,vc indica algo de drama?
+347,giria_ruido,me indica um filme bom
+348,giria_ruido,o que assistir hoje?
+349,giria_ruido,filme
+350,giria_ruido,qualquer um
+351,giria_ruido,sei la
+352,giria_ruido,oi
+353,giria_ruido,teste
+354,giria_ruido,aaaa
+355,giria_ruido,filme bom
+356,giria_ruido,surpreenda-me
+357,giria_ruido,algo diferente
+358,giria_ruido,um filme que ninguém conhece
+359,giria_ruido,filme que todo mundo ama
+360,giria_ruido,quero ver algo bom e curto
+361,giria_ruido,me mostra um filme aleatório

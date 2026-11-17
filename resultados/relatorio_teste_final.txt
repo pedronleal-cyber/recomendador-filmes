@@ -1,0 +1,118 @@
+================================================================================
+TESTE FINAL — pedidos 91 a 110 (rodado uma única vez; dicionário, pesos e motor não mudaram)
+================================================================================
+A, B e H70 usam o catálogo de 2.000 filmes; T e T-palavras, o de 6.000.
+Nota estrita: a coluna filmes_do_autor está vazia no pedidos_final2.csv, então não se aplica (–).
+T = pesos 0,7 etiquetas / 0,3 palavras-chave / 0 sinopse. T-palavras = mesmo motor T com 0 / 1 / 0.
+
+1) Todos os 20 pedidos:
+motor               acerto  precisão  NDCG@5  cobertura  estrito (autor)  avisos
+A              13/20 (65%)      0.20   0.223         81                –       0
+B               5/20 (25%)      0.08   0.094         98                –       0
+H70             9/20 (45%)      0.18   0.206         97                –       0
+T              10/20 (50%)      0.13   0.165         83                –       3
+T-palavras     12/20 (60%)      0.16   0.172         84                –       3
+
+Acerto por estilo:
+estilo         n           A           B         H70           T  T-palavras
+vago           6         50%          0%         17%         17%         33%
+curto          5         60%         40%         60%         60%         60%
+abstrato       2        100%         50%         50%        100%        100%
+detalhado      6         67%         33%         50%         50%         67%
+referência     1        100%          0%        100%        100%        100%
+
+NDCG@5 por estilo:
+estilo         n           A           B         H70           T  T-palavras
+vago           6        0.14        0.00        0.09        0.06        0.11
+curto          5        0.36        0.21        0.34        0.24        0.23
+abstrato       2        0.21        0.25        0.25        0.21        0.21
+detalhado      6        0.14        0.06        0.14        0.14        0.13
+referência     1        0.51        0.00        0.49        0.51        0.36
+
+Precisão por estilo:
+estilo         n           A           B         H70           T  T-palavras
+vago           6        0.13        0.00        0.07        0.03        0.10
+curto          5        0.32        0.16        0.32        0.20        0.20
+abstrato       2        0.20        0.20        0.20        0.20        0.20
+detalhado      6        0.13        0.07        0.13        0.10        0.13
+referência     1        0.40        0.00        0.40        0.40        0.40
+
+
+2) Sem os pedidos [95, 99, 102] (já vistos num diagnóstico): 17 pedidos
+motor               acerto  precisão  NDCG@5  cobertura  estrito (autor)  avisos
+A              10/17 (59%)      0.18   0.193         73                –       0
+B               4/17 (24%)      0.07   0.082         83                –       0
+H70             7/17 (41%)      0.15   0.174         83                –       0
+T               8/17 (47%)      0.11   0.135         74                –       2
+T-palavras     10/17 (59%)      0.14   0.152         74                –       2
+
+3) Ganho das etiquetas (T contra T só com palavras-chave): acerto 12 -> 10 de 20; NDCG@5 0.172 -> 0.165; precisão 0.16 -> 0.13
+   Pedidos que só o T (com etiquetas) acertou: []; que só o T-palavras acertou: [101, 110]
+
+4) Pedidos que o T errou: 10 de 20
+
+  #91 [vago] um filme pra ver chovendo, aconchegante
+     AVISO: Não entendi bem o pedido. Tente descrever o gênero, o clima ou o tema.
+     top 5: 
+     etiquetas ativadas: nenhuma
+     filtros: nenhum
+     gabarito sem fonte de etiquetas: 0 de 15
+
+  #92 [curto] quero adrenalina, perseguição, explosão
+     top 5: Louca Obsessão (1990) · Enterrado Vivo (2010) · Ameaça Terrorista (2010) · Cisne Negro (2010) · O Enigma de Outro Mundo (1982)
+     etiquetas ativadas: tense 1, suspenseful 0.9, intense 0.8, claustrophobic 0.5, paranoid 0.5
+     filtros: nenhum
+     gabarito sem fonte de etiquetas: 0 de 15
+
+  #94 [detalhado] filme de crime bem sério, polícia e corrupção
+     top 5: Um Sonho de Liberdade (1994) · O Poderoso Chefão (1972) · Batman: O Cavaleiro das Trevas (2008) · Pulp Fiction: Tempo de Violência (1994) · À Espera de um Milagre (1999)
+     etiquetas ativadas: nenhuma
+     filtros: generos=['Crime']
+     gabarito sem fonte de etiquetas: 0 de 15
+
+  #100 [detalhado] animação que não seja só pra criança
+     top 5: Os Pinguins de Madagascar - O Filme (2014) · Zootopia: Essa Cidade é o Bicho (2016) · Sing 2 (2021) · Um Cabra Bom de Bola (2026) · Patos! (2023)
+     etiquetas ativadas: nenhuma
+     filtros: generos=['Animação', 'Família']
+     gabarito sem fonte de etiquetas: 0 de 15
+
+  #101 [detalhado] terror pra ver de dia, nada muito pesado
+     top 5: It: A Coisa (2017) · Annabelle 3: De Volta para Casa (2019) · Invocação do Mal 4: O Último Ritual (2025) · Ninguém Vai te Salvar (2023) · A Freira 2 (2023)
+     etiquetas ativadas: scary 0.6, creepy 0.6
+     etiquetas negadas: dark, bleak, grim, depressing, disturbing, gritty, brutal
+     filtros: generos=['Terror']
+     gabarito sem fonte de etiquetas: 0 de 15
+
+  #102 [vago] algo bonito de ver, fotografia incrível
+     AVISO: Não entendi bem o pedido. Tente descrever o gênero, o clima ou o tema.
+     top 5: 
+     etiquetas ativadas: nenhuma
+     filtros: nenhum
+     gabarito sem fonte de etiquetas: 0 de 15
+
+  #103 [vago] quero rir mas também me emocionar
+     top 5: Click (2006) · Marley & Eu (2008) · A Vida é Bela (1997) · Intocáveis (2011) · Luzes da Cidade (1931)
+     etiquetas ativadas: tear jerker 1, sad 0.9, emotional 0.9, touching 0.8, poignant 0.7, bittersweet 0.6, funny 1, hilarious 1, witty 0.6, silly 0.6, goofy 0.5, slapstick 0.5
+     filtros: generos=['Comédia']
+     gabarito sem fonte de etiquetas: 0 de 15
+
+  #106 [vago] só quero desligar a cabeça
+     AVISO: Não entendi bem o pedido. Tente descrever o gênero, o clima ou o tema.
+     top 5: 
+     etiquetas ativadas: nenhuma
+     filtros: nenhum
+     gabarito sem fonte de etiquetas: 1 de 15 (Cidade Perdida)
+
+  #109 [curto] história de amor impossível
+     top 5: Como Se Fosse a Primeira Vez (2004) · Um Lugar Chamado Notting Hill (1999) · Enquanto Você Dormia (1995) · Vestida para Casar (2008) · Escrito nas Estrelas (2001)
+     etiquetas ativadas: romantic 1, love story 1, chick flick 0.5
+     filtros: nenhum
+     gabarito sem fonte de etiquetas: 0 de 15
+
+  #110 [vago] pra ver com meu pai, algo clássico
+     top 5: King Richard: Criando Campeãs (2021) · Beleza Americana (1999) · Tudo em Todo o Lugar ao Mesmo Tempo (2022) · Uma Família de Dois (2016) · Magnólia (1999)
+     etiquetas ativadas: parenthood 1, father daughter relationship 0.8, family drama 0.8
+     filtros: nenhum
+     gabarito sem fonte de etiquetas: 0 de 15
+
+5) Top 5 do T por pedido salvo em resultados_T_final2_top5.csv (88 linhas; coluna nota_do_autor em branco para ele preencher).

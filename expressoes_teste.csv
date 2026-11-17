@@ -1,0 +1,901 @@
+etiqueta,expressao,polaridade
+feel-good,feel good movie,positiva
+feel-good,recarregar as energias,positiva
+feel-good,melhorar meu dia,positiva
+feel-good,terminar o dia sorrindo,positiva
+feel-good,energia boa,positiva
+feel-good,nada de felicidade forçada,negacao
+heartwarming,heartwarming,positiva
+heartwarming,filme que abraça,positiva
+heartwarming,filme acolhedor,positiva
+heartwarming,comovente de um jeito bom,positiva
+heartwarming,gestos de carinho,positiva
+heartwarming,sem coração quentinho,negacao
+tear jerker,chororô,positiva
+tear jerker,chorar igual criança,positiva
+tear jerker,soluçando,positiva
+tear jerker,ugly cry,positiva
+tear jerker,chorar baldes,positiva
+tear jerker,nada de chorar,negacao
+sad,bem triste,positiva
+sad,filme de partir o coração,positiva
+sad,fim triste,positiva
+sad,dorzinha no coração,positiva
+sad,luto,positiva
+sad,sem tragédia,negacao
+bittersweet,feliz e triste ao mesmo tempo,positiva
+bittersweet,doce e amargo,positiva
+bittersweet,meio feliz meio triste,positiva
+bittersweet,final que dói mas conforta,positiva
+bittersweet,dramédia,positiva
+bittersweet,não quero bittersweet,negacao
+touching,tocante,positiva
+touching,mexer comigo,positiva
+touching,touching,positiva
+touching,filme sensível,positiva
+touching,engolir o choro,positiva
+touching,nada emocionante,negacao
+poignant,doloroso,positiva
+poignant,ferida aberta,positiva
+poignant,impactante emocionalmente,positiva
+poignant,dolorosamente real,positiva
+poignant,intenso emocionalmente,positiva
+poignant,não quero nada que machuque,negacao
+emotional,emotivo,positiva
+emotional,emocional,positiva
+emotional,sentimentos à flor da pele,positiva
+emotional,coração na mão,positiva
+emotional,emoção à flor da pele,positiva
+emotional,nada emocional,negacao
+sentimental,cheio de sentimento,positiva
+sentimental,cafona fofo,positiva
+sentimental,sentimentaloide,positiva
+sentimental,cheesy,positiva
+sentimental,sappy,positiva
+sentimental,nada açucarado,negacao
+melancholic,filme cinza,positiva
+melancholic,clima de domingo à noite,positiva
+melancholic,chuva na janela,positiva
+melancholic,lânguido,positiva
+melancholic,na fossa,positiva
+melancholic,nada tristonho,negacao
+bleak,deprimente e frio,positiva
+bleak,mundo cruel,positiva
+bleak,tudo dá errado,positiva
+bleak,niilismo,positiva
+bleak,desgraça,positiva
+bleak,sem desolação,negacao
+depressing,pra ficar mal,positiva
+depressing,filme que deprime,positiva
+depressing,sair arrasado,positiva
+depressing,filme deprê,positiva
+depressing,muito deprimente,positiva
+depressing,nada pra baixo,negacao
+downbeat,anticlímax triste,positiva
+downbeat,sem euforia,positiva
+downbeat,desanimado,positiva
+downbeat,acinzentado,positiva
+downbeat,desencantado,positiva
+downbeat,sem final amargo,negacao
+grim,sério e sombrio,positiva
+grim,macabro,positiva
+grim,implacável,positiva
+grim,impiedoso,positiva
+grim,tenebroso,positiva
+grim,nada tenebroso,negacao
+dark,filme dark,positiva
+dark,sinistro e sombrio,positiva
+dark,denso,positiva
+dark,escuro,positiva
+dark,anti-herói sombrio,positiva
+dark,nada dark,negacao
+gritty,vida real dura,positiva
+gritty,realismo cru,positiva
+gritty,bandidagem,positiva
+gritty,rústico e violento,positiva
+gritty,raw,positiva
+gritty,nada cru,negacao
+disturbing,incomodar,positiva
+disturbing,mexer com a cabeça de um jeito ruim,positiva
+disturbing,bizarro e pesado,positiva
+disturbing,estômago forte,positiva
+disturbing,precisa de estômago,positiva
+disturbing,sem trauma,negacao
+creepy,me arrepiar,positiva
+creepy,assustador de leve,positiva
+creepy,bizarro assustador,positiva
+creepy,sensação de estar sendo observado,positiva
+creepy,boneca assustadora,positiva
+creepy,nada arrepiante,negacao
+eerie,eerie,positiva
+eerie,neblina,positiva
+eerie,nevoeiro,positiva
+eerie,inexplicável,positiva
+eerie,vibe estranha,positiva
+eerie,sem lugar abandonado,negacao
+scary,muito medo,positiva
+scary,pular da cadeira,positiva
+scary,não dormir à noite,positiva
+scary,borrar de medo,positiva
+scary,medo de verdade,positiva
+scary,nada assustador,negacao
+ominous,mau presságio,positiva
+ominous,ameaça no ar,positiva
+ominous,tragédia anunciada,positiva
+ominous,bomba-relógio,positiva
+ominous,slow burn,positiva
+ominous,não quero clima de ameaça,negacao
+tense,tenso,positiva
+tense,coração na boca,positiva
+tense,me deixar nervoso,positiva
+tense,beira da cadeira,positiva
+tense,nail-biting,positiva
+tense,sem roer unhas,negacao
+suspenseful,prender a atenção,positiva
+suspenseful,thriller,positiva
+suspenseful,suspense psicológico,positiva
+suspenseful,ansiedade boa,positiva
+suspenseful,suspense bem feito,positiva
+suspenseful,sem suspense,negacao
+intense,intense,positiva
+intense,adrenalina pura,positiva
+intense,frenético,positiva
+intense,energia alta,positiva
+intense,high octane,positiva
+intense,sem adrenalina,negacao
+atmospheric,atmospheric,positiva
+atmospheric,trilha sonora envolvente,positiva
+atmospheric,cheio de clima,positiva
+atmospheric,textura,positiva
+atmospheric,atmosfera única,positiva
+atmospheric,sem mood,negacao
+claustrophobic,claustrofóbico,positiva
+claustrophobic,preso num lugar,positiva
+claustrophobic,preso num quarto,positiva
+claustrophobic,confinado,positiva
+claustrophobic,submarino,positiva
+claustrophobic,não quero nada sufocante,negacao
+paranoid,alucinação,positiva
+paranoid,gaslighting,positiva
+paranoid,manipulação,positiva
+paranoid,medo de tudo,positiva
+paranoid,ninguém é quem diz ser,positiva
+paranoid,não quero nada de conspiração,negacao
+reflective,introspecção,positiva
+reflective,autoconhecimento,positiva
+reflective,pensativo,positiva
+reflective,tranquilo e profundo,positiva
+reflective,questionar a vida,positiva
+reflective,não quero refletir,negacao
+meditative,meditação,positiva
+meditative,silencioso,positiva
+meditative,slow cinema,positiva
+meditative,paisagem e silêncio,positiva
+meditative,contemplativo,positiva
+meditative,nada meditativo,negacao
+thought-provoking,provocador,positiva
+thought-provoking,muito o que pensar,positiva
+thought-provoking,cutucar,positiva
+thought-provoking,sair discutindo,positiva
+thought-provoking,faz refletir,positiva
+thought-provoking,sem debate,negacao
+cerebral,intelectual,positiva
+cerebral,nerd,positiva
+cerebral,fritar o cérebro,positiva
+cerebral,brainy,positiva
+cerebral,pra pensar muito,positiva
+cerebral,nada cerebral,negacao
+philosophical,filosofia,positiva
+philosophical,dilema moral,positiva
+philosophical,moralidade,positiva
+philosophical,livre-arbítrio,positiva
+philosophical,natureza humana,positiva
+philosophical,sem filosofar,negacao
+funny,engraçado,positiva
+funny,zoeira,positiva
+funny,zuera,positiva
+funny,humorzinho,positiva
+funny,dar umas risadas,positiva
+funny,nada de risada,negacao
+hilarious,chorar de rir,positiva
+hilarious,rachar de rir,positiva
+hilarious,engraçado demais,positiva
+hilarious,muito muito engraçado,positiva
+hilarious,comédia de rachar,positiva
+hilarious,nada de morrer de rir,negacao
+witty,sacadas,positiva
+witty,tiradas,positiva
+witty,humor sutil,positiva
+witty,piadas inteligentes,positiva
+witty,sagaz,positiva
+witty,sem ironia,negacao
+silly,silly,positiva
+silly,bobeira,positiva
+silly,bobagem,positiva
+silly,nonsense bobo,positiva
+silly,humor besta,positiva
+silly,não quero comédia boba,negacao
+goofy,pateta,positiva
+goofy,trapalhões,positiva
+goofy,fazer careta,positiva
+goofy,tonto,positiva
+goofy,zé ruela,positiva
+goofy,sem trapalhada,negacao
+quirky,esquisitinho,positiva
+quirky,charmoso e estranho,positiva
+quirky,original,positiva
+quirky,excentricidade,positiva
+quirky,diferente de tudo,positiva
+quirky,nada excêntrico,negacao
+whimsical,fantasioso,positiva
+whimsical,conto encantado,positiva
+whimsical,colorido e mágico,positiva
+whimsical,delicadeza mágica,positiva
+whimsical,fantasia fofa,positiva
+whimsical,não quero nada encantado,negacao
+absurd,sem lógica,positiva
+absurd,maluquice,positiva
+absurd,doidera,positiva
+absurd,surtado,positiva
+absurd,bizarrice,positiva
+absurd,nada bizarro,negacao
+surreal,bizarro e artístico,positiva
+surreal,viagem lisérgica,positiva
+surreal,lisérgico,positiva
+surreal,delírio visual,positiva
+surreal,acid trip,positiva
+surreal,sem surrealismo,negacao
+dreamlike,parece um sonho,positiva
+dreamlike,dentro de um sonho,positiva
+dreamlike,mundo dos sonhos,positiva
+dreamlike,sonho lúcido,positiva
+dreamlike,lógica de sonho,positiva
+dreamlike,sem lógica de sonho,negacao
+dark humor,humor cruel,positiva
+dark humor,politicamente incorreto,positiva
+dark humor,comédia de crime,positiva
+dark humor,tarantinesco,positiva
+dark humor,comédia macabra,positiva
+dark humor,sem humor negro,negacao
+satirical,sátira,positiva
+satirical,escrachado,positiva
+satirical,crítica ácida,positiva
+satirical,mordaz,positiva
+satirical,comédia crítica,positiva
+satirical,não quero deboche,negacao
+cynical,todo mundo é podre,positiva
+cynical,mundo podre,positiva
+cynical,sarcasmo amargo,positiva
+cynical,oportunista,positiva
+cynical,visão amarga,positiva
+cynical,nada descrente,negacao
+inspirational,motivacional,positiva
+inspirational,superação,positiva
+inspirational,superar,positiva
+inspirational,dar a volta por cima,positiva
+inspirational,vencer na vida,positiva
+inspirational,nada inspirador,negacao
+nostalgic,nostalgia,positiva
+nostalgic,lembrar da infância,positiva
+nostalgic,retro,positiva
+nostalgic,old school,positiva
+nostalgic,das antigas,positiva
+nostalgic,sem retrô,negacao
+romantic,romcom,positiva
+romantic,comédia romântica,positiva
+romantic,amorzinho,positiva
+romantic,primeiro beijo,positiva
+romantic,namorar,positiva
+romantic,sem romance,negacao
+cute,cachorrinho,positiva
+cute,gatinho,positiva
+cute,derreter de fofura,positiva
+cute,docinho,positiva
+cute,fofurinha,positiva
+cute,nada meigo,negacao
+light,sem compromisso,positiva
+light,despretensioso,positiva
+light,de boas,positiva
+light,sossegado,positiva
+light,sem drama,positiva
+light,sem ser levinho,negacao
+visceral,cru e violento,positiva
+visceral,de embrulhar o estômago,positiva
+visceral,sangue nos olhos,positiva
+visceral,sem anestesia,positiva
+visceral,filme que te atropela,positiva
+visceral,sem soco no estômago,negacao
+brutal,brutalidade,positiva
+brutal,pancadaria,positiva
+brutal,matança,positiva
+brutal,tiroteio,positiva
+brutal,ultraviolência,positiva
+brutal,sem massacre,negacao
+campy,brega,positiva
+campy,tão ruim que é bom,positiva
+campy,filme classe b,positiva
+campy,trash divertido,positiva
+campy,efeitos toscos,positiva
+campy,sem ser tosco,negacao
+friendship,melhores amigos,positiva
+friendship,turma,positiva
+friendship,amizade verdadeira,positiva
+friendship,amigos pra sempre,positiva
+friendship,parça,positiva
+friendship,nada de amigos pra sempre,negacao
+unlikely friendships,amizade inesperada,positiva
+unlikely friendships,opostos que viram amigos,positiva
+unlikely friendships,homem e cachorro,positiva
+unlikely friendships,água e óleo,positiva
+unlikely friendships,amizade fora do comum,positiva
+unlikely friendships,não quero opostos que viram amigos,negacao
+love story,história de amor,positiva
+love story,amor da vida,positiva
+love story,amor e perda,positiva
+love story,amor de verão,positiva
+love story,primeiro amor,positiva
+love story,sem alma gêmea,negacao
+coming of age,amadurecer,positiva
+coming of age,adolescência,positiva
+coming of age,primeira vez,positiva
+coming of age,fim da infância,positiva
+coming of age,rito de passagem,positiva
+coming of age,não quero coming of age,negacao
+family drama,drama de família,positiva
+family drama,family drama,positiva
+family drama,mãe e filha,positiva
+family drama,laços de família,positiva
+family drama,divórcio,positiva
+family drama,nada de herança,negacao
+dysfunctional family,família doida,positiva
+dysfunctional family,família maluca,positiva
+dysfunctional family,família tóxica,positiva
+dysfunctional family,todo mundo brigando,positiva
+dysfunctional family,caos familiar,positiva
+dysfunctional family,nada de família tóxica,negacao
+father daughter relationship,pai salvando a filha,positiva
+father daughter relationship,pai coruja,positiva
+father daughter relationship,pai superprotetor,positiva
+father daughter relationship,filha rebelde e pai,positiva
+father daughter relationship,relação de pai,positiva
+father daughter relationship,nada de pai coruja,negacao
+parenthood,parenthood,positiva
+parenthood,ser mãe,positiva
+parenthood,grávida,positiva
+parenthood,adotar,positiva
+parenthood,mãe e filho,positiva
+parenthood,sem adoção,negacao
+loneliness,solidão,positiva
+loneliness,se sentir sozinho,positiva
+loneliness,invisível,positiva
+loneliness,carência,positiva
+loneliness,eremita,positiva
+loneliness,nada solitário,negacao
+redemption,segunda chance,positiva
+redemption,recomeçar,positiva
+redemption,salvar a alma,positiva
+redemption,virar a página,positiva
+redemption,volta por cima moral,positiva
+redemption,nada de segunda chance,negacao
+revenge,se vingar,positiva
+revenge,pagar na mesma moeda,positiva
+revenge,eye for an eye,positiva
+revenge,plano de vingança,positiva
+revenge,vingança sangrenta,positiva
+revenge,nada de vingança,negacao
+sacrifice,sacrifice,positiva
+sacrifice,dar a vida,positiva
+sacrifice,salvar os outros,positiva
+sacrifice,sacrifício final,positiva
+sacrifice,morrer por amor,positiva
+sacrifice,sem sacrifício,negacao
+betrayal,puxada de tapete,positiva
+betrayal,cobra,positiva
+betrayal,infidelidade,positiva
+betrayal,chifre,positiva
+betrayal,traíra,positiva
+betrayal,não quero infidelidade,negacao
+obsession,obcecado,positiva
+obsession,amor doentio,positiva
+obsession,compulsivo,positiva
+obsession,vício em alguém,positiva
+obsession,sem limites pra conseguir,positiva
+obsession,nada de stalker,negacao
+greed,ganância,positiva
+greed,tudo por dinheiro,positiva
+greed,capitalismo selvagem,positiva
+greed,bolsa de valores,positiva
+greed,corrida do ouro,positiva
+greed,nada de fraude,negacao
+corruption,corrupto,positiva
+corruption,corruptos,positiva
+corruption,suborno,positiva
+corruption,policial corrupto,positiva
+corruption,esquema de corrupção,positiva
+corruption,sem esquema,negacao
+justice,justiça,positiva
+justice,injustiça,positiva
+justice,inocente condenado,positiva
+justice,direitos humanos,positiva
+justice,herói da justiça,positiva
+justice,nada de tribunal,negacao
+survival,survival,positiva
+survival,náufrago,positiva
+survival,sem comida,positiva
+survival,sobreviver a qualquer custo,positiva
+survival,resgate,positiva
+survival,sem selva,negacao
+social commentary,crítica ao sistema,positiva
+social commentary,problema social,positiva
+social commentary,mensagem social,positiva
+social commentary,consciência social,positiva
+social commentary,exploração,positiva
+social commentary,sem crítica social,negacao
+politics,politics,positiva
+politics,presidente,positiva
+politics,governo,positiva
+politics,ditadura,positiva
+politics,ideologia,positiva
+politics,sem governo,negacao
+war,soldados,positiva
+war,exército,positiva
+war,militar,positiva
+war,guerra mundial,positiva
+war,missão de guerra,positiva
+war,não quero filme de guerra,negacao
+anti-war,pacifismo,positiva
+anti-war,soldado traumatizado,positiva
+anti-war,inutilidade da guerra,positiva
+anti-war,guerra é um inferno,positiva
+anti-war,sem glorificar a guerra,positiva
+anti-war,não quero pacifismo,negacao
+racism,escravidão,positiva
+racism,violência policial racista,positiva
+racism,igualdade racial,positiva
+racism,preconceito,positiva
+racism,questão racial,positiva
+racism,sem segregação,negacao
+poverty,pobres,positiva
+poverty,miséria,positiva
+poverty,sem teto,positiva
+poverty,morador de rua,positiva
+poverty,luta pra sobreviver,positiva
+poverty,nada de miséria,negacao
+mental illness,doença mental,positiva
+mental illness,transtorno,positiva
+mental illness,manicômio,positiva
+mental illness,psiquiátrico,positiva
+mental illness,múltiplas personalidades,positiva
+mental illness,nada psiquiátrico,negacao
+addiction,vício,positiva
+addiction,viciada,positiva
+addiction,dependência química,positiva
+addiction,dependente químico,positiva
+addiction,crack,positiva
+addiction,nada de vício,negacao
+life & death,mortalidade,positiva
+life & death,funeral,positiva
+life & death,lista de desejos antes de morrer,positiva
+life & death,antes de partir,positiva
+life & death,paciente terminal,positiva
+life & death,não quero luto,negacao
+existentialism,vazio existencial,positiva
+existentialism,quem sou eu,positiva
+existentialism,niilismo existencial,positiva
+existentialism,existir,positiva
+existentialism,existential dread,positiva
+existentialism,não quero angústia existencial,negacao
+identity,identidade,positiva
+identity,se encontrar,positiva
+identity,aceitação,positiva
+identity,identidade de gênero,positiva
+identity,imigrante,positiva
+identity,sem identidade secreta,negacao
+memory,memórias,positiva
+memory,perder a memória,positiva
+memory,amnésia,positiva
+memory,esquecimento,positiva
+memory,alzheimer,positiva
+memory,sem lembranças,negacao
+destiny,sina,positiva
+destiny,tudo está conectado,positiva
+destiny,chosen one,positiva
+destiny,destinados,positiva
+destiny,obra do destino,positiva
+destiny,não quero profecia,negacao
+good versus evil,herói contra vilão,positiva
+good versus evil,vilão poderoso,positiva
+good versus evil,anjos e demônios,positiva
+good versus evil,império do mal,positiva
+good versus evil,escolhido contra o mal,positiva
+good versus evil,nada de forças do mal,negacao
+religion,religion,positiva
+religion,freira,positiva
+religion,seita,positiva
+religion,pecado,positiva
+religion,fanatismo religioso,positiva
+religion,sem padre,negacao
+humanity,empatia,positiva
+humanity,fé na humanidade,positiva
+humanity,humanizar,positiva
+humanity,esperança na humanidade,positiva
+humanity,lado humano,positiva
+humanity,sem solidariedade,negacao
+artificial intelligence,inteligência artificial,positiva
+artificial intelligence,artificial intelligence,positiva
+artificial intelligence,cyborg,positiva
+artificial intelligence,humanoide,positiva
+artificial intelligence,robô humano,positiva
+artificial intelligence,sem inteligência artificial,negacao
+technology,high tech,positiva
+technology,internet,positiva
+technology,celular,positiva
+technology,realidade virtual,positiva
+technology,black mirror,positiva
+technology,sem internet,negacao
+dystopia,sociedade controlada,positiva
+dystopia,governo totalitário,positiva
+dystopia,castas,positiva
+dystopia,futuro decadente,positiva
+dystopia,mundo controlado,positiva
+dystopia,nada de cyberpunk,negacao
+end of the world,fim do mundo,positiva
+end of the world,end of the world,positiva
+end of the world,apocalipse,positiva
+end of the world,extinção,positiva
+end of the world,extinção humana,positiva
+end of the world,sem fim do mundo,negacao
+post-apocalyptic,pós-apocalíptico,positiva
+post-apocalyptic,pós apocalipse,positiva
+post-apocalyptic,wasteland,positiva
+post-apocalyptic,saqueadores,positiva
+post-apocalyptic,depois do apocalipse,positiva
+post-apocalyptic,sem pós-apocalíptico,negacao
+alien invasion,invasão de alienígenas,positiva
+alien invasion,aliens invadindo,positiva
+alien invasion,ataque alienígena,positiva
+alien invasion,disco voador,positiva
+alien invasion,aliens do mal,positiva
+alien invasion,sem extraterrestres,negacao
+first contact,mensagem do espaço,positiva
+first contact,sinais alienígenas,positiva
+first contact,alienígena amigo,positiva
+first contact,estamos sozinhos no universo,positiva
+first contact,contato com outra civilização,positiva
+first contact,sem visitantes do espaço,negacao
+time travel,túnel do tempo,positiva
+time travel,outra época,positiva
+time travel,preso em outra época,positiva
+time travel,futuro e passado,positiva
+time travel,consertar o passado,positiva
+time travel,nada de mudar o passado,negacao
+time loop,loop temporal,positiva
+time loop,repetir o dia,positiva
+time loop,reviver o mesmo dia,positiva
+time loop,acordar no mesmo dia,positiva
+time loop,revivendo o mesmo dia,positiva
+time loop,sem repetição,negacao
+alternate reality,parallel universe,positiva
+alternate reality,outra realidade,positiva
+alternate reality,versão alternativa de mim,positiva
+alternate reality,simulação,positiva
+alternate reality,metaverso,positiva
+alternate reality,sem simulação,negacao
+magic,mágica,positiva
+magic,magic,positiva
+magic,feitiços,positiva
+magic,poderes mágicos,positiva
+magic,truque de mágica,positiva
+magic,nada de bruxa,negacao
+supernatural,paranormal,positiva
+supernatural,exorcista,positiva
+supernatural,oculto,positiva
+supernatural,forças do além,positiva
+supernatural,entidade,positiva
+supernatural,nada paranormal,negacao
+mythology,mitologia,positiva
+mythology,mitologia nórdica,positiva
+mythology,deuses nórdicos,positiva
+mythology,olimpo,positiva
+mythology,lendas antigas,positiva
+mythology,sem semideus,negacao
+fairy tale,contos de fadas,positiva
+fairy tale,fada madrinha,positiva
+fairy tale,bruxa malvada,positiva
+fairy tale,sapo que vira príncipe,positiva
+fairy tale,contos clássicos,positiva
+fairy tale,não quero era uma vez,negacao
+ghosts,casa assombrada,positiva
+ghosts,almas penadas,positiva
+ghosts,hotel assombrado,positiva
+ghosts,espíritos inquietos,positiva
+ghosts,fantasminha,positiva
+ghosts,nada de assombração,negacao
+zombies,zombie,positiva
+zombies,zombies,positiva
+zombies,walking dead,positiva
+zombies,comedores de cérebro,positiva
+zombies,surto zumbi,positiva
+zombies,não quero apocalipse zumbi,negacao
+vampires,vampire,positiva
+vampires,dentes afiados,positiva
+vampires,caçador de vampiros,positiva
+vampires,estaca no coração,positiva
+vampires,sede de sangue,positiva
+vampires,sem mordida no pescoço,negacao
+monster,criatura do lago,positiva
+monster,monstrão,positiva
+monster,lobisomens,positiva
+monster,chupa-cabra,positiva
+monster,yeti,positiva
+monster,nada de criatura,negacao
+serial killer,assassinos em série,positiva
+serial killer,matador em série,positiva
+serial killer,maníaco,positiva
+serial killer,killer,positiva
+serial killer,matador,positiva
+serial killer,nada de psicopata,negacao
+conspiracy,conspirações,positiva
+conspiracy,arquivos secretos,positiva
+conspiracy,sociedade secreta,positiva
+conspiracy,agenda oculta,positiva
+conspiracy,ninguém pode saber,positiva
+conspiracy,sem sociedade secreta,negacao
+organized crime,mafioso,positiva
+organized crime,mafiosos,positiva
+organized crime,crime organizado,positiva
+organized crime,cartel,positiva
+organized crime,mafia italiana,positiva
+organized crime,sem crime organizado,negacao
+heist,heist,positiva
+heist,grande golpe,positiva
+heist,ladrões,positiva
+heist,vigaristas,positiva
+heist,gangue de ladrões,positiva
+heist,nada de roubo,negacao
+espionage,agentes secretos,positiva
+espionage,kgb,positiva
+espionage,dossiê secreto,positiva
+espionage,espiã russa,positiva
+espionage,espião russo,positiva
+espionage,nada de espião,negacao
+police investigation,detetive,positiva
+police investigation,policial,positiva
+police investigation,inspetor,positiva
+police investigation,perícia,positiva
+police investigation,caso arquivado,positiva
+police investigation,sem interrogatório,negacao
+courtroom,advogados,positiva
+courtroom,veredito,positiva
+courtroom,sentença,positiva
+courtroom,filme de tribunal,positiva
+courtroom,legal drama,positiva
+courtroom,sem tribunal,negacao
+prison escape,prison escape,positiva
+prison escape,cadeia,positiva
+prison escape,prisioneiros,positiva
+prison escape,breakout,positiva
+prison escape,fugitivo,positiva
+prison escape,não quero cadeia,negacao
+sports,lutador,positiva
+sports,mma,positiva
+sports,beisebol,positiva
+sports,tênis,positiva
+sports,skate,positiva
+sports,nada de atleta,negacao
+underdog,time fraco que vence,positiva
+underdog,começou do nada,positiva
+underdog,subestimado,positiva
+underdog,ninguém botava fé,positiva
+underdog,zebra que vence,positiva
+underdog,sem azarão,negacao
+music,cantora,positiva
+music,rock,positiva
+music,turnê,positiva
+music,piano,positiva
+music,guitarra,positiva
+music,sem dança,negacao
+superhero,superheroes,positiva
+superhero,quadrinhos,positiva
+superhero,comic book,positiva
+superhero,filme de herói,positiva
+superhero,heróis mascarados,positiva
+superhero,sem quadrinhos,negacao
+space,galáxias,positiva
+space,estrelas,positiva
+space,cosmos,positiva
+space,órbita,positiva
+space,marte,positiva
+space,nada de planetas,negacao
+high school,baile de formatura,positiva
+high school,cheerleader,positiva
+high school,bullying,positiva
+high school,professor,positiva
+high school,ensino médio americano,positiva
+high school,sem bullying,negacao
+road trip,estrada,positiva
+road trip,rodovia,positiva
+road trip,viagem,positiva
+road trip,motorhome,positiva
+road trip,aventura na estrada,positiva
+road trip,sem viagem,negacao
+small town,cidadezinha,positiva
+small town,fazenda,positiva
+small town,rural,positiva
+small town,vida no interior,positiva
+small town,interiorzão,positiva
+small town,nada rural,negacao
+christmas,natal,positiva
+christmas,natalino,positiva
+christmas,xmas,positiva
+christmas,natal em família,positiva
+christmas,noite de natal,positiva
+christmas,nada natalino,negacao
+animals,bicho,positiva
+animals,baleia,positiva
+animals,macaco,positiva
+animals,natureza selvagem,positiva
+animals,filme de bicho,positiva
+animals,sem pets,negacao
+true story,história verdadeira,positiva
+true story,documental,positiva
+true story,quase documentário,positiva
+true story,acontecimento real,positiva
+true story,inspirado em história real,positiva
+true story,sem história real,negacao
+twist ending,final que ninguém espera,positiva
+twist ending,final genial,positiva
+twist ending,final de explodir a cabeça,positiva
+twist ending,twist,positiva
+twist ending,final que surpreende,positiva
+twist ending,sem final inesperado,negacao
+twists & turns,cheio de surpresas,positiva
+twists & turns,surpresas,positiva
+twists & turns,muda o tempo todo,positiva
+twists & turns,gato e rato,positiva
+twists & turns,engana o espectador,positiva
+twists & turns,nada imprevisível,negacao
+nonlinear,flashforward,positiva
+nonlinear,capítulos fora de ordem,positiva
+nonlinear,narrativa não linear,positiva
+nonlinear,narrativa criativa,positiva
+nonlinear,história embaralhada,positiva
+nonlinear,sem idas e vindas no tempo,negacao
+mindfuck,explodir a cabeça,positiva
+mindfuck,mindblowing,positiva
+mindfuck,nó no cérebro,positiva
+mindfuck,fundir a cabeça,positiva
+mindfuck,viajar na maionese,positiva
+mindfuck,não quero mindfuck,negacao
+complex,complex,positiva
+complex,difícil de entender,positiva
+complex,elaborado,positiva
+complex,rever pra entender,positiva
+complex,ver duas vezes,positiva
+complex,sem ser complicado,negacao
+enigmatic,enigmatic,positiva
+enigmatic,ambíguo,positiva
+enigmatic,interpretação livre,positiva
+enigmatic,simbólico,positiva
+enigmatic,simbolismo,positiva
+enigmatic,nada simbólico,negacao
+murder mystery,quem é o assassino,positiva
+murder mystery,assassinato misterioso,positiva
+murder mystery,detetive excêntrico,positiva
+murder mystery,mistério na mansão,positiva
+murder mystery,quem é o culpado,positiva
+murder mystery,nada de suspeitos,negacao
+chase,perseguições,positiva
+chase,perseguição de carro,positiva
+chase,caçada,positiva
+chase,fuga desesperada,positiva
+chase,perseguição policial,positiva
+chase,sem correria,negacao
+visually stunning,visualmente lindo,positiva
+visually stunning,lindo de ver,positiva
+visually stunning,encher os olhos,positiva
+visually stunning,cores lindas,positiva
+visually stunning,estonteante,positiva
+visually stunning,nada de cinematografia,negacao
+stylized,estilo próprio,positiva
+stylized,visual estiloso,positiva
+stylized,cores saturadas,positiva
+stylized,slow motion,positiva
+stylized,estilo quadrinhos,positiva
+stylized,sem estética exagerada,negacao
+character study,vida de uma pessoa,positiva
+character study,personagem profundo,positiva
+character study,psicologia do personagem,positiva
+character study,anti-herói complexo,positiva
+character study,interpretação incrível,positiva
+character study,sem grande atuação,negacao
+dialogue driven,diálogos,positiva
+dialogue driven,conversas,positiva
+dialogue driven,falação,positiva
+dialogue driven,roteiro afiado,positiva
+dialogue driven,filme falado,positiva
+dialogue driven,sem muita conversa,negacao
+multiple storylines,histórias paralelas,positiva
+multiple storylines,muitos personagens,positiva
+multiple storylines,núcleos,positiva
+multiple storylines,episódios,positiva
+multiple storylines,histórias entrelaçadas,positiva
+multiple storylines,sem várias histórias,negacao
+art house,filme cult,positiva
+art house,palma de ouro,positiva
+art house,independente,positiva
+art house,filme artístico,positiva
+art house,filme de cinemateca,positiva
+art house,sem ser artístico,negacao
+neo-noir,neo noir,positiva
+neo-noir,noir,positiva
+neo-noir,detetive noir,positiva
+neo-noir,femme fatale,positiva
+neo-noir,estética noir,positiva
+neo-noir,nada noir,negacao
+epic,superprodução,positiva
+epic,escala enorme,positiva
+epic,exércitos,positiva
+epic,longo e grandioso,positiva
+epic,grandes batalhas,positiva
+epic,sem blockbuster,negacao
+period piece,século passado,positiva
+period piece,idade média,positiva
+period piece,renascimento,positiva
+period piece,realeza,positiva
+period piece,século xviii,positiva
+period piece,nada medieval,negacao
+slapstick,humor físico,positiva
+slapstick,tombos,positiva
+slapstick,cair de bunda,positiva
+slapstick,palhaçada física,positiva
+slapstick,looney tunes,positiva
+slapstick,sem torta na cara,negacao
+parody,paródia,positiva
+parody,sátira de filmes,positiva
+parody,paródia de terror,positiva
+parody,paródia de ação,positiva
+parody,sátira de cinema,positiva
+parody,não quero besteirol paródia,negacao
+gory,sangrento,positiva
+gory,muito sangue,positiva
+gory,carnificina,positiva
+gory,terror gore,positiva
+gory,body horror,positiva
+gory,nada sangrento,negacao
+fast paced,fast-paced,positiva
+fast paced,dinâmico,positiva
+fast paced,sem enrolar,positiva
+fast paced,ágil,positiva
+fast paced,sem tempo morto,positiva
+fast paced,nada acelerado,negacao
+slow paced,lento,positiva
+slow paced,cadenciado,positiva
+slow paced,arrastado,positiva
+slow paced,demorado,positiva
+slow paced,queima lenta,positiva
+slow paced,não quero filme lento,negacao
+action packed,action packed,positiva
+action packed,"tiro, porrada e bomba",positiva
+action packed,muita explosão,positiva
+action packed,cenas de ação,positiva
+action packed,ação desenfreada,positiva
+action packed,sem porrada,negacao
+kids and family,infantil,positiva
+kids and family,com os filhos,positiva
+kids and family,classificação livre,positiva
+kids and family,animação infantil,positiva
+kids and family,pros pequenos,positiva
+kids and family,sem ser filme de criança,negacao
+teen movie,comédia adolescente,positiva
+teen movie,romance adolescente,positiva
+teen movie,besteirol americano,positiva
+teen movie,sessão teen,positiva
+teen movie,comédia teen,positiva
+teen movie,nada adolescente,negacao
+chick flick,filme feminino,positiva
+chick flick,brigadeiro e filme,positiva
+chick flick,mulherada,positiva
+chick flick,romance açucarado,positiva
+chick flick,despedida de solteira,positiva
+chick flick,sem filme de garotas,negacao

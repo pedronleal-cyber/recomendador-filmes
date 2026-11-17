@@ -1,0 +1,339 @@
+ESTRESSE DO MOTOR T: ANTES (v7) x DEPOIS (v8)
+======================================================================
+pedidos_estresse.csv é conjunto de DESCOBERTA DE FALHAS, nunca de medição. Os pedidos 111 a 140 não foram usados.
+As regras de conferência (a-h) são as mesmas nos dois lados (rodar_estresse.py da rodada v4).
+Frases: 161
+
+1) MODO DE RESPOSTA               v7      v8
+   etiquetas                    102     102
+   filtros                       47      47
+   aleatorio                      3       3
+   sinopse                        1       1
+   reserva_populares              8       8
+
+2) FRASES COM VIOLAÇÃO, POR TIPO      v7      v8
+   a) idioma/país                    0       0
+   b) duração                        0       0
+   c) ano/época                      1       1
+   d) streaming                      1       1
+   e) nota                           0       0
+   f) negação                        2       2
+   g) referência                     2       2
+   h) nome de pessoa                 0       0
+   com alguma violação               6       6
+   sem contar pessoas (a-g)          6       6
+
+   Por categoria (frases com alguma violação)      v7      v8
+   abstrato                                         0       0   (de 20)
+   emocao                                           0       0   (de 16)
+   genero                                           2       2   (de 20)
+   giria_ruido                                      0       0   (de 25)
+   negacao_filtro                                   1       1   (de 20)
+   ocasiao                                          0       0   (de 15)
+   pais_epoca                                       1       1   (de 15)
+   pessoas                                          0       0   (de 15)
+   referencia                                       2       2   (de 15)
+
+   Top 5 igual ao de antes em 154 de 161 frases.
+
+3) FOCO: PESSOAS, PAÍS/ÉPOCA E NEGAÇÃO/FILTRO (todas as frases dessas categorias)
+
+   --- pessoas: com violação v7 0 -> v8 0 (de 15) ---
+   #267 [pessoas] "filme do Christopher Nolan"
+      modo: filtros -> filtros | violações: - -> -
+      antes:  Batman: O Cavaleiro das Trevas (2008); Interestelar (2014); A Origem (2010); O Grande Truque (2006); Amnésia (2000)
+      depois: Batman: O Cavaleiro das Trevas (2008); Interestelar (2014); A Origem (2010); O Grande Truque (2006); Amnésia (2000)
+      filtros depois: pessoas=[562]; pessoas=Christopher Nolan
+   #268 [pessoas] "com Leonardo DiCaprio"
+      modo: filtros -> filtros | violações: - -> -
+      antes:  A Origem (2010); Django Livre (2012); Ilha do Medo (2010); Os Infiltrados (2006); O Lobo de Wall Street (2013)
+      depois: A Origem (2010); Django Livre (2012); Ilha do Medo (2010); Os Infiltrados (2006); O Lobo de Wall Street (2013)
+      filtros depois: pessoas=[112]; pessoas=Leonardo DiCaprio
+   #269 [pessoas] "dirigido pelo Spielberg"
+      modo: filtros -> filtros | violações: - -> -
+      antes:  A Lista de Schindler (1993); O Resgate do Soldado Ryan (1998); Jurassic Park: O Parque dos Dinossauros (1993); Prenda-Me se For Capaz (2002); Indiana Jones e os Caçadores da Arca Perdida (1981)
+      depois: A Lista de Schindler (1993); O Resgate do Soldado Ryan (1998); Jurassic Park: O Parque dos Dinossauros (1993); Prenda-Me se For Capaz (2002); Indiana Jones e os Caçadores da Arca Perdida (1981)
+      filtros depois: pessoas=[39]; pessoas=Steven Spielberg
+   #270 [pessoas] "filme da Meryl Streep"
+      modo: filtros -> filtros | violações: - -> -
+      antes:  O Franco Atirador (1978); O Fantástico Sr. Raposo (2009); O Diabo Veste Prada (2006); Manhattan (1979); As Pontes de Madison (1995)
+      depois: O Franco Atirador (1978); O Fantástico Sr. Raposo (2009); O Diabo Veste Prada (2006); Manhattan (1979); As Pontes de Madison (1995)
+      filtros depois: pessoas=[53]; pessoas=Meryl Streep
+   #271 [pessoas] "com o Keanu Reeves"
+      modo: filtros -> filtros | violações: - -> -
+      antes:  Matrix (1999); John Wick 4: Baba Yaga (2023); Advogado do Diabo (1997); Sonic 3: O Filme (2024); Drácula de Bram Stoker (1992)
+      depois: Matrix (1999); John Wick 4: Baba Yaga (2023); Advogado do Diabo (1997); Sonic 3: O Filme (2024); Drácula de Bram Stoker (1992)
+      filtros depois: pessoas=[6]; pessoas=Keanu Reeves
+   #272 [pessoas] "filme do Miyazaki"
+      modo: filtros -> filtros | violações: - -> -
+      antes:  A Viagem de Chihiro (2001); O Castelo Animado (2004); Princesa Mononoke (1997); Meu Amigo Totoro (1988); O Castelo no Céu (1986)
+      depois: A Viagem de Chihiro (2001); O Castelo Animado (2004); Princesa Mononoke (1997); Meu Amigo Totoro (1988); O Castelo no Céu (1986)
+      filtros depois: pessoas=[655]; pessoas=Hayao Miyazaki
+   #273 [pessoas] "filmes com a Emma Stone"
+      modo: filtros -> filtros | violações: - -> -
+      antes:  Histórias Cruzadas (2011); La La Land: Cantando Estações (2016); Cruella (2021); Pobres Criaturas (2023); Birdman ou (A Inesperada Virtude da Ignorância) (2014)
+      depois: Histórias Cruzadas (2011); La La Land: Cantando Estações (2016); Cruella (2021); Pobres Criaturas (2023); Birdman ou (A Inesperada Virtude da Ignorância) (2014)
+      filtros depois: pessoas=[121]; pessoas=Emma Stone
+   #274 [pessoas] "algo do Scorsese"
+      modo: filtros -> filtros | violações: - -> -
+      antes:  Os Bons Companheiros (1990); Ilha do Medo (2010); Os Infiltrados (2006); Taxi Driver: Motorista de Táxi (1976); O Lobo de Wall Street (2013)
+      depois: Os Bons Companheiros (1990); Ilha do Medo (2010); Os Infiltrados (2006); Taxi Driver: Motorista de Táxi (1976); O Lobo de Wall Street (2013)
+      filtros depois: pessoas=[193]; pessoas=Martin Scorsese
+   #275 [pessoas] "com Tom Hanks"
+      modo: filtros -> filtros | violações: - -> -
+      antes:  Forrest Gump: O Contador de Histórias (1994); À Espera de um Milagre (1999); O Resgate do Soldado Ryan (1998); Toy Story: Um Mundo de Aventuras (1995); Prenda-Me se For Capaz (2002)
+      depois: Forrest Gump: O Contador de Histórias (1994); À Espera de um Milagre (1999); O Resgate do Soldado Ryan (1998); Toy Story: Um Mundo de Aventuras (1995); Prenda-Me se For Capaz (2002)
+      filtros depois: pessoas=[3]; pessoas=Tom Hanks
+   #276 [pessoas] "Denis Villeneuve"
+      modo: filtros -> filtros | violações: - -> -
+      antes:  Os Suspeitos (2013); Duna: Parte Dois (2024); Incêndios (2010); A Chegada (2016); Blade Runner 2049 (2017)
+      depois: Os Suspeitos (2013); Duna: Parte Dois (2024); Incêndios (2010); A Chegada (2016); Blade Runner 2049 (2017)
+      filtros depois: pessoas=[1174]; pessoas=Denis Villeneuve
+   #277 [pessoas] "filme com a Scarlett Johansson"
+      modo: filtros -> filtros | violações: - -> -
+      antes:  Vingadores: Guerra Infinita (2018); O Grande Truque (2006); Jojo Rabbit (2019); Ela (2013); Capitão América: O Soldado Invernal (2014)
+      depois: Vingadores: Guerra Infinita (2018); O Grande Truque (2006); Jojo Rabbit (2019); Ela (2013); Capitão América: O Soldado Invernal (2014)
+      filtros depois: pessoas=[14]; pessoas=Scarlett Johansson
+   #278 [pessoas] "Wes Anderson"
+      modo: filtros -> filtros | violações: - -> -
+      antes:  O Grande Hotel Budapeste (2014); O Fantástico Sr. Raposo (2009); Ilha dos Cachorros (2018); Moonrise Kingdom (2012); Os Excêntricos Tenenbaums (2001)
+      depois: O Grande Hotel Budapeste (2014); O Fantástico Sr. Raposo (2009); Ilha dos Cachorros (2018); Moonrise Kingdom (2012); Os Excêntricos Tenenbaums (2001)
+      filtros depois: pessoas=[549]; pessoas=Wes Anderson
+   #279 [pessoas] "com o Adam Sandler"
+      modo: filtros -> filtros | violações: - -> -
+      antes:  Arremessando Alto (2022); Joias Brutas (2019); Leo (2023); Embriagado de Amor (2002); Reine Sobre Mim (2007)
+      depois: Arremessando Alto (2022); Joias Brutas (2019); Leo (2023); Embriagado de Amor (2002); Reine Sobre Mim (2007)
+      filtros depois: pessoas=[13]; pessoas=Adam Sandler
+   #280 [pessoas] "filme do Hitchcock"
+      modo: filtros -> filtros | violações: - -> -
+      antes:  Psicose (1960); Janela Indiscreta (1954); Um Corpo Que Cai (1958); Intriga Internacional (1959); Disque M para Matar (1954)
+      depois: Psicose (1960); Janela Indiscreta (1954); Um Corpo Que Cai (1958); Intriga Internacional (1959); Disque M para Matar (1954)
+      filtros depois: pessoas=[251]; pessoas=Alfred Hitchcock
+   #281 [pessoas] "quero algo do Kubrick"
+      modo: filtros -> filtros | violações: - -> -
+      antes:  O Iluminado (1980); Laranja Mecânica (1971); Nascido Para Matar (1987); 2001: Uma Odisséia no Espaço (1968); Dr. Fantástico (1964)
+      depois: O Iluminado (1980); Laranja Mecânica (1971); Nascido Para Matar (1987); 2001: Uma Odisséia no Espaço (1968); Dr. Fantástico (1964)
+      filtros depois: pessoas=[811]; pessoas=Stanley Kubrick
+
+   --- pais_epoca: com violação v7 1 -> v8 1 (de 15) ---
+   #252 [pais_epoca] "filme francês"
+      modo: filtros -> filtros | violações: - -> -
+      antes:  Intocáveis (2011); O Profissional (1994); O Fabuloso Destino de Amélie Poulain (2001); O Ódio (1995); Incêndios (2010)
+      depois: Intocáveis (2011); O Profissional (1994); O Fabuloso Destino de Amélie Poulain (2001); O Ódio (1995); Incêndios (2010)
+      filtros depois: paises=2; países=filme francês
+   #253 [pais_epoca] "algo italiano clássico"
+      modo: etiquetas -> etiquetas | violações: - -> -
+      antes:  Cinema Paradiso (1988); Três Homens em Conflito (1966); A Vida é Bela (1997); Ladrões de Bicicleta (1948); Amarcord (1973)
+      depois: Cinema Paradiso (1988); Três Homens em Conflito (1966); A Vida é Bela (1997); Ladrões de Bicicleta (1948); Amarcord (1973)
+      filtros depois: paises=3; países=filme italiano
+   #254 [pais_epoca] "cinema japonês, não animação"
+      modo: filtros -> filtros | violações: - -> -
+      antes:  Os Sete Samurais (1954); Rashomon (1950); Harakiri (1962); Viver (1952); Ran (1985)
+      depois: Os Sete Samurais (1954); Rashomon (1950); Harakiri (1962); Viver (1952); Ran (1985)
+      filtros depois: paises=6; sem_generos=Animação; países=filme japonês
+   #255 [pais_epoca] "filme espanhol de terror"
+      modo: etiquetas -> etiquetas | violações: - -> -
+      antes:  [REC] (2007); O Orfanato (2007); A Espinha do Diabo (2001); Morte ao Vivo (1996); A Pele Que Habito (2011)
+      depois: [REC] (2007); O Orfanato (2007); A Espinha do Diabo (2001); Morte ao Vivo (1996); A Pele Que Habito (2011)
+      filtros depois: paises=5; generos=Terror; países=filme espanhol
+   #256 [pais_epoca] "indiano com música"
+      modo: etiquetas -> etiquetas | violações: - -> -
+      antes:  Dilwale vai levar a noiva (1995); Meu Nome é Khan (2010); 3 Idiotas (2009); Como Estrelas na Terra (2007); RRR: Revolta, Rebelião, Revolução (2022)
+      depois: Dilwale vai levar a noiva (1995); Meu Nome é Khan (2010); 3 Idiotas (2009); Como Estrelas na Terra (2007); RRR: Revolta, Rebelião, Revolução (2022)
+      filtros depois: paises=9; países=filme indiano
+   #257 [pais_epoca] "filme alemão sobre guerra"
+      modo: etiquetas -> etiquetas | violações: - -> -
+      antes:  A Queda! As Últimas Horas de Hitler (2004); O Barco: Inferno no Mar (1981); Nada de Novo no Front (2022)
+      depois: A Queda! As Últimas Horas de Hitler (2004); O Barco: Inferno no Mar (1981); Nada de Novo no Front (2022)
+      filtros depois: paises=4; generos=Guerra; países=filme alemão
+   #258 [pais_epoca] "anos 90"
+      modo: filtros -> filtros | violações: - -> -
+      antes:  Um Sonho de Liberdade (1994); A Lista de Schindler (1993); Pulp Fiction: Tempo de Violência (1994); Forrest Gump: O Contador de Histórias (1994); À Espera de um Milagre (1999)
+      depois: Um Sonho de Liberdade (1994); A Lista de Schindler (1993); Pulp Fiction: Tempo de Violência (1994); Forrest Gump: O Contador de Histórias (1994); À Espera de um Milagre (1999)
+      filtros depois: ano_min=1990; ano_max=1999
+   #259 [pais_epoca] "filme dos anos 70"
+      modo: filtros -> filtros | violações: - -> -
+      antes:  O Poderoso Chefão (1972); Um Estranho no Ninho (1975); Guerra nas Estrelas (1977); Alien: O Oitavo Passageiro (1979); Apocalypse Now (1979)
+      depois: O Poderoso Chefão (1972); Um Estranho no Ninho (1975); Guerra nas Estrelas (1977); Alien: O Oitavo Passageiro (1979); Apocalypse Now (1979)
+      filtros depois: ano_min=1970; ano_max=1979
+   #260 [pais_epoca] "lançamento recente"
+      modo: filtros -> filtros | violações: - -> -
+      antes:  Devoradores de Estrelas (2026); Homem-Aranha: Um Novo Dia (2026); Michael (2026); Robô Selvagem (2024); Demon Slayer: Kimetsu no Yaiba Castelo Infinito (2025)
+      depois: Devoradores de Estrelas (2026); Homem-Aranha: Um Novo Dia (2026); Michael (2026); Robô Selvagem (2024); Demon Slayer: Kimetsu no Yaiba Castelo Infinito (2025)
+      filtros depois: ano_min=2024; ano_max=9999
+   #261 [pais_epoca] "filme de 2023"
+      modo: filtros -> filtros | violações: - -> -
+      antes:  Homem-Aranha: Através do Aranhaverso (2023); Oppenheimer (2023); Guardiões da Galáxia: Vol. 3 (2023); A Sociedade da Neve (2023); John Wick 4: Baba Yaga (2023)
+      depois: Homem-Aranha: Através do Aranhaverso (2023); Oppenheimer (2023); Guardiões da Galáxia: Vol. 3 (2023); A Sociedade da Neve (2023); John Wick 4: Baba Yaga (2023)
+      filtros depois: ano_min=2023; ano_max=2023
+   #262 [pais_epoca] "filme mudo"
+      modo: reserva_populares -> reserva_populares | violações: c -> c
+      antes:  Um Sonho de Liberdade (1994); O Poderoso Chefão (1972); Batman: O Cavaleiro das Trevas (2008); Interestelar (2014); A Lista de Schindler (1993)
+      depois: Um Sonho de Liberdade (1994); O Poderoso Chefão (1972); Batman: O Cavaleiro das Trevas (2008); Interestelar (2014); A Lista de Schindler (1993)
+      aviso depois: Não consigo filtrar filmes mudos: no catálogo só 19 filmes têm essa marcação, poucos demais para confiar.
+      violação depois: c) pediu 'filme mudo (até 1929 ou palavra-chave silent film)': 5 de 5 fora (conferido pela palavra-chave ou pelo ano): Um Sonho de Liberdade [1994], O Poderoso Chefão [1972], Batman: O Cavaleiro das Trevas [2008], Interestelar [2014], A Lista de Schindler [1993]
+   #263 [pais_epoca] "preto e branco"
+      modo: filtros -> filtros | violações: - -> -
+      antes:  A Lista de Schindler (1993); 12 Homens e uma Sentença (1957); Psicose (1960); Os Sete Samurais (1954); A Felicidade Não Se Compra (1946)
+      depois: A Lista de Schindler (1993); 12 Homens e uma Sentença (1957); Psicose (1960); Os Sete Samurais (1954); A Felicidade Não Se Compra (1946)
+      filtros depois: palavras_chave=black and white
+   #264 [pais_epoca] "cinema nórdico, clima frio"
+      modo: filtros -> filtros | violações: - -> -
+      antes:  A Caça (2012); O Sétimo Selo (1957); Quando Duas Mulheres Pecam (1966); Morangos Silvestres (1957); Druk: Mais Uma Rodada (2020)
+      depois: A Caça (2012); O Sétimo Selo (1957); Quando Duas Mulheres Pecam (1966); Morangos Silvestres (1957); Druk: Mais Uma Rodada (2020)
+      filtros depois: paises=12; países=filme nórdico
+   #265 [pais_epoca] "filme argentino"
+      modo: filtros -> filtros | violações: - -> -
+      antes:  Relatos Selvagens (2014); O Segredo dos seus Olhos (2009); Nove Rainhas (2000); Argentina 1985 (2022); O Roubo do Século (2020)
+      depois: Relatos Selvagens (2014); O Segredo dos seus Olhos (2009); Nove Rainhas (2000); Argentina 1985 (2022); O Roubo do Século (2020)
+      filtros depois: paises=10; países=filme argentino
+   #266 [pais_epoca] "filme mexicano"
+      modo: filtros -> filtros | violações: - -> -
+      antes:  O Labirinto do Fauno (2006); A Captura (2026); Amores Brutos (2000); Contra-Ataque (2025); Ninguém Merece, Frida 2 (2019)
+      depois: O Labirinto do Fauno (2006); A Captura (2026); Amores Brutos (2000); Contra-Ataque (2025); Ninguém Merece, Frida 2 (2019)
+      filtros depois: paises=11; países=filme mexicano
+
+   --- negacao_filtro: com violação v7 1 -> v8 1 (de 20) ---
+   #297 [negacao_filtro] "comédia sem palavrão"
+      modo: etiquetas -> etiquetas | violações: - -> -
+      antes:  Monty Python em Busca do Cálice Sagrado (1975); S.O.S.: Tem um Louco Solto no Espaço (1987); Banzé no Oeste (1974); A Vida de Brian (1979); Corra que a Polícia Vem Aí! (1988)
+      depois: Monty Python em Busca do Cálice Sagrado (1975); S.O.S.: Tem um Louco Solto no Espaço (1987); Banzé no Oeste (1974); A Vida de Brian (1979); Corra que a Polícia Vem Aí! (1988)
+      filtros depois: generos=Comédia
+   #298 [negacao_filtro] "terror que não seja de fantasma"
+      modo: etiquetas -> etiquetas | violações: - -> -
+      antes:  Corra! (2017); Backrooms: Um Não-Lugar (2026); Resident Evil (2026); Drácula: A Última Viagem do Deméter (2023); Ninguém Vai te Salvar (2023)
+      depois: Corra! (2017); Backrooms: Um Não-Lugar (2026); Resident Evil (2026); Drácula: A Última Viagem do Deméter (2023); Ninguém Vai te Salvar (2023)
+      filtros depois: generos=Terror; temas negados=fantasma / espírito; etiquetas penalizadas=ghosts/supernatural
+   #299 [negacao_filtro] "sem romance"
+      modo: etiquetas -> etiquetas | violações: - -> -
+      antes:  Parasita (2019); Devoradores de Estrelas (2026); Homem-Aranha: No Aranhaverso (2018); Vingadores: Guerra Infinita (2018); Michael (2026)
+      depois: Parasita (2019); Devoradores de Estrelas (2026); Homem-Aranha: No Aranhaverso (2018); Vingadores: Guerra Infinita (2018); Michael (2026)
+      filtros depois: sem_generos=Romance; temas negados=romance / amor; termos negados=romanc; etiquetas penalizadas=chick flick/love story/romantic/sentimental
+   #300 [negacao_filtro] "nada de guerra"
+      modo: etiquetas -> etiquetas | violações: - -> -
+      antes:  Parasita (2019); Your Name. (2016); Whiplash: Em Busca da Perfeição (2014); Homem-Aranha: Um Novo Dia (2026); Viva: A Vida é Uma Festa (2017)
+      depois: Parasita (2019); Your Name. (2016); Whiplash: Em Busca da Perfeição (2014); Homem-Aranha: Um Novo Dia (2026); Viva: A Vida é Uma Festa (2017)
+      filtros depois: sem_generos=Guerra; temas negados=guerra / soldados; etiquetas penalizadas=anti-war/sacrifice/war
+   #301 [negacao_filtro] "ação sem super-herói"
+      modo: etiquetas -> etiquetas | violações: - -> -
+      antes:  John Wick 3: Parabellum (2019); Ronin (1998); O Novato (2003); Mad Max: Estrada da Fúria (2015); Dragon Ball Super: Broly (2018)
+      depois: John Wick 3: Parabellum (2019); Ronin (1998); O Novato (2003); Mad Max: Estrada da Fúria (2015); Dragon Ball Super: Broly (2018)
+      filtros depois: generos=Ação; temas negados=super-herói; etiquetas penalizadas=superhero
+   #302 [negacao_filtro] "filme que não seja americano"
+      modo: filtros -> filtros | violações: - -> -
+      antes:  A Viagem de Chihiro (2001); Parasita (2019); Your Name. (2016); A Vida é Bela (1997); O Castelo Animado (2004)
+      depois: A Viagem de Chihiro (2001); Parasita (2019); Your Name. (2016); A Vida é Bela (1997); O Castelo Animado (2004)
+      filtros depois: sem_paises=1; sem países=sem participação americana na produção
+   #303 [negacao_filtro] "animação que não seja da Disney"
+      modo: filtros -> filtros | violações: d -> d
+      antes:  Your Name. (2016); Homem-Aranha: No Aranhaverso (2018); Viva: A Vida é Uma Festa (2017); Túmulo dos Vagalumes (1988); Princesa Mononoke (1997)
+      depois: Your Name. (2016); Homem-Aranha: No Aranhaverso (2018); Viva: A Vida é Uma Festa (2017); Túmulo dos Vagalumes (1988); Princesa Mononoke (1997)
+      filtros depois: sem_estudios=2; generos=Animação; sem estúdios=Disney
+      violação depois: d) pediu Disney+: 3 de 5 não estão nesse serviço por assinatura (o motor NÃO detectou o filtro de streaming): Your Name., Túmulo dos Vagalumes, Princesa Mononoke
+   #304 [negacao_filtro] "drama sem final triste"
+      modo: etiquetas -> etiquetas | violações: - -> -
+      antes:  Parasita (2019); Whiplash: Em Busca da Perfeição (2014); Dilwale vai levar a noiva (1995); Top Gun: Maverick (2022); Três Anúncios Para Um Crime (2017)
+      depois: Parasita (2019); Whiplash: Em Busca da Perfeição (2014); Dilwale vai levar a noiva (1995); Top Gun: Maverick (2022); Três Anúncios Para Um Crime (2017)
+      filtros depois: generos=Drama; temas negados=chorar / emocionante/expr: sad; termos negados=trist/final triste; etiquetas penalizadas=bittersweet/bleak/depressing/downbeat/emotional/melancholic/poignant/sad/tear jerker/touching
+   #305 [negacao_filtro] "filme que não seja muito longo"
+      modo: filtros -> filtros | violações: - -> -
+      antes:  12 Homens e uma Sentença (1957); Your Name. (2016); Homem-Aranha: No Aranhaverso (2018); A Vida é Bela (1997); Whiplash: Em Busca da Perfeição (2014)
+      depois: 12 Homens e uma Sentença (1957); Your Name. (2016); Homem-Aranha: No Aranhaverso (2018); A Vida é Bela (1997); Whiplash: Em Busca da Perfeição (2014)
+      filtros depois: duracao_ate=120
+   #306 [negacao_filtro] "menos de 90 minutos"
+      modo: filtros -> filtros | violações: - -> -
+      antes:  Túmulo dos Vagalumes (1988); O Rei Leão (1994); Toy Story: Um Mundo de Aventuras (1995); Meu Amigo Totoro (1988); Tempos Modernos (1936)
+      depois: Túmulo dos Vagalumes (1988); O Rei Leão (1994); Toy Story: Um Mundo de Aventuras (1995); Meu Amigo Totoro (1988); Tempos Modernos (1936)
+      filtros depois: duracao_max=90
+   #307 [negacao_filtro] "até 1h30"
+      modo: filtros -> filtros | violações: - -> -
+      antes:  Túmulo dos Vagalumes (1988); O Rei Leão (1994); Toy Story: Um Mundo de Aventuras (1995); Meu Amigo Totoro (1988); Tempos Modernos (1936)
+      depois: Túmulo dos Vagalumes (1988); O Rei Leão (1994); Toy Story: Um Mundo de Aventuras (1995); Meu Amigo Totoro (1988); Tempos Modernos (1936)
+      filtros depois: duracao_ate=90
+   #308 [negacao_filtro] "que esteja na Netflix"
+      modo: filtros -> filtros | violações: - -> -
+      antes:  Um Sonho de Liberdade (1994); A Viagem de Chihiro (2001); Parasita (2019); O Senhor dos Anéis: A Sociedade do Anel (2001); Clube da Luta (1999)
+      depois: Um Sonho de Liberdade (1994); A Viagem de Chihiro (2001); Parasita (2019); O Senhor dos Anéis: A Sociedade do Anel (2001); Clube da Luta (1999)
+      filtros depois: streaming=netflix
+   #309 [negacao_filtro] "que tenha no Prime Video"
+      modo: filtros -> filtros | violações: - -> -
+      antes:  Batman: O Cavaleiro das Trevas (2008); Interestelar (2014); Parasita (2019); O Senhor dos Anéis: A Sociedade do Anel (2001); Clube da Luta (1999)
+      depois: Batman: O Cavaleiro das Trevas (2008); Interestelar (2014); Parasita (2019); O Senhor dos Anéis: A Sociedade do Anel (2001); Clube da Luta (1999)
+      filtros depois: streaming=prime video
+   #310 [negacao_filtro] "tem na Max?"
+      modo: filtros -> filtros | violações: - -> -
+      antes:  Um Sonho de Liberdade (1994); Batman: O Cavaleiro das Trevas (2008); Interestelar (2014); O Senhor dos Anéis: O Retorno do Rei (2003); À Espera de um Milagre (1999)
+      depois: Um Sonho de Liberdade (1994); Batman: O Cavaleiro das Trevas (2008); Interestelar (2014); O Senhor dos Anéis: O Retorno do Rei (2003); À Espera de um Milagre (1999)
+      filtros depois: streaming=hbo
+   #311 [negacao_filtro] "nota acima de 8"
+      modo: filtros -> filtros | violações: - -> -
+      antes:  Um Sonho de Liberdade (1994); O Poderoso Chefão (1972); Batman: O Cavaleiro das Trevas (2008); Interestelar (2014); A Lista de Schindler (1993)
+      depois: Um Sonho de Liberdade (1994); O Poderoso Chefão (1972); Batman: O Cavaleiro das Trevas (2008); Interestelar (2014); A Lista de Schindler (1993)
+      filtros depois: nota_min=8.0; nota_estrita=True
+   #312 [negacao_filtro] "filme bem avaliado"
+      modo: filtros -> filtros | violações: - -> -
+      antes:  Um Sonho de Liberdade (1994); O Poderoso Chefão (1972); Batman: O Cavaleiro das Trevas (2008); Interestelar (2014); A Lista de Schindler (1993)
+      depois: Um Sonho de Liberdade (1994); O Poderoso Chefão (1972); Batman: O Cavaleiro das Trevas (2008); Interestelar (2014); A Lista de Schindler (1993)
+      filtros depois: nota_min=7.5; nota_estrita=False
+   #313 [negacao_filtro] "filme pouco conhecido"
+      modo: filtros -> filtros | violações: - -> -
+      antes:  Avatar Aang: O Último Mestre do Ar (2026); Eu Quero Comer seu Pâncreas (2018); Operação Sombra (2025); Testemunha de Acusação (1957); Harakiri (1962)
+      depois: Avatar Aang: O Último Mestre do Ar (2026); Eu Quero Comer seu Pâncreas (2018); Operação Sombra (2025); Testemunha de Acusação (1957); Harakiri (1962)
+      filtros depois: votos_max=1892.0; nota_min=7.0; nota_estrita=False
+   #314 [negacao_filtro] "clássico que todo mundo já viu"
+      modo: etiquetas -> etiquetas | violações: - -> -
+      antes:  Um Sonho de Liberdade (1994); Forrest Gump: O Contador de Histórias (1994); De Volta para o Futuro (1985); Guerra nas Estrelas (1977); Toy Story: Um Mundo de Aventuras (1995)
+      depois: Um Sonho de Liberdade (1994); Forrest Gump: O Contador de Histórias (1994); De Volta para o Futuro (1985); Guerra nas Estrelas (1977); Toy Story: Um Mundo de Aventuras (1995)
+   #315 [negacao_filtro] "filme de 2010 pra cá"
+      modo: filtros -> filtros | violações: - -> -
+      antes:  A Origem (2010); Ilha do Medo (2010); Como Treinar o Seu Dragão (2010); Toy Story 3 (2010); Incêndios (2010)
+      depois: A Origem (2010); Ilha do Medo (2010); Como Treinar o Seu Dragão (2010); Toy Story 3 (2010); Incêndios (2010)
+      filtros depois: ano_min=2010; ano_max=2010
+   #316 [negacao_filtro] "que passe no Disney+"
+      modo: filtros -> filtros | violações: - -> -
+      antes:  O Senhor dos Anéis: O Retorno do Rei (2003); Clube da Luta (1999); Homem-Aranha: No Aranhaverso (2018); Guerra nas Estrelas: O Império Contra-Ataca (1980); Vingadores: Guerra Infinita (2018)
+      depois: O Senhor dos Anéis: O Retorno do Rei (2003); Clube da Luta (1999); Homem-Aranha: No Aranhaverso (2018); Guerra nas Estrelas: O Império Contra-Ataca (1980); Vingadores: Guerra Infinita (2018)
+      filtros depois: streaming=disney
+
+4) OUTRAS CATEGORIAS: FRASES QUE MELHORARAM (0)
+
+5) OUTRAS CATEGORIAS: FRASES QUE PIORARAM (0)
+
+6) OUTRAS CATEGORIAS: TOP 5 MUDOU SEM MUDAR VIOLAÇÃO (7) — para olhar à mão
+   #215 [emocao] "quero me sentir adolescente de novo"
+      modo: etiquetas -> etiquetas | violações: - -> -
+      antes:  A Mentira (2010); As Vantagens de Ser Invisível (2012); Curtindo a Vida Adoidado (1986); Picardias Estudantis (1982); D.U.F.F. - Você Conhece, Tem ou É (2015)
+      depois: A Mentira (2010); As Vantagens de Ser Invisível (2012); Curtindo a Vida Adoidado (1986); Picardias Estudantis (1982); Clube dos Cinco (1985)
+   #229 [ocasiao] "pra ver com meu irmão adolescente"
+      modo: etiquetas -> etiquetas | violações: - -> -
+      antes:  A Mentira (2010); As Vantagens de Ser Invisível (2012); Curtindo a Vida Adoidado (1986); Picardias Estudantis (1982); D.U.F.F. - Você Conhece, Tem ou É (2015)
+      depois: A Mentira (2010); As Vantagens de Ser Invisível (2012); Curtindo a Vida Adoidado (1986); Picardias Estudantis (1982); Clube dos Cinco (1985)
+   #230 [ocasiao] "sexta à noite com a galera, bagunça"
+      modo: etiquetas -> etiquetas | violações: - -> -
+      antes:  Austin Powers: O Agente ‘Bond’ Cama (1999); Penetras Bons de Bico (2005); Quem Vai Ficar com Mary? (1998); A Princesa Prometida (1987); American Pie: A Primeira Vez é Inesquecível (1999)
+      depois: Penetras Bons de Bico (2005); A Princesa Prometida (1987); Forrest Gump: O Contador de Histórias (1994); American Pie: A Primeira Vez é Inesquecível (1999); Piratas do Caribe: A Maldição do Pérola Negra (2003)
+   #246 [genero] "comédia absurda"
+      modo: etiquetas -> etiquetas | violações: - -> -
+      antes:  Monty Python em Busca do Cálice Sagrado (1975); S.O.S.: Tem um Louco Solto no Espaço (1987); Banzé no Oeste (1974); A Vida de Brian (1979); Corra que a Polícia Vem Aí! (1988)
+      depois: Monty Python em Busca do Cálice Sagrado (1975); Banzé no Oeste (1974); S.O.S.: Tem um Louco Solto no Espaço (1987); A Vida de Brian (1979); Corra que a Polícia Vem Aí! (1988)
+      filtros depois: generos=Comédia
+   #247 [genero] "thriller de advogado"
+      modo: etiquetas -> etiquetas | violações: - -> -
+      antes:  Capitão Phillips (2013); O Fugitivo (1993); Alcatraz: Fuga Impossível (1979); Cabo do Medo (1991); Todos os Homens do Presidente (1976)
+      depois: O Fugitivo (1993); Cabo do Medo (1991); Capitão Phillips (2013); Alcatraz: Fuga Impossível (1979); Millennium III: A Rainha do Castelo de Ar (2009)
+      filtros depois: generos=Thriller
+   #251 [genero] "drama familiar emocionante"
+      modo: etiquetas -> etiquetas | violações: - -> -
+      antes:  Bambi (1942); Divertida Mente (2015); O Rei Leão (1994); Todos os Cães Merecem o Céu (1989); O Cão e a Raposa (1981)
+      depois: Bambi (1942); O Rei Leão (1994); Divertida Mente (2015); Todos os Cães Merecem o Céu (1989); O Cão e a Raposa (1981)
+      filtros depois: generos=Drama/Família
+   #335 [abstrato] "sobre sonhos e ambição"
+      modo: etiquetas -> etiquetas | violações: - -> -
+      antes:  Cidade das Sombras (1998); Amnésia (2000); A Origem (2010); Brilho Eterno de uma Mente sem Lembranças (2004); Estranhos Prazeres (1995)
+      depois: Cidade das Sombras (1998); Amnésia (2000); A Origem (2010); Brilho Eterno de uma Mente sem Lembranças (2004); Brazil: O Filme (1985)
+
+7) OUTRAS CATEGORIAS: VIOLAÇÕES QUE CONTINUAM IGUAIS (4)
+   #233 "terror psicológico sem sustos": f) negou 'sustos' -> sustos (etiquetas scary/creepy): 5 de 5 têm: Mórbida Curiosidade, Medo, O Iluminado, Alucinações do Passado, A Cura
+   #244 "filme de espaço sem alienígena": f) negou 'alienigena' -> alienígena (palavra-chave alien ou etiqueta alien invasion): 1 de 5 têm: Vida
+   #291 "tipo O Senhor dos Anéis": g) referência 'o senhor dos aneis': o filme citado, a série ou o mesmo universo apareceu: O Hobbit: Uma Jornada Inesperada
+   #293 "no estilo Studio Ghibli": g) referência 'studio ghibli' não achada no catálogo

@@ -1,0 +1,10 @@
+Ajuste de pesos do motor T (pedidos 1 a 90). Escolha: maior NDCG@5; empate -> maior acerto.
+  tags     A     B        acerto  precisão  NDCG@5  cobertura
+   1.0   0.0   0.0   60/90 (67%)      0.26   0.268        312
+   0.7   0.3   0.0   63/90 (70%)      0.28   0.300        329
+   0.6   0.2   0.2   66/90 (73%)      0.25   0.262        346
+   0.5   0.3   0.2   60/90 (67%)      0.25   0.259        349
+   0.4   0.4   0.2   57/90 (63%)      0.25   0.249        356
+   0.3   0.5   0.2   57/90 (63%)      0.24   0.245        362
+
+Pesos escolhidos: {'tags': 0.7, 'a': 0.3, 'b': 0.0} -> salvos em pesos_t.json

@@ -1,0 +1,131 @@
+ESCOLHA DOS PESOS DA REFERÊNCIA (só pedidos de desenvolvimento)
+======================================================================
+Pedidos de desenvolvimento (8): #22, #23, #24, #25, #26, #59, #80, #95
+HitRate@5 = pedidos com pelo menos 1 filme bom no top 5; NDCG@5 = 1 se os bons estão todos no topo.
+Escolha: maior média (NDCG@5 + HitRate@5)/2; empate -> maior NDCG@5; empate -> fica a atual.
+
+combinação                           HitRate@5  NDCG@5   média  precisão
+atual (só etiquetas)                      0.75   0.226   0.488      0.20
+ML 0,5 / TMDB 0,2 / etiquetas 0,3         0.62   0.228   0.427      0.20
+ML 0,7 / TMDB 0,1 / etiquetas 0,2         0.62   0.218   0.422      0.18
+
+ESCOLHIDA: atual (só etiquetas)  {"ml": 0.0, "tmdb": 0.0, "tags": 1.0}
+
+POR PEDIDO (acertou / NDCG@5 / top 5)
+
+#22 "parecido com Interestelar, mas mais emocional"
+   atual (só etiquetas)                 sim  0.146  WALL-E | A.I.: Inteligência Artificial | Gattaca: A Experiência Genética | Lunar | Ela
+   ML 0,5 / TMDB 0,2 / etiquetas 0,3    sim  0.360  WALL-E | A Chegada | Ela | Gravidade | A.I.: Inteligência Artificial
+   ML 0,7 / TMDB 0,1 / etiquetas 0,2    sim  0.301  WALL-E | Ela | Gravidade | Divertida Mente | A Chegada
+
+#23 "tipo Matrix"
+   atual (só etiquetas)                 sim  0.131  O Exterminador do Futuro | O Senhor dos Anéis: As Duas Torres | Ghost in the Shell: O Fantasma do Futuro | RoboCop - O Policial do Futuro | Blade Runner: O Caçador de Andróides
+   ML 0,5 / TMDB 0,2 / etiquetas 0,3    sim  0.131  O Senhor dos Anéis: A Sociedade do Anel | O Exterminador do Futuro | O Quinto Elemento | Clube da Luta | A Origem
+   ML 0,7 / TMDB 0,1 / etiquetas 0,2    sim  0.131  O Senhor dos Anéis: A Sociedade do Anel | O Exterminador do Futuro | O Quinto Elemento | Clube da Luta | A Origem
+
+#24 "algo no estilo Tarantino"
+   atual (só etiquetas)                 não  0.000  Amnésia | Oldboy | O Tigre e o Dragão | Fogo Contra Fogo | Os Suspeitos
+   ML 0,5 / TMDB 0,2 / etiquetas 0,3    não  0.000  Os Suspeitos | Seven - Os Sete Crimes Capitais | Drive | Amnésia | A Lista de Schindler
+   ML 0,7 / TMDB 0,1 / etiquetas 0,2    não  0.000  Os Suspeitos | Seven - Os Sete Crimes Capitais | Amnésia | Fargo: Uma Comédia de Erros | O Silêncio dos Inocentes
+
+#25 "quero um filme como Clube da Luta"
+   atual (só etiquetas)                 sim  0.509  Seven - Os Sete Crimes Capitais | Marcas da Violência | Laranja Mecânica | Psicose | Identidade
+   ML 0,5 / TMDB 0,2 / etiquetas 0,3    sim  0.485  Seven - Os Sete Crimes Capitais | Matrix | Beleza Americana | Réquiem para um Sonho | Kill Bill: Volume 2
+   ML 0,7 / TMDB 0,1 / etiquetas 0,2    sim  0.339  Seven - Os Sete Crimes Capitais | Matrix | Beleza Americana | O Senhor dos Anéis: O Retorno do Rei | Kill Bill: Volume 2
+
+#26 "parecido com Harry Potter mas para adulto"
+   atual (só etiquetas)                 não  0.000  Como Treinar o Seu Dragão | Shrek | O Sexto Sentido | Toy Story: Um Mundo de Aventuras | O Senhor dos Anéis: O Retorno do Rei
+   ML 0,5 / TMDB 0,2 / etiquetas 0,3    não  0.000  O Senhor dos Anéis: O Retorno do Rei | Como Treinar o Seu Dragão | Shrek | Monstros S.A. | Procurando Nemo
+   ML 0,7 / TMDB 0,1 / etiquetas 0,2    não  0.000  O Senhor dos Anéis: O Retorno do Rei | Como Treinar o Seu Dragão | Shrek | Procurando Nemo | Monstros S.A.
+
+#59 "comédia de família tipo Esqueceram de Mim"
+   atual (só etiquetas)                 sim  0.170  Vida de Inseto | Shrek 2 | Um Duende em Nova York | Um Natal Muito, Muito Louco | Detona Ralph
+   ML 0,5 / TMDB 0,2 / etiquetas 0,3    sim  0.214  Um Natal Muito, Muito Louco | Uma Babá Quase Perfeita | Meu Papai é Noel | Toy Story: Um Mundo de Aventuras | Um Herói de Brinquedo
+   ML 0,7 / TMDB 0,1 / etiquetas 0,2    sim  0.339  Uma Babá Quase Perfeita | Um Natal Muito, Muito Louco | Meu Papai é Noel | Toy Story: Um Mundo de Aventuras | Um Herói de Brinquedo
+
+#80 "filmes tipo Todo Mundo em Pânico"
+   atual (só etiquetas)                 sim  0.214  Não é Mais um Besteirol Americano | S.O.S.: Tem um Louco Solto no Espaço | Super-Herói: O Filme | Os Vampiros que se Mordam | Corra que a Polícia Vem Aí! 2½
+   ML 0,5 / TMDB 0,2 / etiquetas 0,3    não  0.000  Não é Mais um Besteirol Americano | Corra que a Polícia Vem Aí! 2½ | Caindo na Estrada | South Park: Maior, Melhor e Sem Cortes | Austin Powers: O Homem do Membro de Ouro
+   ML 0,7 / TMDB 0,1 / etiquetas 0,2    não  0.000  Não é Mais um Besteirol Americano | Corra que a Polícia Vem Aí! 2½ | Caindo na Estrada | Austin Powers: O Homem do Membro de Ouro | Pânico
+
+#95 "algo tipo Parasita, crítica social"
+   atual (só etiquetas)                 sim  0.637  Corra! | Psicopata Americano | Triângulo da Tristeza | O Hospedeiro | Pulp Fiction: Tempo de Violência
+   ML 0,5 / TMDB 0,2 / etiquetas 0,3    sim  0.637  Coringa | Corra! | O Abutre | Entre Facas e Segredos | Joias Brutas
+   ML 0,7 / TMDB 0,1 / etiquetas 0,2    sim  0.637  Coringa | Corra! | Entre Facas e Segredos | O Abutre | Joias Brutas
+
+INSPEÇÃO: FRASES DE REFERÊNCIA DO ESTRESSE (sem gabarito; não entram na escolha)
+
+#282 "parecido com Matrix"
+   atual (só etiquetas)                 O Exterminador do Futuro | O Senhor dos Anéis: As Duas Torres | Ghost in the Shell: O Fantasma do Futuro | RoboCop - O Policial do Futuro | Blade Runner: O Caçador de Andróides
+   ML 0,5 / TMDB 0,2 / etiquetas 0,3    O Senhor dos Anéis: A Sociedade do Anel | O Exterminador do Futuro | O Quinto Elemento | Clube da Luta | A Origem
+   ML 0,7 / TMDB 0,1 / etiquetas 0,2    O Senhor dos Anéis: A Sociedade do Anel | O Exterminador do Futuro | O Quinto Elemento | Clube da Luta | A Origem
+
+#283 "tipo O Poderoso Chefão"
+   atual (só etiquetas)                 Os Bons Companheiros | Os Infiltrados | Scarface | Donnie Brasco | Estrada para Perdição
+   ML 0,5 / TMDB 0,2 / etiquetas 0,3    Os Bons Companheiros | Cassino | Donnie Brasco | Pulp Fiction: Tempo de Violência | O Pagamento Final
+   ML 0,7 / TMDB 0,1 / etiquetas 0,2    Os Bons Companheiros | Pulp Fiction: Tempo de Violência | Os Suspeitos | Um Sonho de Liberdade | Um Estranho no Ninho
+
+#284 "como Coringa"
+   atual (só etiquetas)                 Monster: Desejo Assassino | Psicopata Americano | Cisne Negro | Donnie Darko | Fome
+   ML 0,5 / TMDB 0,2 / etiquetas 0,3    Parasita | Psicopata Americano | O Lobo de Wall Street | Batman: O Cavaleiro das Trevas | Ilha do Medo
+   ML 0,7 / TMDB 0,1 / etiquetas 0,2    Parasita | O Lobo de Wall Street | Batman: O Cavaleiro das Trevas | 1917 | O Abutre
+
+#285 "no estilo de Pulp Fiction"
+   atual (só etiquetas)                 Amnésia | Sete Psicopatas e um Shih Tzu | Na Mira do Chefe | Os Suspeitos | O Sucesso a Qualquer Preço
+   ML 0,5 / TMDB 0,2 / etiquetas 0,3    Cães de Aluguel | Os Suspeitos | Amnésia | O Silêncio dos Inocentes | Seven - Os Sete Crimes Capitais
+   ML 0,7 / TMDB 0,1 / etiquetas 0,2    Os Suspeitos | Amnésia | O Silêncio dos Inocentes | Cães de Aluguel | Seven - Os Sete Crimes Capitais
+
+#286 "algo como Toy Story"
+   atual (só etiquetas)                 Monstros S.A. | Vida de Inseto | Shrek | Como Treinar o Seu Dragão | Carros
+   ML 0,5 / TMDB 0,2 / etiquetas 0,3    Monstros S.A. | Shrek | Procurando Nemo | Os Incríveis | De Volta para o Futuro
+   ML 0,7 / TMDB 0,1 / etiquetas 0,2    Monstros S.A. | Shrek | Procurando Nemo | Os Incríveis | De Volta para o Futuro
+
+#287 "parecido com Duna"
+   atual (só etiquetas)                 Guerra nas Estrelas | Matrix | 2010: O Ano em que Faremos Contato | Alien: O Oitavo Passageiro | Final Fantasy
+   ML 0,5 / TMDB 0,2 / etiquetas 0,3    O Vingador do Futuro | O Planeta dos Macacos | Alien: O Oitavo Passageiro | 2010: O Ano em que Faremos Contato | O Quinto Elemento
+   ML 0,7 / TMDB 0,1 / etiquetas 0,2    O Vingador do Futuro | Blade Runner 2049 | Batman | Alien: O Oitavo Passageiro | O Quinto Elemento
+
+#288 "tipo Titanic"
+   atual (só etiquetas)                 O Destino do Poseidon | O Impossível | Lendas da Paixão | Diário de uma Paixão | Ben-Hur
+   ML 0,5 / TMDB 0,2 / etiquetas 0,3    Forrest Gump: O Contador de Histórias | Gladiador | A Lista de Schindler | Gênio Indomável | O Rei Leão
+   ML 0,7 / TMDB 0,1 / etiquetas 0,2    Forrest Gump: O Contador de Histórias | Gladiador | Gênio Indomável | A Lista de Schindler | O Sexto Sentido
+
+#289 "como Ratatouille"
+   atual (só etiquetas)                 Kung Fu Panda | Monstros S.A. | Um Ratinho Encrenqueiro | Vida de Inseto | Procurando Nemo
+   ML 0,5 / TMDB 0,2 / etiquetas 0,3    Operação Big Hero | Up: Altas Aventuras | WALL-E | Monstros S.A. | Procurando Nemo
+   ML 0,7 / TMDB 0,1 / etiquetas 0,2    WALL-E | Up: Altas Aventuras | Os Incríveis | Procurando Nemo | Monstros S.A.
+
+#290 "similar a Cisne Negro"
+   atual (só etiquetas)                 O Operário | Réquiem para um Sonho | O Abrigo | Retratos de Uma Obsessão | Oldboy
+   ML 0,5 / TMDB 0,2 / etiquetas 0,3    Ilha do Medo | Réquiem para um Sonho | A Origem | Bastardos Inglórios | Ela
+   ML 0,7 / TMDB 0,1 / etiquetas 0,2    Ilha do Medo | A Origem | Bastardos Inglórios | Réquiem para um Sonho | Ela
+
+#291 "tipo O Senhor dos Anéis"
+   atual (só etiquetas)                 O Hobbit: Uma Jornada Inesperada | Guerra nas Estrelas | Matrix | Excalibur, a Espada do Poder | Indiana Jones e os Caçadores da Arca Perdida
+   ML 0,5 / TMDB 0,2 / etiquetas 0,3    Matrix | Guerra nas Estrelas | Batman: O Cavaleiro das Trevas | O Hobbit: Uma Jornada Inesperada | Gladiador
+   ML 0,7 / TMDB 0,1 / etiquetas 0,2    Matrix | Guerra nas Estrelas | Batman: O Cavaleiro das Trevas | Gladiador | Piratas do Caribe: A Maldição do Pérola Negra
+
+#292 "como Forrest Gump"
+   atual (só etiquetas)                 Melhor é Impossível | JFK: A Pergunta Que Não Quer Calar | Intocáveis | Rain Man | Nascido em 4 de Julho
+   ML 0,5 / TMDB 0,2 / etiquetas 0,3    Um Sonho de Liberdade | Coração Valente | Melhor é Impossível | A Lista de Schindler | O Resgate do Soldado Ryan
+   ML 0,7 / TMDB 0,1 / etiquetas 0,2    Um Sonho de Liberdade | Coração Valente | O Resgate do Soldado Ryan | O Silêncio dos Inocentes | A Lista de Schindler
+
+#293 "no estilo Studio Ghibli"
+   atual (só etiquetas)                 A Viagem de Chihiro | O Castelo Animado | Túmulo dos Vagalumes | Princesa Mononoke | Meu Amigo Totoro
+   ML 0,5 / TMDB 0,2 / etiquetas 0,3    A Viagem de Chihiro | O Castelo Animado | Túmulo dos Vagalumes | Princesa Mononoke | Meu Amigo Totoro
+   ML 0,7 / TMDB 0,1 / etiquetas 0,2    A Viagem de Chihiro | O Castelo Animado | Túmulo dos Vagalumes | Princesa Mononoke | Meu Amigo Totoro
+
+#294 "parecido com Vingadores"
+   atual (só etiquetas)                 Liga da Justiça | Homem de Ferro 2 | Thor: O Mundo Sombrio | O Incrível Hulk | Homem-Aranha: Sem Volta Para Casa
+   ML 0,5 / TMDB 0,2 / etiquetas 0,3    Guardiões da Galáxia - Vol. 2 | Homem de Ferro 2 | Thor: O Mundo Sombrio | Capitão América: Guerra Civil | Pantera Negra
+   ML 0,7 / TMDB 0,1 / etiquetas 0,2    Guardiões da Galáxia - Vol. 2 | Thor: Ragnarok | Capitão América: Guerra Civil | Homem de Ferro 2 | Pantera Negra
+
+#295 "tipo Jogos Vorazes"
+   atual (só etiquetas)                 Batalha Real | Guerra dos Mundos | V de Vingança | O Exterminador do Futuro | Guerra Mundial Z
+   ML 0,5 / TMDB 0,2 / etiquetas 0,3    Divergente | A Série Divergente: Insurgente | Maze Runner: Correr ou Morrer | Avatar | Harry Potter e as Relíquias da Morte - Parte 1
+   ML 0,7 / TMDB 0,1 / etiquetas 0,2    Divergente | A Série Divergente: Insurgente | Maze Runner: Correr ou Morrer | Harry Potter e as Relíquias da Morte - Parte 1 | Avatar
+
+#296 "como Bastardos Inglórios"
+   atual (só etiquetas)                 A Vida é Bela | A Lista de Schindler | O Resgate do Soldado Ryan | O Pianista | Oldboy
+   ML 0,5 / TMDB 0,2 / etiquetas 0,3    Django Livre | Batman: O Cavaleiro das Trevas | A Lista de Schindler | A Origem | Pulp Fiction: Tempo de Violência
+   ML 0,7 / TMDB 0,1 / etiquetas 0,2    Django Livre | Batman: O Cavaleiro das Trevas | A Origem | Pulp Fiction: Tempo de Violência | Os Infiltrados

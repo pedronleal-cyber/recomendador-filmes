@@ -1,0 +1,12 @@
+Pedidos 91 a 110: 2 de 20 mudaram de top 5 ou de caminho de resposta: #93, #105
+
+#93 "filme sobre amizade que me deixe com saudade da infância"
+   ANTES (v2, etiquetas): Intocáveis (2011); Toy Story: Um Mundo de Aventuras (1995); O Cão e a Raposa (1981); Missão Madrinha de Casamento (2011); Homens Brancos Não Sabem Enterrar (1992)
+   DEPOIS (v3, etiquetas): Toy Story: Um Mundo de Aventuras (1995); Gênio Indomável (1997); Conta Comigo (1986); O Cão e a Raposa (1981); Forrest Gump: O Contador de Histórias (1994)
+   o que mudou no entendimento: temas novos=['saudade']; filtros novos/alterados=-; correções=-
+
+#105 "um clima de anos 80, nostalgia"
+   ANTES (v2, etiquetas): Guerra nas Estrelas: O Império Contra-Ataca (1980); De Volta para o Futuro (1985); Sociedade dos Poetas Mortos (1989); Túmulo dos Vagalumes (1988); O Iluminado (1980)
+   DEPOIS (v3, filtros): Guerra nas Estrelas: O Império Contra-Ataca (1980); De Volta para o Futuro (1985); Sociedade dos Poetas Mortos (1989); Túmulo dos Vagalumes (1988); O Iluminado (1980)
+   o que mudou no entendimento: temas novos=-; filtros novos/alterados=-; correções=-
+

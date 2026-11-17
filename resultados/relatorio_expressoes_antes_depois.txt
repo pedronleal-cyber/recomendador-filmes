@@ -1,0 +1,439 @@
+EXPRESSÕES DE TESTE (20% guardados antes de mexer no dicionário): antes x depois
+
+positivas (750): entendidas 31.6% -> 49.9% | no topo 22.0% -> 43.3% | sem nenhuma etiqueta 58.9% -> 39.2% | filmes fortes no top 5 2.71 -> 3.32
+de negação (150): entendidas 40.7% -> 68.7%
+
+Positivas entendidas por grupo de etiqueta:
+  clima    (265): 29.1% -> 47.9%
+  enredo   ( 40): 25.0% -> 42.5%
+  estilo   ( 75): 16.0% -> 50.7%
+  publico  ( 15): 46.7% -> 53.3%
+  tema     (355): 36.9% -> 51.8%
+
+Pioraram (entendida antes, não depois): 1
+  [humanity] "humanizar" (positiva)
+
+Ainda não entendidas depois (423):
+  [feel-good] "feel good movie" (positiva) -> ativou: -
+  [feel-good] "recarregar as energias" (positiva) -> ativou: -
+  [feel-good] "melhorar meu dia" (positiva) -> ativou: -
+  [feel-good] "terminar o dia sorrindo" (positiva) -> ativou: -
+  [feel-good] "energia boa" (positiva) -> ativou: -
+  [feel-good] "nada de felicidade forçada" (negacao) -> ativou: -
+  [heartwarming] "comovente de um jeito bom" (positiva) -> ativou: tear jerker=1; touching=1; sad=0.9; emotional=0.9; poignant=0.7; bittersweet=0.6
+  [tear jerker] "soluçando" (positiva) -> ativou: -
+  [tear jerker] "ugly cry" (positiva) -> ativou: -
+  [sad] "dorzinha no coração" (positiva) -> ativou: -
+  [bittersweet] "doce e amargo" (positiva) -> ativou: cynical=1
+  [bittersweet] "final que dói mas conforta" (positiva) -> ativou: heartwarming=1
+  [bittersweet] "não quero bittersweet" (negacao) -> ativou: bittersweet=1
+  [touching] "touching" (positiva) -> ativou: -
+  [poignant] "ferida aberta" (positiva) -> ativou: -
+  [poignant] "dolorosamente real" (positiva) -> ativou: -
+  [poignant] "não quero nada que machuque" (negacao) -> ativou: -
+  [emotional] "coração na mão" (positiva) -> ativou: -
+  [sentimental] "cheio de sentimento" (positiva) -> ativou: -
+  [sentimental] "cafona fofo" (positiva) -> ativou: feel-good=1; campy=1; light=0.9; heartwarming=0.7; funny=0.6; cute=0.6
+  [sentimental] "cheesy" (positiva) -> ativou: -
+  [sentimental] "sappy" (positiva) -> ativou: -
+  [melancholic] "filme cinza" (positiva) -> ativou: -
+  [melancholic] "clima de domingo à noite" (positiva) -> ativou: -
+  [melancholic] "lânguido" (positiva) -> ativou: -
+  [bleak] "deprimente e frio" (positiva) -> ativou: depressing=1
+  [bleak] "mundo cruel" (positiva) -> ativou: grim=1
+  [bleak] "tudo dá errado" (positiva) -> ativou: -
+  [bleak] "niilismo" (positiva) -> ativou: -
+  [depressing] "pra ficar mal" (positiva) -> ativou: -
+  [depressing] "filme que deprime" (positiva) -> ativou: -
+  [depressing] "sair arrasado" (positiva) -> ativou: -
+  [depressing] "nada pra baixo" (negacao) -> ativou: -
+  [downbeat] "anticlímax triste" (positiva) -> ativou: tear jerker=1; sad=0.9; emotional=0.9; touching=0.8; poignant=0.7; bittersweet=0.6
+  [downbeat] "sem euforia" (positiva) -> ativou: -
+  [downbeat] "desanimado" (positiva) -> ativou: -
+  [downbeat] "acinzentado" (positiva) -> ativou: -
+  [downbeat] "desencantado" (positiva) -> ativou: -
+  [grim] "implacável" (positiva) -> ativou: -
+  [grim] "impiedoso" (positiva) -> ativou: -
+  [grim] "tenebroso" (positiva) -> ativou: -
+  [grim] "nada tenebroso" (negacao) -> ativou: -
+  [dark] "escuro" (positiva) -> ativou: -
+  [gritty] "vida real dura" (positiva) -> ativou: true story=1
+  [gritty] "bandidagem" (positiva) -> ativou: -
+  [gritty] "rústico e violento" (positiva) -> ativou: gory=1; brutal=1; visceral=0.8
+  [gritty] "raw" (positiva) -> ativou: -
+  [gritty] "nada cru" (negacao) -> ativou: -
+  [disturbing] "incomodar" (positiva) -> ativou: -
+  [disturbing] "mexer com a cabeça de um jeito ruim" (positiva) -> ativou: thought-provoking=1
+  [disturbing] "estômago forte" (positiva) -> ativou: -
+  [disturbing] "precisa de estômago" (positiva) -> ativou: -
+  [creepy] "sensação de estar sendo observado" (positiva) -> ativou: -
+  [eerie] "eerie" (positiva) -> ativou: -
+  [eerie] "nevoeiro" (positiva) -> ativou: -
+  [eerie] "inexplicável" (positiva) -> ativou: -
+  [eerie] "vibe estranha" (positiva) -> ativou: mindfuck=1; surreal=0.9; absurd=0.8; enigmatic=0.7; complex=0.7; nonlinear=0.6
+  [scary] "pular da cadeira" (positiva) -> ativou: -
+  [scary] "não dormir à noite" (positiva) -> ativou: -
+  [ominous] "mau presságio" (positiva) -> ativou: -
+  [ominous] "ameaça no ar" (positiva) -> ativou: -
+  [ominous] "tragédia anunciada" (positiva) -> ativou: sad=1
+  [ominous] "bomba-relógio" (positiva) -> ativou: -
+  [ominous] "slow burn" (positiva) -> ativou: slow paced=1
+  [ominous] "não quero clima de ameaça" (negacao) -> ativou: ominous=1
+  [tense] "coração na boca" (positiva) -> ativou: -
+  [tense] "beira da cadeira" (positiva) -> ativou: -
+  [tense] "nail-biting" (positiva) -> ativou: -
+  [tense] "sem roer unhas" (negacao) -> ativou: -
+  [suspenseful] "ansiedade boa" (positiva) -> ativou: mental illness=1
+  [intense] "intense" (positiva) -> ativou: -
+  [intense] "energia alta" (positiva) -> ativou: -
+  [intense] "high octane" (positiva) -> ativou: -
+  [atmospheric] "atmospheric" (positiva) -> ativou: -
+  [atmospheric] "trilha sonora envolvente" (positiva) -> ativou: music=1
+  [atmospheric] "cheio de clima" (positiva) -> ativou: -
+  [atmospheric] "textura" (positiva) -> ativou: -
+  [atmospheric] "sem mood" (negacao) -> ativou: -
+  [claustrophobic] "preso num lugar" (positiva) -> ativou: -
+  [claustrophobic] "preso num quarto" (positiva) -> ativou: -
+  [claustrophobic] "confinado" (positiva) -> ativou: -
+  [claustrophobic] "submarino" (positiva) -> ativou: -
+  [paranoid] "alucinação" (positiva) -> ativou: mindfuck=1; surreal=0.9; absurd=0.8; enigmatic=0.7; complex=0.7; nonlinear=0.6
+  [paranoid] "medo de tudo" (positiva) -> ativou: scary=1; creepy=0.9; eerie=0.7; ominous=0.6; disturbing=0.5
+  [paranoid] "ninguém é quem diz ser" (positiva) -> ativou: -
+  [reflective] "introspecção" (positiva) -> ativou: -
+  [reflective] "autoconhecimento" (positiva) -> ativou: -
+  [reflective] "questionar a vida" (positiva) -> ativou: -
+  [reflective] "não quero refletir" (negacao) -> ativou: reflective=1
+  [meditative] "meditação" (positiva) -> ativou: -
+  [meditative] "slow cinema" (positiva) -> ativou: -
+  [meditative] "paisagem e silêncio" (positiva) -> ativou: -
+  [thought-provoking] "provocador" (positiva) -> ativou: -
+  [thought-provoking] "cutucar" (positiva) -> ativou: -
+  [thought-provoking] "sair discutindo" (positiva) -> ativou: -
+  [thought-provoking] "faz refletir" (positiva) -> ativou: reflective=1
+  [thought-provoking] "sem debate" (negacao) -> ativou: -
+  [cerebral] "nerd" (positiva) -> ativou: -
+  [cerebral] "brainy" (positiva) -> ativou: -
+  [philosophical] "moralidade" (positiva) -> ativou: -
+  [philosophical] "natureza humana" (positiva) -> ativou: humanity=1; survival=0.6; visually stunning=0.5; animals=0.5
+  [funny] "zuera" (positiva) -> ativou: -
+  [witty] "sacadas" (positiva) -> ativou: -
+  [witty] "tiradas" (positiva) -> ativou: -
+  [silly] "silly" (positiva) -> ativou: -
+  [silly] "bobagem" (positiva) -> ativou: -
+  [silly] "não quero comédia boba" (negacao) -> ativou: funny=1; hilarious=1; silly=1; witty=0.6; goofy=0.5; slapstick=0.5
+  [goofy] "pateta" (positiva) -> ativou: -
+  [goofy] "trapalhões" (positiva) -> ativou: slapstick=1
+  [goofy] "tonto" (positiva) -> ativou: -
+  [goofy] "zé ruela" (positiva) -> ativou: -
+  [quirky] "charmoso e estranho" (positiva) -> ativou: mindfuck=1; eerie=1; surreal=0.9; absurd=0.8; enigmatic=0.7; complex=0.7
+  [quirky] "original" (positiva) -> ativou: -
+  [quirky] "excentricidade" (positiva) -> ativou: -
+  [quirky] "diferente de tudo" (positiva) -> ativou: unlikely friendships=1
+  [whimsical] "colorido e mágico" (positiva) -> ativou: magic=1; supernatural=0.7; fairy tale=0.5
+  [whimsical] "delicadeza mágica" (positiva) -> ativou: magic=1; supernatural=0.7; fairy tale=0.5
+  [whimsical] "fantasia fofa" (positiva) -> ativou: -
+  [absurd] "sem lógica" (positiva) -> ativou: -
+  [absurd] "surtado" (positiva) -> ativou: -
+  [surreal] "lisérgico" (positiva) -> ativou: -
+  [surreal] "delírio visual" (positiva) -> ativou: visually stunning=1; paranoid=1; stylized=0.8; atmospheric=0.7; epic=0.5
+  [surreal] "acid trip" (positiva) -> ativou: dark humor=1; satirical=0.9; witty=0.8; cynical=0.8
+  [dark humor] "humor cruel" (positiva) -> ativou: funny=1; hilarious=1; grim=1; witty=0.6; silly=0.6; goofy=0.5
+  [dark humor] "comédia de crime" (positiva) -> ativou: funny=1; hilarious=1; witty=0.6; silly=0.6; goofy=0.5; slapstick=0.5
+  [dark humor] "tarantinesco" (positiva) -> ativou: -
+  [dark humor] "comédia macabra" (positiva) -> ativou: funny=1; hilarious=1; scary=1; creepy=0.9; eerie=0.7; witty=0.6
+  [satirical] "escrachado" (positiva) -> ativou: -
+  [satirical] "mordaz" (positiva) -> ativou: -
+  [satirical] "comédia crítica" (positiva) -> ativou: funny=1; hilarious=1; witty=0.6; silly=0.6; goofy=0.5; slapstick=0.5
+  [satirical] "não quero deboche" (negacao) -> ativou: satirical=1
+  [cynical] "todo mundo é podre" (positiva) -> ativou: feel-good=0.8; funny=0.6; epic=0.5; kids and family=0.5
+  [cynical] "mundo podre" (positiva) -> ativou: -
+  [cynical] "oportunista" (positiva) -> ativou: -
+  [cynical] "visão amarga" (positiva) -> ativou: -
+  [nostalgic] "old school" (positiva) -> ativou: -
+  [romantic] "romcom" (positiva) -> ativou: -
+  [cute] "cachorrinho" (positiva) -> ativou: animals=1
+  [cute] "gatinho" (positiva) -> ativou: -
+  [cute] "docinho" (positiva) -> ativou: -
+  [light] "sem compromisso" (positiva) -> ativou: -
+  [light] "de boas" (positiva) -> ativou: -
+  [light] "sossegado" (positiva) -> ativou: -
+  [light] "sem drama" (positiva) -> ativou: -
+  [visceral] "sem anestesia" (positiva) -> ativou: -
+  [visceral] "filme que te atropela" (positiva) -> ativou: -
+  [brutal] "tiroteio" (positiva) -> ativou: action packed=1
+  [brutal] "ultraviolência" (positiva) -> ativou: -
+  [campy] "brega" (positiva) -> ativou: sentimental=1
+  [campy] "tão ruim que é bom" (positiva) -> ativou: -
+  [campy] "filme classe b" (positiva) -> ativou: -
+  [friendship] "parça" (positiva) -> ativou: -
+  [unlikely friendships] "homem e cachorro" (positiva) -> ativou: animals=1
+  [unlikely friendships] "água e óleo" (positiva) -> ativou: -
+  [unlikely friendships] "não quero opostos que viram amigos" (negacao) -> ativou: friendship=1; unlikely friendships=1
+  [coming of age] "amadurecer" (positiva) -> ativou: -
+  [coming of age] "primeira vez" (positiva) -> ativou: -
+  [coming of age] "fim da infância" (positiva) -> ativou: nostalgic=1
+  [coming of age] "não quero coming of age" (negacao) -> ativou: coming of age=1
+  [family drama] "family drama" (positiva) -> ativou: -
+  [family drama] "laços de família" (positiva) -> ativou: kids and family=1; cute=0.6; heartwarming=0.5
+  [dysfunctional family] "família doida" (positiva) -> ativou: mindfuck=1; kids and family=1; surreal=0.9; absurd=0.8; enigmatic=0.7; complex=0.7
+  [dysfunctional family] "família maluca" (positiva) -> ativou: mindfuck=1; kids and family=1; surreal=0.9; absurd=0.8; enigmatic=0.7; complex=0.7
+  [dysfunctional family] "família tóxica" (positiva) -> ativou: kids and family=1; cute=0.6; heartwarming=0.5
+  [dysfunctional family] "todo mundo brigando" (positiva) -> ativou: action packed=1; feel-good=0.8; brutal=0.7; funny=0.6; fast paced=0.5; revenge=0.5
+  [dysfunctional family] "nada de família tóxica" (negacao) -> ativou: -
+  [parenthood] "parenthood" (positiva) -> ativou: -
+  [parenthood] "grávida" (positiva) -> ativou: -
+  [parenthood] "adotar" (positiva) -> ativou: -
+  [loneliness] "invisível" (positiva) -> ativou: -
+  [loneliness] "eremita" (positiva) -> ativou: -
+  [redemption] "segunda chance" (positiva) -> ativou: -
+  [redemption] "recomeçar" (positiva) -> ativou: -
+  [redemption] "salvar a alma" (positiva) -> ativou: -
+  [redemption] "virar a página" (positiva) -> ativou: -
+  [redemption] "nada de segunda chance" (negacao) -> ativou: -
+  [revenge] "pagar na mesma moeda" (positiva) -> ativou: -
+  [revenge] "eye for an eye" (positiva) -> ativou: -
+  [sacrifice] "sacrifice" (positiva) -> ativou: -
+  [sacrifice] "salvar os outros" (positiva) -> ativou: -
+  [sacrifice] "morrer por amor" (positiva) -> ativou: romantic=1; love story=1; life & death=1; sad=0.8; twist ending=0.6; tear jerker=0.6
+  [betrayal] "cobra" (positiva) -> ativou: -
+  [betrayal] "infidelidade" (positiva) -> ativou: -
+  [betrayal] "não quero infidelidade" (negacao) -> ativou: -
+  [obsession] "obcecado" (positiva) -> ativou: -
+  [obsession] "compulsivo" (positiva) -> ativou: -
+  [obsession] "vício em alguém" (positiva) -> ativou: addiction=1; bleak=0.6; disturbing=0.5; depressing=0.5
+  [obsession] "sem limites pra conseguir" (positiva) -> ativou: -
+  [obsession] "nada de stalker" (negacao) -> ativou: -
+  [greed] "capitalismo selvagem" (positiva) -> ativou: survival=1; social commentary=1; visually stunning=0.5; animals=0.5
+  [greed] "corrida do ouro" (positiva) -> ativou: chase=1; sports=1; fast paced=0.8; action packed=0.6
+  [greed] "nada de fraude" (negacao) -> ativou: -
+  [corruption] "sem esquema" (negacao) -> ativou: -
+  [justice] "inocente condenado" (positiva) -> ativou: -
+  [justice] "direitos humanos" (positiva) -> ativou: humanity=1; identity=0.8; existentialism=0.7; philosophical=0.6
+  [survival] "survival" (positiva) -> ativou: -
+  [survival] "sem comida" (positiva) -> ativou: -
+  [survival] "resgate" (positiva) -> ativou: -
+  [social commentary] "crítica ao sistema" (positiva) -> ativou: -
+  [social commentary] "problema social" (positiva) -> ativou: -
+  [social commentary] "consciência social" (positiva) -> ativou: humanity=1; philosophical=1; identity=0.8; existentialism=0.7
+  [social commentary] "exploração" (positiva) -> ativou: epic=0.6; action packed=0.5; mythology=0.5
+  [war] "não quero filme de guerra" (negacao) -> ativou: war=1; anti-war=0.7; sacrifice=0.5
+  [anti-war] "pacifismo" (positiva) -> ativou: -
+  [anti-war] "sem glorificar a guerra" (positiva) -> ativou: -
+  [anti-war] "não quero pacifismo" (negacao) -> ativou: -
+  [racism] "igualdade racial" (positiva) -> ativou: -
+  [racism] "questão racial" (positiva) -> ativou: -
+  [poverty] "pobres" (positiva) -> ativou: -
+  [poverty] "miséria" (positiva) -> ativou: -
+  [poverty] "sem teto" (positiva) -> ativou: -
+  [poverty] "morador de rua" (positiva) -> ativou: -
+  [poverty] "luta pra sobreviver" (positiva) -> ativou: survival=1; action packed=1; brutal=0.7; fast paced=0.5; revenge=0.5
+  [poverty] "nada de miséria" (negacao) -> ativou: -
+  [mental illness] "psiquiátrico" (positiva) -> ativou: -
+  [mental illness] "múltiplas personalidades" (positiva) -> ativou: -
+  [mental illness] "nada psiquiátrico" (negacao) -> ativou: -
+  [addiction] "dependente químico" (positiva) -> ativou: -
+  [addiction] "crack" (positiva) -> ativou: -
+  [life & death] "antes de partir" (positiva) -> ativou: -
+  [life & death] "paciente terminal" (positiva) -> ativou: -
+  [life & death] "não quero luto" (negacao) -> ativou: life & death=1; sad=0.8; existentialism=0.8; reflective=0.8; emotional=0.7; bittersweet=0.6
+  [existentialism] "quem sou eu" (positiva) -> ativou: -
+  [existentialism] "existir" (positiva) -> ativou: -
+  [existentialism] "não quero angústia existencial" (negacao) -> ativou: tense=1; existentialism=1; philosophical=1; suspenseful=0.9; intense=0.8; claustrophobic=0.5
+  [identity] "se encontrar" (positiva) -> ativou: -
+  [identity] "imigrante" (positiva) -> ativou: -
+  [memory] "amnésia" (positiva) -> ativou: -
+  [memory] "esquecimento" (positiva) -> ativou: -
+  [destiny] "sina" (positiva) -> ativou: -
+  [destiny] "tudo está conectado" (positiva) -> ativou: -
+  [destiny] "chosen one" (positiva) -> ativou: chase=1
+  [destiny] "destinados" (positiva) -> ativou: -
+  [destiny] "não quero profecia" (negacao) -> ativou: destiny=1
+  [good versus evil] "anjos e demônios" (positiva) -> ativou: supernatural=1; magic=0.8; religion=0.6
+  [good versus evil] "império do mal" (positiva) -> ativou: -
+  [religion] "freira" (positiva) -> ativou: -
+  [religion] "seita" (positiva) -> ativou: -
+  [religion] "pecado" (positiva) -> ativou: -
+  [religion] "sem padre" (negacao) -> ativou: -
+  [humanity] "humanizar" (positiva) -> ativou: -
+  [artificial intelligence] "artificial intelligence" (positiva) -> ativou: cerebral=1; complex=0.6; mental illness=0.5; witty=0.5
+  [artificial intelligence] "cyborg" (positiva) -> ativou: -
+  [artificial intelligence] "humanoide" (positiva) -> ativou: humanity=1; identity=0.8; existentialism=0.7; philosophical=0.6
+  [technology] "high tech" (positiva) -> ativou: -
+  [technology] "celular" (positiva) -> ativou: -
+  [technology] "black mirror" (positiva) -> ativou: -
+  [dystopia] "castas" (positiva) -> ativou: -
+  [dystopia] "mundo controlado" (positiva) -> ativou: -
+  [end of the world] "end of the world" (positiva) -> ativou: -
+  [end of the world] "extinção" (positiva) -> ativou: -
+  [end of the world] "extinção humana" (positiva) -> ativou: -
+  [post-apocalyptic] "saqueadores" (positiva) -> ativou: -
+  [first contact] "estamos sozinhos no universo" (positiva) -> ativou: loneliness=1; space=1; melancholic=0.6; character study=0.5
+  [first contact] "contato com outra civilização" (positiva) -> ativou: -
+  [time travel] "túnel do tempo" (positiva) -> ativou: -
+  [time travel] "outra época" (positiva) -> ativou: -
+  [time travel] "preso em outra época" (positiva) -> ativou: -
+  [time travel] "futuro e passado" (positiva) -> ativou: technology=1; dystopia=0.6; artificial intelligence=0.5
+  [time travel] "consertar o passado" (positiva) -> ativou: -
+  [time loop] "repetir o dia" (positiva) -> ativou: -
+  [time loop] "reviver o mesmo dia" (positiva) -> ativou: -
+  [time loop] "acordar no mesmo dia" (positiva) -> ativou: -
+  [time loop] "revivendo o mesmo dia" (positiva) -> ativou: -
+  [time loop] "sem repetição" (negacao) -> ativou: -
+  [alternate reality] "parallel universe" (positiva) -> ativou: -
+  [alternate reality] "versão alternativa de mim" (positiva) -> ativou: -
+  [alternate reality] "simulação" (positiva) -> ativou: -
+  [alternate reality] "metaverso" (positiva) -> ativou: technology=1
+  [alternate reality] "sem simulação" (negacao) -> ativou: -
+  [supernatural] "paranormal" (positiva) -> ativou: -
+  [supernatural] "forças do além" (positiva) -> ativou: -
+  [supernatural] "entidade" (positiva) -> ativou: -
+  [supernatural] "nada paranormal" (negacao) -> ativou: -
+  [mythology] "olimpo" (positiva) -> ativou: -
+  [fairy tale] "contos de fadas" (positiva) -> ativou: -
+  [fairy tale] "sapo que vira príncipe" (positiva) -> ativou: -
+  [fairy tale] "contos clássicos" (positiva) -> ativou: nostalgic=0.5
+  [fairy tale] "não quero era uma vez" (negacao) -> ativou: fairy tale=1
+  [ghosts] "almas penadas" (positiva) -> ativou: -
+  [zombies] "comedores de cérebro" (positiva) -> ativou: -
+  [zombies] "não quero apocalipse zumbi" (negacao) -> ativou: zombies=1; end of the world=1; post-apocalyptic=0.9; dystopia=0.9
+  [vampires] "dentes afiados" (positiva) -> ativou: -
+  [vampires] "estaca no coração" (positiva) -> ativou: -
+  [vampires] "sede de sangue" (positiva) -> ativou: gory=1; brutal=1; visceral=0.8
+  [monster] "lobisomens" (positiva) -> ativou: -
+  [monster] "chupa-cabra" (positiva) -> ativou: -
+  [monster] "yeti" (positiva) -> ativou: -
+  [serial killer] "assassinos em série" (positiva) -> ativou: -
+  [serial killer] "matador em série" (positiva) -> ativou: -
+  [serial killer] "maníaco" (positiva) -> ativou: -
+  [serial killer] "killer" (positiva) -> ativou: -
+  [serial killer] "matador" (positiva) -> ativou: -
+  [conspiracy] "arquivos secretos" (positiva) -> ativou: -
+  [conspiracy] "sociedade secreta" (positiva) -> ativou: -
+  [conspiracy] "agenda oculta" (positiva) -> ativou: supernatural=1; magic=0.8; religion=0.6
+  [conspiracy] "ninguém pode saber" (positiva) -> ativou: -
+  [conspiracy] "sem sociedade secreta" (negacao) -> ativou: -
+  [heist] "heist" (positiva) -> ativou: -
+  [heist] "vigaristas" (positiva) -> ativou: -
+  [espionage] "agentes secretos" (positiva) -> ativou: -
+  [espionage] "kgb" (positiva) -> ativou: -
+  [espionage] "dossiê secreto" (positiva) -> ativou: conspiracy=1
+  [police investigation] "inspetor" (positiva) -> ativou: -
+  [police investigation] "caso arquivado" (positiva) -> ativou: -
+  [courtroom] "veredito" (positiva) -> ativou: -
+  [courtroom] "sentença" (positiva) -> ativou: -
+  [courtroom] "legal drama" (positiva) -> ativou: -
+  [prison escape] "prison escape" (positiva) -> ativou: -
+  [prison escape] "prisioneiros" (positiva) -> ativou: -
+  [prison escape] "breakout" (positiva) -> ativou: bleak=1
+  [prison escape] "fugitivo" (positiva) -> ativou: -
+  [prison escape] "não quero cadeia" (negacao) -> ativou: prison escape=1
+  [sports] "mma" (positiva) -> ativou: -
+  [sports] "beisebol" (positiva) -> ativou: -
+  [sports] "tênis" (positiva) -> ativou: -
+  [sports] "skate" (positiva) -> ativou: -
+  [underdog] "time fraco que vence" (positiva) -> ativou: -
+  [underdog] "começou do nada" (positiva) -> ativou: -
+  [underdog] "subestimado" (positiva) -> ativou: -
+  [underdog] "ninguém botava fé" (positiva) -> ativou: religion=1; philosophical=0.6; existentialism=0.5; reflective=0.5
+  [music] "rock" (positiva) -> ativou: -
+  [music] "turnê" (positiva) -> ativou: -
+  [music] "piano" (positiva) -> ativou: -
+  [music] "guitarra" (positiva) -> ativou: -
+  [superhero] "comic book" (positiva) -> ativou: -
+  [superhero] "filme de herói" (positiva) -> ativou: -
+  [space] "estrelas" (positiva) -> ativou: -
+  [space] "cosmos" (positiva) -> ativou: -
+  [space] "órbita" (positiva) -> ativou: -
+  [space] "marte" (positiva) -> ativou: -
+  [high school] "cheerleader" (positiva) -> ativou: -
+  [high school] "bullying" (positiva) -> ativou: -
+  [high school] "professor" (positiva) -> ativou: -
+  [high school] "sem bullying" (negacao) -> ativou: -
+  [road trip] "rodovia" (positiva) -> ativou: -
+  [road trip] "viagem" (positiva) -> ativou: -
+  [road trip] "motorhome" (positiva) -> ativou: -
+  [road trip] "sem viagem" (negacao) -> ativou: -
+  [small town] "rural" (positiva) -> ativou: -
+  [small town] "nada rural" (negacao) -> ativou: -
+  [christmas] "xmas" (positiva) -> ativou: -
+  [animals] "baleia" (positiva) -> ativou: -
+  [animals] "macaco" (positiva) -> ativou: -
+  [animals] "sem pets" (negacao) -> ativou: -
+  [true story] "história verdadeira" (positiva) -> ativou: -
+  [true story] "documental" (positiva) -> ativou: -
+  [true story] "quase documentário" (positiva) -> ativou: -
+  [true story] "acontecimento real" (positiva) -> ativou: -
+  [twist ending] "final genial" (positiva) -> ativou: -
+  [twist ending] "final de explodir a cabeça" (positiva) -> ativou: mindfuck=1
+  [twists & turns] "muda o tempo todo" (positiva) -> ativou: -
+  [twists & turns] "engana o espectador" (positiva) -> ativou: -
+  [twists & turns] "nada imprevisível" (negacao) -> ativou: -
+  [nonlinear] "flashforward" (positiva) -> ativou: -
+  [nonlinear] "narrativa criativa" (positiva) -> ativou: -
+  [nonlinear] "história embaralhada" (positiva) -> ativou: -
+  [mindfuck] "mindblowing" (positiva) -> ativou: -
+  [mindfuck] "nó no cérebro" (positiva) -> ativou: -
+  [mindfuck] "fundir a cabeça" (positiva) -> ativou: -
+  [mindfuck] "viajar na maionese" (positiva) -> ativou: road trip=1
+  [mindfuck] "não quero mindfuck" (negacao) -> ativou: mindfuck=1
+  [complex] "complex" (positiva) -> ativou: -
+  [complex] "elaborado" (positiva) -> ativou: -
+  [complex] "rever pra entender" (positiva) -> ativou: -
+  [complex] "ver duas vezes" (positiva) -> ativou: -
+  [enigmatic] "ambíguo" (positiva) -> ativou: -
+  [enigmatic] "interpretação livre" (positiva) -> ativou: inspirational=0.7; prison escape=0.6; underdog=0.5; redemption=0.5; survival=0.5
+  [enigmatic] "simbólico" (positiva) -> ativou: -
+  [enigmatic] "simbolismo" (positiva) -> ativou: -
+  [enigmatic] "nada simbólico" (negacao) -> ativou: -
+  [murder mystery] "quem é o assassino" (positiva) -> ativou: -
+  [murder mystery] "mistério na mansão" (positiva) -> ativou: -
+  [murder mystery] "quem é o culpado" (positiva) -> ativou: -
+  [murder mystery] "nada de suspeitos" (negacao) -> ativou: -
+  [chase] "fuga desesperada" (positiva) -> ativou: prison escape=1
+  [visually stunning] "cores lindas" (positiva) -> ativou: -
+  [visually stunning] "estonteante" (positiva) -> ativou: -
+  [stylized] "estilo próprio" (positiva) -> ativou: -
+  [stylized] "cores saturadas" (positiva) -> ativou: satirical=1
+  [stylized] "slow motion" (positiva) -> ativou: -
+  [stylized] "estilo quadrinhos" (positiva) -> ativou: superhero=1; action packed=0.5
+  [character study] "vida de uma pessoa" (positiva) -> ativou: -
+  [character study] "anti-herói complexo" (positiva) -> ativou: complex=1
+  [character study] "interpretação incrível" (positiva) -> ativou: -
+  [dialogue driven] "roteiro afiado" (positiva) -> ativou: -
+  [dialogue driven] "filme falado" (positiva) -> ativou: -
+  [multiple storylines] "núcleos" (positiva) -> ativou: -
+  [multiple storylines] "episódios" (positiva) -> ativou: -
+  [multiple storylines] "histórias entrelaçadas" (positiva) -> ativou: -
+  [art house] "filme cult" (positiva) -> ativou: -
+  [art house] "palma de ouro" (positiva) -> ativou: -
+  [art house] "filme de cinemateca" (positiva) -> ativou: -
+  [neo-noir] "noir" (positiva) -> ativou: -
+  [neo-noir] "nada noir" (negacao) -> ativou: -
+  [epic] "escala enorme" (positiva) -> ativou: -
+  [epic] "exércitos" (positiva) -> ativou: war=1; anti-war=0.7; sacrifice=0.5
+  [epic] "grandes batalhas" (positiva) -> ativou: war=1; anti-war=0.7; sacrifice=0.5
+  [period piece] "século passado" (positiva) -> ativou: -
+  [period piece] "idade média" (positiva) -> ativou: -
+  [period piece] "renascimento" (positiva) -> ativou: christmas=1
+  [period piece] "século xviii" (positiva) -> ativou: -
+  [slapstick] "cair de bunda" (positiva) -> ativou: -
+  [slapstick] "looney tunes" (positiva) -> ativou: -
+  [parody] "sátira de filmes" (positiva) -> ativou: satirical=1
+  [parody] "sátira de cinema" (positiva) -> ativou: satirical=1
+  [parody] "não quero besteirol paródia" (negacao) -> ativou: funny=1; hilarious=1; parody=1; witty=0.6; silly=0.6; goofy=0.5
+  [gory] "carnificina" (positiva) -> ativou: brutal=1
+  [gory] "body horror" (positiva) -> ativou: scary=0.6; creepy=0.6
+  [fast paced] "sem enrolar" (positiva) -> ativou: -
+  [fast paced] "ágil" (positiva) -> ativou: -
+  [fast paced] "sem tempo morto" (positiva) -> ativou: -
+  [slow paced] "cadenciado" (positiva) -> ativou: -
+  [slow paced] "demorado" (positiva) -> ativou: -
+  [slow paced] "queima lenta" (positiva) -> ativou: -
+  [slow paced] "não quero filme lento" (negacao) -> ativou: slow paced=1
+  [kids and family] "classificação livre" (positiva) -> ativou: inspirational=0.7; prison escape=0.6; underdog=0.5; redemption=0.5; survival=0.5
+  [teen movie] "sessão teen" (positiva) -> ativou: -
+  [teen movie] "comédia teen" (positiva) -> ativou: funny=1; hilarious=1; witty=0.6; silly=0.6; goofy=0.5; slapstick=0.5
+  [chick flick] "filme feminino" (positiva) -> ativou: -
+  [chick flick] "brigadeiro e filme" (positiva) -> ativou: action packed=1; brutal=0.7; fast paced=0.5; revenge=0.5
+  [chick flick] "mulherada" (positiva) -> ativou: -
+  [chick flick] "despedida de solteira" (positiva) -> ativou: life & death=1

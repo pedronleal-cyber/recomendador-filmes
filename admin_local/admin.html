@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Frases não entendidas</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E%F0%9F%8E%AC%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="../site/estilo.css">
+</head>
+<body>
+  <header class="topo">
+    <h1>Frases não entendidas</h1>
+    <p class="subtitulo">Pedidos deste navegador que caíram na busca por sinopse ou na lista de populares.
+      Ficam guardados só aqui, neste aparelho (nada é enviado a servidor).</p>
+  </header>
+  <main>
+    <div id="alerta-dados" class="alerta-ok">Verificando a data dos dados…</div>
+    <div class="acoes">
+      <button type="button" id="exportar">Exportar CSV</button>
+      <button type="button" id="limpar">Apagar a lista</button>
+      <a href="../site/index.html">Voltar para o site</a>
+      <a href="../site/LICENCAS.html">Licenças e créditos</a>
+    </div>
+    <p id="vazio" class="status" hidden>Nenhuma frase guardada ainda.</p>
+    <table id="tabela" hidden>
+      <thead><tr><th>Quando</th><th>Frase</th><th>Caminho</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </main>
+  <script>
+    (function () {
+      "use strict";
+      const CHAVE = "recomendador_frases_nao_entendidas";
+      const ler = () => { try { return JSON.parse(localStorage.getItem(CHAVE) || "[]"); } catch (e) { return []; } };
+      const nomeModo = { sinopse: "busca por sinopse", reserva_populares: "lista de populares" };
+      function desenhar() {
+        const lst = ler(), tb = document.querySelector("tbody");
+        tb.innerHTML = "";
+        document.getElementById("vazio").hidden = lst.length > 0;
+        document.getElementById("tabela").hidden = lst.length === 0;
+        lst.slice().reverse().forEach((x) => {
+          const tr = document.createElement("tr");
+          [new Date(x.quando).toLocaleString("pt-BR"), x.frase, nomeModo[x.modo] || x.modo].forEach((v) => {
+            const td = document.createElement("td"); td.textContent = v; tr.append(td);
+          });
+          tb.append(tr);
+        });
+      }
+      document.getElementById("exportar").addEventListener("click", () => {
+        const aspas = (v) => '"' + String(v).replace(/"/g, '""') + '"';
+        const csv = "﻿quando,frase,modo\n" + ler().map((x) => [x.quando, x.frase, x.modo].map(aspas).join(",")).join("\n");
+        const a = document.createElement("a");
+        a.href = URL.createObjectURL(new Blob([csv], { type: "text/csv;charset=utf-8" }));
+        a.download = "frases_nao_entendidas.csv";
+        a.click();
+        URL.revokeObjectURL(a.href);
+      });
+      document.getElementById("limpar").addEventListener("click", () => {
+        if (confirm("Apagar todas as frases guardadas neste navegador?")) { try { localStorage.removeItem(CHAVE); } catch (e) {} desenhar(); }
+      });
+      desenhar();
+
+      // Termos do TMDB: dados em cache por no máximo 6 meses. Alerta vermelho depois de 150 dias.
+      // (?simular_hoje=AAAA-MM-DD só serve para testar o alerta)
+      fetch("../site/data/versao.json", { cache: "no-cache" }).then((r) => r.json()).then((v) => {
+        const sim = new URLSearchParams(location.search).get("simular_hoje");
+        const hoje = sim ? new Date(sim + "T12:00:00") : new Date();
+        // Vale a data mais antiga entre os dados do TMDB (filmes/onde assistir e endereços das capas)
+        const data = v.dado_tmdb_mais_antigo || v.dados_tmdb_baixados_em;
+        const dias = Math.floor((hoje - new Date(data + "T12:00:00")) / 86400000);
+        const caixa = document.getElementById("alerta-dados");
+        if (dias > v.alerta_dias) {
+          caixa.className = "alerta-vermelho";
+          caixa.textContent = `Atenção: os dados do TMDB têm ${dias} dias (dado mais antigo: ${data}; filmes ${v.dados_tmdb_baixados_em}, capas ${v.posters_buscados_em || "–"}, créditos ${v.creditos_buscados_em || "–"}, recomendados ${v.recomendados_buscados_em || "–"}). ` +
+            `O TMDB permite guardar dados por no máximo 6 meses (${v.cache_max_dias} dias). Atualize seguindo o ATUALIZAR_DADOS.md.`;
+        } else {
+          caixa.className = "alerta-ok";
+          caixa.textContent = `Dados do TMDB: filmes baixados em ${v.dados_tmdb_baixados_em}, capas em ${v.posters_buscados_em || "–"}, créditos (pessoas, países, estúdios) em ${v.creditos_buscados_em || "–"}, recomendados (filmes parecidos) em ${v.recomendados_buscados_em || "–"} (o mais antigo tem ${dias} dias). ` +
+            `Limite do TMDB: 6 meses; o alerta aparece depois de ${v.alerta_dias} dias.`;
+        }
+      }).catch(() => {
+        const caixa = document.getElementById("alerta-dados");
+        caixa.className = "alerta-vermelho";
+        caixa.textContent = "Não consegui ler ../site/data/versao.json para conferir a idade dos dados.";
+      });
+    })();
+  </script>
+</body>
+</html>

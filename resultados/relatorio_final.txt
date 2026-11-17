@@ -1,0 +1,337 @@
+
+=== Abordagem A (final): nota de acerto ===
+11 de 20 pedidos com pelo menos 1 filme bom no top 5 (55%)
+Nota estrita (filmes do autor): 4 de 20 (20%)
+Média de filmes bons no top 5: 0.90
+
+Por estilo:
+  detalhado   4/5  (80%)
+  vago        1/5  (20%)
+  curto       5/6  (83%)
+  referência  0/1  (0%)
+  casal       0/1  (0%)
+  abstrato    1/2  (50%)
+
+Pedidos que erraram:
+
+  #72 [vago] quero ficar alegre
+     1. Um Sonho de Liberdade (1994)
+     2. O Poderoso Chefão (1972)
+     3. Batman: O Cavaleiro das Trevas (2008)
+     4. Interestelar (2014)
+     5. Pulp Fiction: Tempo de Violência (1994)
+
+  #74 [detalhado] um filme de romance que não seja clichê
+     filtros: generos=['Romance']
+     temas: romance / amor
+     1. Como Se Fosse a Primeira Vez (2004)
+     2. O Fabuloso Destino de Amélie Poulain (2001)
+     3. A Cinco Passos de Você (2019)
+     4. Para Todos os Garotos que Já Amei (2018)
+     5. Paixão Sem Limites (2010)
+
+  #77 [curto] mundo acabando
+     1. Um Sonho de Liberdade (1994)
+     2. O Poderoso Chefão (1972)
+     3. Batman: O Cavaleiro das Trevas (2008)
+     4. Interestelar (2014)
+     5. Pulp Fiction: Tempo de Violência (1994)
+
+  #79 [vago] quero algo pesado, que seja um soco no estômago pra mim
+     temas: sombrio / pesado | luta / porrada
+     1. John Wick: Um Novo Dia para Matar (2017)
+     2. Seven - Os Sete Crimes Capitais (1995)
+     3. Oldboy (2003)
+     4. O Corvo (1994)
+     5. John Wick 4: Baba Yaga (2023)
+
+  #80 [referência] filmes tipo Todo Mundo em Pânico
+     1. Todo Mundo em Pânico 2 (2001)
+     2. Todo Mundo em Pânico 4 (2006)
+     3. Todo Mundo em Pânico 3 (2003)
+     4. Todo Mundo em Pânico 5 (2013)
+     5. Megarromântico (2019)
+
+  #85 [casal] só quero curtir com minha namorada
+     temas: romance / amor
+     1. Os Miseráveis (2012)
+     2. Como Se Fosse a Primeira Vez (2004)
+     3. O Fabuloso Destino de Amélie Poulain (2001)
+     4. A Cinco Passos de Você (2019)
+     5. Para Todos os Garotos que Já Amei (2018)
+
+  #86 [vago] um sábado de pizza
+     1. Um Sonho de Liberdade (1994)
+     2. O Poderoso Chefão (1972)
+     3. Batman: O Cavaleiro das Trevas (2008)
+     4. Interestelar (2014)
+     5. Pulp Fiction: Tempo de Violência (1994)
+
+  #87 [vago] qualquer coisa que me faça ficar vidrado na tela
+     1. Um Sonho de Liberdade (1994)
+     2. O Poderoso Chefão (1972)
+     3. Batman: O Cavaleiro das Trevas (2008)
+     4. Interestelar (2014)
+     5. Pulp Fiction: Tempo de Violência (1994)
+
+  #88 [abstrato] quero enxergar a vida de outra maneira
+     1. Um Sonho de Liberdade (1994)
+     2. O Poderoso Chefão (1972)
+     3. Batman: O Cavaleiro das Trevas (2008)
+     4. Interestelar (2014)
+     5. Pulp Fiction: Tempo de Violência (1994)
+
+Resultados salvos em resultados_A_final.csv
+
+=== Abordagem B (final): nota de acerto ===
+5 de 20 pedidos com pelo menos 1 filme bom no top 5 (25%)
+Nota estrita (filmes do autor): 1 de 20 (5%)
+Média de filmes bons no top 5: 0.35
+
+Por estilo:
+  detalhado   2/5  (40%)
+  vago        1/5  (20%)
+  curto       1/6  (17%)
+  referência  0/1  (0%)
+  casal       0/1  (0%)
+  abstrato    1/2  (50%)
+
+Pedidos que erraram:
+
+  #73 [vago] algo que seja reflexivo e que me deixe pensativo por alguns dias
+     1. Pompeia (2014)
+     2. Extermínio (2002)
+     3. Guerra dos Mundos (2005)
+     4. mãe! (2017)
+     5. Spring Breakers: Garotas Perigosas (2013)
+
+  #74 [detalhado] um filme de romance que não seja clichê
+     filtros: generos=['Romance']
+     1. Amizade Colorida (2011)
+     2. A Barraca do Beijo (2018)
+     3. Dezesseis Luas (2013)
+     4. Minha Culpa (2023)
+     5. Sierra Burgess é uma Loser (2018)
+
+  #75 [detalhado] um terror mas que seja reflexivo também, não algo clichê que o terror seja bruxa, satanismo e coisas assim
+     filtros: generos=['Terror']
+     1. A Babá (2017)
+     2. O Exorcista do Papa (2023)
+     3. Hereditário (2018)
+     4. Brinquedo Assassino (1988)
+     5. João e Maria: Caçadores de Bruxas (2013)
+
+  #76 [curto] quero reviravoltas
+     1. Red: Crescer é Uma Fera (2022)
+     2. O Mundo Depois de Nós (2023)
+     3. Eu Queria Ter a Sua Vida (2011)
+     4. Atlantis: O Reino Perdido (2001)
+     5. Star Wars: Os Últimos Jedi (2017)
+
+  #77 [curto] mundo acabando
+     1. Uma Ladra Sem Limites (2013)
+     2. Ender's Game: O Jogo do Exterminador (2013)
+     3. Os Pinguins de Madagascar - O Filme (2014)
+     4. A Senha: Swordfish (2001)
+     5. O Poderoso Chefinho (2017)
+
+  #79 [vago] quero algo pesado, que seja um soco no estômago pra mim
+     1. Lucy (2014)
+     2. Rocky III: O Desafio Supremo (1982)
+     3. Rocky Balboa (2006)
+     4. Expresso do Amanhã (2013)
+     5. Uma Linda Mulher (1990)
+
+  #80 [referência] filmes tipo Todo Mundo em Pânico
+     1. Pânico 3 (2000)
+     2. Jumanji: Próxima Fase (2019)
+     3. Todo Mundo em Pânico 3 (2003)
+     4. Namorados para Sempre (2010)
+     5. Anna: O Perigo Tem Nome (2019)
+
+  #82 [curto] algo psicológico
+     1. Gênio Indomável (1997)
+     2. Cubo (1998)
+     3. Hush: A Morte Ouve (2016)
+     4. O Assassino: O Primeiro Alvo (2017)
+     5. 50% (2011)
+
+  #83 [curto] psicológico mas jogos mentais
+     1. Jumanji (1995)
+     2. Gênio Indomável (1997)
+     3. Cubo (1998)
+     4. Meu Pai (2020)
+     5. Hush: A Morte Ouve (2016)
+
+  #84 [detalhado] algum personagem importante morre e te pega de surpresa
+     1. Indiana Jones e A Relíquia do Destino (2023)
+     2. O Menu (2022)
+     3. P.S. Eu Te Amo (2007)
+     4. A Janela Secreta (2004)
+     5. Free Guy: Assumindo o Controle (2021)
+
+  #85 [casal] só quero curtir com minha namorada
+     1. High School Musical 3: Ano da Formatura (2008)
+     2. O Espetacular Homem-Aranha (2012)
+     3. Noivo Neurótico, Noiva Nervosa (1977)
+     4. 2012 (2009)
+     5. Querido John (2010)
+
+  #86 [vago] um sábado de pizza
+     1. Five Nights at Freddy's - O Pesadelo Sem Fim (2023)
+     2. A Caçada (2020)
+     3. O Guia do Mochileiro das Galáxias (2005)
+     4. A Babá (2017)
+     5. Mama (2013)
+
+  #87 [vago] qualquer coisa que me faça ficar vidrado na tela
+     1. Eles Vivem (1988)
+     2. Annabelle 3: De Volta para Casa (2019)
+     3. A Primeira Noite de Crime (2018)
+     4. Capitão América: Admirável Mundo Novo (2025)
+     5. Batem à Porta (2023)
+
+  #88 [abstrato] quero enxergar a vida de outra maneira
+     1. Cidade de Deus (2002)
+     2. Eles Vivem (1988)
+     3. Dragão Vermelho (2002)
+     4. Transformers: O Último Cavaleiro (2017)
+     5. O Amor é Cego (2001)
+
+  #90 [curto] filmes bem non-sense
+     1. Tudo e Todas as Coisas (2017)
+     2. Noites Brutais (2022)
+     3. A Culpa é das Estrelas (2014)
+     4. À Espera de um Milagre (1999)
+     5. Deadpool (2016)
+
+Resultados salvos em resultados_B_final.csv
+
+=== Abordagem H70 (final): nota de acerto ===
+8 de 20 pedidos com pelo menos 1 filme bom no top 5 (40%)
+Nota estrita (filmes do autor): 2 de 20 (10%)
+Média de filmes bons no top 5: 0.65
+
+Por estilo:
+  detalhado   2/5  (40%)
+  vago        1/5  (20%)
+  curto       3/6  (50%)
+  referência  0/1  (0%)
+  casal       1/1  (100%)
+  abstrato    1/2  (50%)
+
+Pedidos que caíram no aviso "não entendi": 1 [87]
+
+Pedidos que erraram:
+
+  #73 [vago] algo que seja reflexivo e que me deixe pensativo por alguns dias
+     temas: pensar / reflexivo
+     1. mãe! (2017)
+     2. Como Treinar o Seu Dragão 3 (2019)
+     3. After: Depois da Verdade (2020)
+     4. 007 Contra Spectre (2015)
+     5. Sociedade dos Poetas Mortos (1989)
+
+  #74 [detalhado] um filme de romance que não seja clichê
+     filtros: generos=['Romance']
+     temas: romance / amor
+     1. Amizade Colorida (2011)
+     2. Closer: Perto Demais (2004)
+     3. Dezesseis Luas (2013)
+     4. Vanilla Sky (2001)
+     5. Minha Culpa (2023)
+
+  #75 [detalhado] um terror mas que seja reflexivo também, não algo clichê que o terror seja bruxa, satanismo e coisas assim
+     filtros: generos=['Terror']
+     temas: pensar / reflexivo | magia / bruxaria
+     1. A Bruxa de Blair (1999)
+     2. João e Maria: Caçadores de Bruxas (2013)
+     3. Suspiria (1977)
+     4. Uma Noite Alucinante 3 (1992)
+     5. mãe! (2017)
+
+  #77 [curto] mundo acabando
+     1. Uma Ladra Sem Limites (2013)
+     2. Ender's Game: O Jogo do Exterminador (2013)
+     3. Os Pinguins de Madagascar - O Filme (2014)
+     4. A Senha: Swordfish (2001)
+     5. O Poderoso Chefinho (2017)
+
+  #79 [vago] quero algo pesado, que seja um soco no estômago pra mim
+     temas: sombrio / pesado | luta / porrada
+     1. Touro Indomável (1980)
+     2. John Wick: Um Novo Dia para Matar (2017)
+     3. Seven - Os Sete Crimes Capitais (1995)
+     4. Oldboy (2003)
+     5. O Corvo (1994)
+
+  #80 [referência] filmes tipo Todo Mundo em Pânico
+     1. Todo Mundo em Pânico 3 (2003)
+     2. Todo Mundo em Pânico 2 (2001)
+     3. Todo Mundo em Pânico 4 (2006)
+     4. Todo Mundo em Pânico 5 (2013)
+     5. Jumanji: Próxima Fase (2019)
+
+  #83 [curto] psicológico mas jogos mentais
+     temas: psicológico
+     1. Perfect Blue (1998)
+     2. Cisne Negro (2010)
+     3. A Estrada Perdida (1997)
+     4. O Sexto Sentido (1999)
+     5. Coringa (2019)
+
+  #84 [detalhado] algum personagem importante morre e te pega de surpresa
+     1. Indiana Jones e A Relíquia do Destino (2023)
+     2. O Menu (2022)
+     3. P.S. Eu Te Amo (2007)
+     4. A Janela Secreta (2004)
+     5. Free Guy: Assumindo o Controle (2021)
+
+  #86 [vago] um sábado de pizza
+     1. Five Nights at Freddy's - O Pesadelo Sem Fim (2023)
+     2. A Caçada (2020)
+     3. O Guia do Mochileiro das Galáxias (2005)
+     4. A Babá (2017)
+     5. Mama (2013)
+
+  #87 [vago] qualquer coisa que me faça ficar vidrado na tela
+     AVISO: Não entendi bem o pedido. Tente descrever o gênero, o clima ou o tema.
+
+  #88 [abstrato] quero enxergar a vida de outra maneira
+     1. Cidade de Deus (2002)
+     2. Eles Vivem (1988)
+     3. Dragão Vermelho (2002)
+     4. Transformers: O Último Cavaleiro (2017)
+     5. O Amor é Cego (2001)
+
+  #90 [curto] filmes bem non-sense
+     1. Tudo e Todas as Coisas (2017)
+     2. Noites Brutais (2022)
+     3. A Culpa é das Estrelas (2014)
+     4. À Espera de um Milagre (1999)
+     5. Deadpool (2016)
+
+Resultados salvos em resultados_H70_final.csv
+
+=== Acertos por estilo final ===
+                   A       B     H70
+detalhado        4/5     2/5     2/5
+vago             1/5     1/5     1/5
+curto            5/6     1/6     3/6
+referência       0/1     0/1     0/1
+casal            0/1     0/1     1/1
+abstrato         1/2     1/2     1/2
+TOTAL          11/20    5/20    8/20
+%                55%     25%     40%
+estrita         4/20    1/20    2/20
+estrita %        20%      5%     10%
+média boas      0.90    0.35    0.65
+
+Nota estrita por estilo:
+                   A       B     H70
+detalhado        2/5     0/5     0/5
+vago             0/5     0/5     0/5
+curto            2/6     1/6     2/6
+referência       0/1     0/1     0/1
+casal            0/1     0/1     0/1
+abstrato         0/2     0/2     0/2

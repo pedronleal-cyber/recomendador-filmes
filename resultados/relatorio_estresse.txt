@@ -1,0 +1,155 @@
+RELATÓRIO DE ESTRESSE: MOTOR T V4 (ATUAL, O MESMO DO SITE)
+======================================================================
+pedidos_estresse.csv é conjunto de DESCOBERTA DE FALHAS, nunca de medição (não tem gabarito).
+Regras de conferência da rodada v4: país (a), 'americano'/Disney/Marvel (f) e pessoas (h) conferidos pelo
+creditos.csv (TMDB), lido por este script de forma independente do motor. As outras regras não mudaram.
+Antes x depois: ver relatorio_estresse_v3_v4.txt (python -I comparar_estresse.py).
+Frases: 161
+
+1) MODO DE RESPOSTA
+----------------------------------------------------------------------
+  etiquetas           102
+  filtros              47
+  aleatorio             3
+  sinopse               1
+  reserva_populares     8
+
+  Por categoria:
+  modo_resposta   etiquetas  filtros  aleatorio  sinopse  reserva_populares
+  categoria                                                                
+  abstrato               20        0          0        0                  0
+  emocao                 16        0          0        0                  0
+  genero                 19        1          0        0                  0
+  giria_ruido             8        6          3        1                  7
+  negacao_filtro          7       13          0        0                  0
+  ocasiao                14        1          0        0                  0
+  pais_epoca              4       10          0        0                  1
+  pessoas                 0       15          0        0                  0
+  referencia             14        1          0        0                  0
+
+2) FRASES QUE CAÍRAM EM SINOPSE OU RESERVA_POPULARES
+----------------------------------------------------------------------
+  #262 [pais_epoca] reserva_populares: "filme mudo"
+      -> Um Sonho de Liberdade (1994); O Poderoso Chefão (1972); Batman: O Cavaleiro das Trevas (2008); Interestelar (2014); A Lista de Schindler (1993)
+  #347 [giria_ruido] reserva_populares: "me indica um filme bom"
+      -> Um Sonho de Liberdade (1994); O Poderoso Chefão (1972); Batman: O Cavaleiro das Trevas (2008); Interestelar (2014); A Lista de Schindler (1993)
+  #348 [giria_ruido] reserva_populares: "o que assistir hoje?"
+      -> Um Sonho de Liberdade (1994); O Poderoso Chefão (1972); Batman: O Cavaleiro das Trevas (2008); Interestelar (2014); A Lista de Schindler (1993)
+  #349 [giria_ruido] reserva_populares: "filme"
+      -> Um Sonho de Liberdade (1994); O Poderoso Chefão (1972); Batman: O Cavaleiro das Trevas (2008); Interestelar (2014); A Lista de Schindler (1993)
+  #351 [giria_ruido] reserva_populares: "sei la"
+      -> Um Sonho de Liberdade (1994); O Poderoso Chefão (1972); Batman: O Cavaleiro das Trevas (2008); Interestelar (2014); A Lista de Schindler (1993)
+  #352 [giria_ruido] reserva_populares: "oi"
+      -> Um Sonho de Liberdade (1994); O Poderoso Chefão (1972); Batman: O Cavaleiro das Trevas (2008); Interestelar (2014); A Lista de Schindler (1993)
+  #353 [giria_ruido] sinopse: "teste"
+      -> Feel the Beat (2020); Ex_Machina: Instinto Artificial (2015); O Paradoxo Cloverfield (2018); Festival Eurovision da Canção: A Saga de Sigrit e Lars (2020); Loucamente Apaixonados (2011)
+  #354 [giria_ruido] reserva_populares: "aaaa"
+      -> Um Sonho de Liberdade (1994); O Poderoso Chefão (1972); Batman: O Cavaleiro das Trevas (2008); Interestelar (2014); A Lista de Schindler (1993)
+  #355 [giria_ruido] reserva_populares: "filme bom"
+      -> Um Sonho de Liberdade (1994); O Poderoso Chefão (1972); Batman: O Cavaleiro das Trevas (2008); Interestelar (2014); A Lista de Schindler (1993)
+
+3) VIOLAÇÕES POR TIPO
+----------------------------------------------------------------------
+  Cortes usados: curto = menos de 100 min (o mesmo número do motor); "não muito longo" = até 120 min;
+  recente = 2024+; antigo = até 1979; filme mudo = até 1929 ou palavra-chave "silent film";
+  bem avaliado = nota TMDB 7.5+ (regra deste diagnóstico; o motor v3 usa o mesmo corte
+  filme "forte" numa etiqueta = nota >= 0.5 na escala do motor;
+  país = pelo menos um país de produção é o pedido; 'não seja americano' = EUA não pode ser o único país;
+  pessoa = nome completo ou sobrenome (o de mais filmes) entre diretores e 8 primeiros do elenco; o top 5 precisa
+  ter min(5, filmes da pessoa) filmes dela; nome que não é do catálogo precisa gerar aviso do motor.
+
+  a) idioma/país: 0
+
+  b) duração: 0
+
+  c) ano/década/época: 1
+     #262 "filme mudo"
+        pediu 'filme mudo (até 1929 ou palavra-chave silent film)': 5 de 5 fora (conferido pela palavra-chave ou pelo ano): Um Sonho de Liberdade [1994], O Poderoso Chefão [1972], Batman: O Cavaleiro das Trevas [2008], Interestelar [2014], A Lista de Schindler [1993]
+        top 5: Um Sonho de Liberdade (1994); O Poderoso Chefão (1972); Batman: O Cavaleiro das Trevas (2008); Interestelar (2014); A Lista de Schindler (1993)
+
+  d) streaming: 1
+     #303 "animação que não seja da Disney"
+        pediu Disney+: 3 de 5 não estão nesse serviço por assinatura (o motor NÃO detectou o filtro de streaming): Your Name., Túmulo dos Vagalumes, Princesa Mononoke
+        top 5: Your Name. (2016); Homem-Aranha: No Aranhaverso (2018); Viva: A Vida é Uma Festa (2017); Túmulo dos Vagalumes (1988); Princesa Mononoke (1997)
+
+  e) nota: 0
+
+  f) negações: 2
+     #233 "terror psicológico sem sustos"
+        negou 'sustos' -> sustos (etiquetas scary/creepy): 5 de 5 têm: Mórbida Curiosidade, Medo, O Iluminado, Alucinações do Passado, A Cura
+        top 5: Mórbida Curiosidade (1960); Medo (2003); O Iluminado (1980); Alucinações do Passado (1990); A Cura (1997)
+     #244 "filme de espaço sem alienígena"
+        negou 'alienigena' -> alienígena (palavra-chave alien ou etiqueta alien invasion): 1 de 5 têm: Vida
+        top 5: Gattaca: A Experiência Genética (1997); 2001: Uma Odisséia no Espaço (1968); A Outra Terra (2011); O Planeta dos Macacos (1968); Vida (2017)
+
+  g) referência: 2
+     #291 "tipo O Senhor dos Anéis"
+        referência 'o senhor dos aneis': o filme citado, a série ou o mesmo universo apareceu: O Hobbit: Uma Jornada Inesperada
+        top 5: O Hobbit: Uma Jornada Inesperada (2012); Guerra nas Estrelas (1977); Matrix (1999); Indiana Jones e os Caçadores da Arca Perdida (1981); Excalibur, a Espada do Poder (1981)
+     #293 "no estilo Studio Ghibli"
+        referência 'studio ghibli' não achada no catálogo
+        top 5: A Viagem de Chihiro (2001); O Castelo Animado (2004); Túmulo dos Vagalumes (1988); Princesa Mononoke (1997); Meu Amigo Totoro (1988)
+
+  h) nome de pessoa: 0
+
+4) PALAVRAS DOS PEDIDOS QUE NÃO CASARAM COM NADA
+----------------------------------------------------------------------
+  (sem etiqueta, tema, gênero, filtro ou referência; ignorando as palavras vazias que o motor já usa
+   e mais estas de preenchimento: bastante, ca, esteja, estilo, estou, goste, igual, parecida, parecido, passa, passe, precisando, preciso, qro, quer, sentir, similar, ta, to, tou, vc, vcs, verdade)
+
+  Ranking geral (palavra: vezes):
+  trabalho: 1, casa: 1, domingo: 1, 5: 1, anos: 1, madrugada: 1, viagem: 1, vespera: 1, prova: 1, irmao: 1, antigo: 1, moderno: 1, vietna: 1, marvel: 1, lancamento: 1, recente: 1, mudo: 1, preto: 1, branco: 1, nordico: 1, clima: 1, frio: 1, argentino: 1, mexicano: 1, christopher: 1, nolan: 1, leonardo: 1, dicaprio: 1, dirigido: 1, spielberg: 1, meryl: 1, streep: 1, keanu: 1, reeves: 1, miyazaki: 1, emma: 1, stone: 1, scorsese: 1, tom: 1, hanks: 1, denis: 1, villeneuve: 1, scarlett: 1, johansson: 1, wes: 1, anderson: 1, adam: 1, sandler: 1, hitchcock: 1, kubrick: 1, studio: 1, ghibli: 1, palavrao: 1, americano: 1, longo: 1, 1h30: 1, max: 1, nota: 1, acima: 1, 8: 1
+
+  Expressões (2+ palavras seguidas não reconhecidas):
+  "5 anos": 1, "lancamento recente": 1, "nordico clima frio": 1, "christopher nolan": 1, "leonardo dicaprio": 1, "meryl streep": 1, "keanu reeves": 1, "emma stone": 1, "tom hanks": 1, "denis villeneuve": 1, "scarlett johansson": 1, "wes anderson": 1, "adam sandler": 1, "studio ghibli": 1, "nota acima": 1, "pouco conhecido": 1, "ficsao cientifica": 1, "ninguem conhece": 1
+
+  Por categoria:
+   abstrato: faca (1)
+   emocao: trabalho (1), casa (1)
+   genero: antigo (1), moderno (1), vietna (1), marvel (1)
+   giria_ruido: topzera (1), massa (1), aksao (1), ficsao (1), cientifica (1), suspence (1), oi (1), teste (1), aaaa (1), ninguem (1), conhece (1), ama (1), mostra (1), aleatorio (1)
+   negacao_filtro: palavrao (1), americano (1), longo (1), 1h30 (1), max (1), nota (1), acima (1), 8 (1), avaliado (1), pouco (1), conhecido (1), viu (1)
+   ocasiao: domingo (1), 5 (1), anos (1), madrugada (1), viagem (1), vespera (1), prova (1), irmao (1)
+   pais_epoca: lancamento (1), recente (1), mudo (1), preto (1), branco (1), nordico (1), clima (1), frio (1), argentino (1), mexicano (1)
+   pessoas: christopher (1), nolan (1), leonardo (1), dicaprio (1), dirigido (1), spielberg (1), meryl (1), streep (1), keanu (1), reeves (1), miyazaki (1), emma (1), stone (1), scorsese (1), tom (1), hanks (1), denis (1), villeneuve (1), scarlett (1), johansson (1), wes (1), anderson (1), adam (1), sandler (1), hitchcock (1)
+   referencia: studio (1), ghibli (1)
+
+5) FRASES ENTENDIDAS SÓ EM PARTE (reconheceu um termo e ignorou outro)
+----------------------------------------------------------------------
+  #203 "tô estressado do trabalho, quero relaxar"  | reconheceu: estressado, relaxar  | ignorou: trabalho
+  #205 "tô com saudade de casa"  | reconheceu: saudade  | ignorou: casa
+  #221 "domingo de preguiça"  | reconheceu: preguica  | ignorou: domingo
+  #222 "pra ver com criança de 5 anos"  | reconheceu: crianca  | ignorou: 5, anos
+  #223 "madrugada sozinho"  | reconheceu: sozinho  | ignorou: madrugada
+  #225 "viagem de avião, algo que prenda"  | reconheceu: aviao, prenda  | ignorou: viagem
+  #227 "véspera de prova, algo curto"  | reconheceu: curto  | ignorou: vespera, prova
+  #229 "pra ver com meu irmão adolescente"  | reconheceu: adolescente  | ignorou: irmao
+  #236 "suspense policial antigo"  | reconheceu: suspense, policial  | ignorou: antigo
+  #240 "faroeste moderno"  | reconheceu: faroeste  | ignorou: moderno
+  #243 "guerra no Vietnã"  | reconheceu: guerra  | ignorou: vietna
+  #248 "super-herói que não é da Marvel"  | reconheceu: super, heroi  | ignorou: marvel
+  #297 "comédia sem palavrão"  | reconheceu: comedia  | ignorou: palavrao
+  #314 "clássico que todo mundo já viu"  | reconheceu: classico, todo, mundo  | ignorou: viu
+  #317 "filme que me faça refletir sobre a morte"  | reconheceu: refletir, morte  | ignorou: faca
+  #359 "filme que todo mundo ama"  | reconheceu: todo, mundo  | ignorou: ama
+
+6) 10 RESPOSTAS QUE PARECEM ESTRANHAS
+----------------------------------------------------------------------
+  Critérios objetivos, por prioridade (não julga gosto):
+   1) 2+ dos 5 sem nenhum gênero esperado (o gênero escrito no pedido, mesmo com erro de digitação comum,
+      ou os gêneros do filme citado);
+   2) o pedido tem palavra de conteúdo, mas a resposta é a lista fixa de populares;
+   3) caminho "sinopse" e 2+ títulos repetem uma palavra do pedido (casou pelo título, não pelo tema).
+  Frases que caem em cada critério: 1) 0  2) 1  3) 0. As 10 primeiras:
+  #262 "filme mudo" [critério 2]: tinha conteúdo (mudo), mas veio a lista fixa de populares
+      top 5: Um Sonho de Liberdade (1994); O Poderoso Chefão (1972); Batman: O Cavaleiro das Trevas (2008); Interestelar (2014); A Lista de Schindler (1993)
+
+  Também objetivo: o mesmo top 5 repetido em 3+ frases diferentes:
+   12 frases (#262, #311, #312, #337, #338, #347, #348, #349, #351, #352, #354, #355) devolveram o mesmo top 5:
+      Um Sonho de Liberdade (1994); O Poderoso Chefão (1972); Batman: O Cavaleiro das Trevas (2008); Interestelar (2014); A Lista de Schindler (1993)
+
+7) TEMPO DO MOTOR POR PEDIDO (Python)
+----------------------------------------------------------------------
+  média 116 ms | mediana 110 ms | máximo 213 ms | mínimo 97 ms
+  mais lentos: #217 212.7 ms; #297 209.5 ms; #221 188.6 ms
+  (no site, em JavaScript, a medição anterior era de cerca de 10 ms por pedido)

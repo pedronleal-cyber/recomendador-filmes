@@ -1,0 +1,231 @@
+
+=== Abordagem A (validacao): nota de acerto ===
+20 de 30 pedidos com pelo menos 1 filme bom no top 5 (67%)
+
+Por estilo:
+  curto       9/13  (69%)
+  detalhado   4/5  (80%)
+  gíria       1/2  (50%)
+  abstrato    3/4  (75%)
+  referência  0/1  (0%)
+  vago        3/3  (100%)
+  casal       0/2  (0%)
+
+Pedidos que erraram:
+
+  #42 [curto] super-herói divertido, sem muito drama
+     filtros: sem_generos=['Drama']
+     temas: super-herói
+     1. Homem-Aranha: Através do Aranhaverso (2023)
+     2. Homem-Aranha: Sem Volta Para Casa (2021)
+     3. Batman: O Cavaleiro das Trevas (2008)
+     4. Homem-Aranha: Um Novo Dia (2026)
+     5. Batman vs Superman: A Origem da Justiça (2016)
+
+  #44 [curto] filme de tribunal, com advogado e julgamento
+     1. Um Sonho de Liberdade (1994)
+     2. O Poderoso Chefão (1972)
+     3. Batman: O Cavaleiro das Trevas (2008)
+     4. Interestelar (2014)
+     5. Pulp Fiction: Tempo de Violência (1994)
+
+  #49 [detalhado] filme sobre hackers e tecnologia
+     temas: futuro / tecnologia
+     1. Blade Runner 2049 (2017)
+     2. Upgrade: Atualização (2018)
+     3. Matrix Reloaded (2003)
+     4. Matrix Revolutions (2003)
+     5. Matrix Resurrections (2021)
+
+  #53 [curto] filme sobre hospital e médicos
+     1. Um Sonho de Liberdade (1994)
+     2. O Poderoso Chefão (1972)
+     3. Batman: O Cavaleiro das Trevas (2008)
+     4. Interestelar (2014)
+     5. Pulp Fiction: Tempo de Violência (1994)
+
+  #54 [abstrato] um filme sobre pai e filho com relação complicada
+     temas: pais e filhos
+     1. Juntos e Misturados (2014)
+     2. Forrest Gump: O Contador de Histórias (1994)
+     3. Projeto Flórida (2017)
+     4. Mamma Mia! (2008)
+     5. A Árvore da Vida (2011)
+
+  #55 [gíria] comédia com humor ácido, bem sarcástico
+     filtros: generos=['Comédia']
+     temas: rir / engraçado
+     1. Megarromântico (2019)
+     2. Zumbilândia (2009)
+     3. Borat: Fita de Cinema Seguinte (2020)
+     4. Monty Python em Busca do Cálice Sagrado (1975)
+     5. A Vida de Brian (1979)
+
+  #58 [curto] aventura na selva
+     filtros: generos=['Aventura']
+     temas: natureza | aventura
+     1. Moana: Um Mar de Aventuras (2016)
+     2. Atlantis: O Reino Perdido (2001)
+     3. O Hobbit: Uma Jornada Inesperada (2012)
+     4. Z: A Cidade Perdida (2017)
+     5. Piratas do Caribe: Navegando em Águas Misteriosas (2011)
+
+  #59 [referência] comédia de família tipo Esqueceram de Mim
+     filtros: generos=['Comédia', 'Família']
+     temas: rir / engraçado | criança / família
+     1. Esqueceram de Mim 2: Perdido em Nova York (1992)
+     2. Esqueceram de Mim 3 (1997)
+     3. Kung Fu Panda 4 (2024)
+     4. Sing - Quem Canta Seus Males Espanta (2016)
+     5. Angry Birds: O Filme (2016)
+
+  #67 [casal] filme de golpe engraçado pra ver em casal
+     filtros: generos=['Comédia']
+     temas: rir / engraçado | assalto / golpe
+     1. Tiras, Só Que Não (2014)
+     2. A Balada de Buster Scruggs (2018)
+     3. As Panteras: Detonando (2003)
+     4. Megarromântico (2019)
+     5. Zumbilândia (2009)
+
+  #69 [casal] aventura no espaço com humor, pra ver com meu namorado
+     filtros: generos=['Comédia', 'Aventura']
+     temas: rir / engraçado | romance / amor | aventura | espaço
+     1. Super Mario Galaxy: O Filme (2026)
+     2. Uma Aventura Lego (2014)
+     3. Jumanji: Próxima Fase (2019)
+     4. Trovão Tropical (2008)
+     5. A Princesa Prometida (1987)
+
+Resultados salvos em resultados_A_validacao.csv
+
+=== Abordagem B (validacao): nota de acerto ===
+21 de 30 pedidos com pelo menos 1 filme bom no top 5 (70%)
+
+Por estilo:
+  curto       12/13  (92%)
+  detalhado   4/5  (80%)
+  gíria       1/2  (50%)
+  abstrato    2/4  (50%)
+  referência  1/1  (100%)
+  vago        1/3  (33%)
+  casal       0/2  (0%)
+
+Pedidos que erraram:
+
+  #45 [curto] cinebiografia de músico
+     1. Continência ao Amor (2022)
+     2. Nasce Uma Estrela (2018)
+     3. Armadilha (2024)
+     4. Viva: A Vida é Uma Festa (2017)
+     5. A Escolha Perfeita 3 (2017)
+
+  #49 [detalhado] filme sobre hackers e tecnologia
+     1. Jason Bourne (2016)
+     2. 007: Um Novo Dia para Morrer (2002)
+     3. A Vigilante do Amanhã: Ghost in the Shell (2017)
+     4. Gigantes de Aço (2011)
+     5. Cubo (1998)
+
+  #51 [abstrato] filme que se passa numa ilha isolada
+     1. O Iluminado (1980)
+     2. Tempo (2021)
+     3. Jurassic World: Reino Ameaçado (2018)
+     4. Scooby-Doo: O Filme (2002)
+     5. Robô Selvagem (2024)
+
+  #54 [abstrato] um filme sobre pai e filho com relação complicada
+     1. Lembranças (2010)
+     2. A Árvore da Vida (2011)
+     3. Juno (2007)
+     4. Uma Babá Quase Perfeita (1993)
+     5. Precisamos Falar Sobre o Kevin (2011)
+
+  #55 [gíria] comédia com humor ácido, bem sarcástico
+     filtros: generos=['Comédia']
+     1. R.I.P.D.: Agentes do Além (2013)
+     2. Melhor é Impossível (1997)
+     3. Megarromântico (2019)
+     4. O Pior Vizinho do Mundo (2022)
+     5. Entrando numa Fria Maior Ainda (2004)
+
+  #63 [vago] romance triste que não termina bem
+     filtros: generos=['Romance']
+     1. A Barraca do Beijo (2018)
+     2. Dezesseis Luas (2013)
+     3. Minha Culpa (2023)
+     4. Sierra Burgess é uma Loser (2018)
+     5. Mesmo Se Nada Der Certo (2014)
+
+  #66 [vago] algo inspirador pra me motivar
+     1. Pânico 3 (2000)
+     2. Evereste (2015)
+     3. 1922 (2017)
+     4. Pixels (2015)
+     5. Capitão América: Admirável Mundo Novo (2025)
+
+  #67 [casal] filme de golpe engraçado pra ver em casal
+     filtros: generos=['Comédia']
+     1. As Branquelas (2004)
+     2. Um Lugar Chamado Notting Hill (1999)
+     3. Todos Menos Você (2023)
+     4. Sex Tape: Perdido na Nuvem (2014)
+     5. Deus da Carnificina (2011)
+
+  #69 [casal] aventura no espaço com humor, pra ver com meu namorado
+     filtros: generos=['Comédia', 'Aventura']
+     1. Deadpool (2016)
+     2. Amor e Monstros (2020)
+     3. Moana 2 (2024)
+     4. Barbie (2023)
+     5. Madagascar 2 (2008)
+
+Resultados salvos em resultados_B_validacao.csv
+
+=== A contra B validacao ===
+                   A       B
+curto           9/13   12/13
+detalhado        4/5     4/5
+gíria            1/2     1/2
+abstrato         3/4     2/4
+referência       0/1     1/1
+vago             3/3     1/3
+casal            0/2     0/2
+TOTAL          20/30   21/30
+%                67%     70%
+
+Pedido a pedido:
+  #41  curto       A:sim  B:sim  filme de zumbi
+  #42  curto       A:não  B:sim  super-herói divertido, sem muito drama
+  #43  curto       A:sim  B:sim  filme de tubarão
+  #44  curto       A:não  B:sim  filme de tribunal, com advogado e julgamento
+  #45  curto       A:sim  B:não  cinebiografia de músico
+  #46  curto       A:sim  B:sim  filme de natal
+  #47  detalhado   A:sim  B:sim  espionagem com muita ação e perseguição
+  #48  curto       A:sim  B:sim  filme com cachorro
+  #49  detalhado   A:não  B:não  filme sobre hackers e tecnologia
+  #50  gíria       A:sim  B:sim  filmão de pirata e tesouro, aventura raiz
+  #51  abstrato    A:sim  B:não  filme que se passa numa ilha isolada
+  #52  curto       A:sim  B:sim  filme de luta, boxe ou artes marciais
+  #53  curto       A:não  B:sim  filme sobre hospital e médicos
+  #54  abstrato    A:não  B:não  um filme sobre pai e filho com relação complicada
+  #55  gíria       A:não  B:não  comédia com humor ácido, bem sarcástico
+  #56  detalhado   A:sim  B:sim  mistério com detetive pra desvendar o crime
+  #57  detalhado   A:sim  B:sim  futuro distópico onde o governo controla tudo
+  #58  curto       A:não  B:sim  aventura na selva
+  #59  referência  A:não  B:sim  comédia de família tipo Esqueceram de Mim
+  #60  abstrato    A:sim  B:sim  road trip, viagem de carro com amigos ou família
+  #61  curto       A:sim  B:sim  filme sobre a Segunda Guerra Mundial
+  #62  curto       A:sim  B:sim  faroeste
+  #63  vago        A:sim  B:não  romance triste que não termina bem
+  #64  curto       A:sim  B:sim  filme musical
+  #65  detalhado   A:sim  B:sim  alienígenas invadindo a Terra
+  #66  vago        A:sim  B:não  algo inspirador pra me motivar
+  #67  casal       A:não  B:não  filme de golpe engraçado pra ver em casal
+  #68  vago        A:sim  B:sim  terror psicológico que me deixe angustiado
+  #69  casal       A:não  B:não  aventura no espaço com humor, pra ver com meu namorado
+  #70  abstrato    A:sim  B:sim  história de uma mulher que luta contra tudo pra vencer
+
+Só A acertou: [45, 51, 63, 66]
+Só B acertou: [42, 44, 53, 58, 59]
+Nenhum acertou: [49, 54, 55, 67, 69]

@@ -1,0 +1,44 @@
+==============================================================================
+DESENVOLVIMENTO (pedidos 1 a 90): A, B, H70, H70 no catálogo de 6.000 e T
+==============================================================================
+Pesos do motor T: {'tags': 0.7, 'a': 0.3, 'b': 0.0}
+motor      catálogo        acerto  precisão  NDCG@5  cobertura  avisos
+A             2.000   62/90 (69%)      0.31   0.315        283       0
+B             2.000   39/90 (43%)      0.18   0.189        375       0
+H70           2.000   62/90 (69%)      0.31   0.311        355       1
+H70-v2        6.000   46/90 (51%)      0.19   0.187        392       0
+T             6.000   63/90 (70%)      0.28   0.300        329       1
+(precisão = média de filmes bons entre os 5; NDCG@5 = 1 se os bons estão todos no topo; cobertura = filmes diferentes nos tops 5 dos 90 pedidos)
+
+Acerto por estilo:
+estilo         n        A        B      H70   H70-v2        T
+curto         24      79%      71%      88%      58%      75%
+vago          13      54%      15%      38%      38%      69%
+abstrato      12      58%      33%      67%      42%      50%
+gíria          7      71%      14%      71%      57%      71%
+referência     7      57%      57%      57%      43%      86%
+casal          6      17%       0%      33%      17%      33%
+detalhado     16      88%      44%      75%      56%      75%
+filtro         5     100%      80%     100%     100%     100%
+
+NDCG@5 por estilo:
+estilo         n        A        B      H70   H70-v2        T
+curto         24     0.36     0.29     0.41     0.20     0.27
+vago          13     0.20     0.06     0.17     0.07     0.29
+abstrato      12     0.21     0.09     0.18     0.13     0.23
+gíria          7     0.30     0.10     0.34     0.18     0.37
+referência     7     0.22     0.12     0.18     0.18     0.19
+casal          6     0.03     0.00     0.08     0.06     0.11
+detalhado     16     0.43     0.19     0.36     0.19     0.35
+filtro         5     0.77     0.74     0.78     0.71     0.77
+
+Precisão por estilo:
+estilo         n        A        B      H70   H70-v2        T
+curto         24     0.34     0.29     0.42     0.23     0.28
+vago          13     0.23     0.05     0.17     0.08     0.25
+abstrato      12     0.18     0.08     0.17     0.10     0.20
+gíria          7     0.29     0.09     0.34     0.20     0.34
+referência     7     0.17     0.14     0.17     0.14     0.20
+casal          6     0.03     0.00     0.07     0.03     0.10
+detalhado     16     0.44     0.17     0.36     0.19     0.29
+filtro         5     0.76     0.72     0.76     0.68     0.80

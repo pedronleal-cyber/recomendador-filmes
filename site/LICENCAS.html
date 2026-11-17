@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Licenças e créditos</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E%F0%9F%8E%AC%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="estilo.css">
+  <style>
+    .licencas h2 { font-size: 1.25rem; margin: 26px 0 8px; }
+    .licencas h3 { font-size: 1.05rem; margin: 20px 0 6px; }
+    .licencas blockquote { margin: 8px 0; padding: 10px 14px; border-left: 3px solid var(--linha); background: var(--cartao); font-size: 0.92rem; }
+    .licencas li { margin-bottom: 6px; }
+    .licencas a { color: var(--destaque); overflow-wrap: anywhere; }
+  </style>
+</head>
+<body>
+  <header class="topo">
+    <h1>Licenças, créditos e citações</h1>
+    <p class="subtitulo"><a href="index.html">← Voltar para o site</a></p>
+  </header>
+  <main class="licencas">
+    <p>Este site é um projeto de portfólio, <strong>sem fins lucrativos</strong>: sem anúncios, sem doações, sem plano pago e sem qualquer receita.</p>
+
+    <h2>Avisos</h2>
+    <ul>
+      <li><strong>Dados derivados redistribuídos sob as mesmas condições.</strong> O arquivo <code>data/etiquetas.json</code> contém notas de etiquetas derivadas do MovieLens Tag Genome 2021 e do MovieLens 32M (ml-32m). Esses dados transformados são redistribuídos sob as mesmas condições das licenças originais, transcritas abaixo.</li>
+      <li><strong>Filmes parecidos (“quem gostou de X também gostou de Y”).</strong> O arquivo <code>data/referencias.json</code> contém pontuações de similaridade entre filmes calculadas a partir das notas (ratings) do MovieLens 32M (ml-32m). São dados derivados, redistribuídos sob as mesmas condições: uso só não comercial, sem endosso da Universidade de Minnesota nem do GroupLens. O mesmo arquivo traz os filmes recomendados pelo TMDB para cada filme (dados do TMDB, guardados por no máximo 6 meses).</li>
+      <li><strong>Uso não comercial.</strong> Os dados do MovieLens não podem ser usados para fins comerciais ou que gerem receita sem permissão prévia do GroupLens Research Project (Universidade de Minnesota). O Tag Genome 2021 é licenciado como CC BY-NC 3.0 (atribuição, uso não comercial).</li>
+      <li><strong>Sem endosso.</strong> Este site não é endossado pela Universidade de Minnesota nem pelo GroupLens Research Group. Aviso do TMDB: <span lang="en">“This website uses TMDB and the TMDB APIs but is not endorsed, certified, or otherwise approved by TMDB.”</span></li>
+      <li><strong>Etiquetas estimadas por IA.</strong> Parte das etiquetas (marcadas como “etiqueta estimada” no site) foi estimada por IA (Claude, da Anthropic) uma única vez, offline. O site não usa IA ao funcionar: só cruza dados.</li>
+    </ul>
+
+    <h2>Créditos</h2>
+    <p class="tmdb"><img src="img/tmdb-logo.svg" alt="TMDB" class="logo-tmdb" width="82" height="11"></p>
+    <p id="data-dados">Dados atualizados em: carregando…</p>
+    <ul>
+      <li>Dados de filmes: TMDB (The Movie Database). <span lang="en">This website uses TMDB and the TMDB APIs but is not endorsed, certified, or otherwise approved by TMDB.</span></li>
+      <li>Onde assistir: JustWatch (via TMDB).</li>
+      <li>Etiquetas: MovieLens (GroupLens, Universidade de Minnesota): Tag Genome 2021 e MovieLens 32M.</li>
+      <li>Filmes parecidos: similaridade calculada a partir das notas do MovieLens 32M (GroupLens) e filmes recomendados pelo TMDB.</li>
+    </ul>
+
+    <h2>Citações</h2>
+    <ul>
+      <li>F. Maxwell Harper and Joseph A. Konstan. 2015. The MovieLens Datasets: History and Context. ACM Transactions on Interactive Intelligent Systems (TiiS) 5, 4: 19:1–19:19. <a href="https://doi.org/10.1145/2827872" rel="noopener noreferrer">https://doi.org/10.1145/2827872</a></li>
+      <li>Vig, J., Sen, S., and Riedl, J. (2012). The tag genome: Encoding community knowledge to support novel interaction. ACM Trans. Interact. Intell. Syst., 2(3):13:1–13:44. <a href="https://doi.org/10.1145/2362394.2362395" rel="noopener noreferrer">https://doi.org/10.1145/2362394.2362395</a></li>
+      <li>Kotkov, D., Maslov, A., and Neovius, M. (2021). Revisiting the tag relevance prediction problem. In Proceedings of the 44th International ACM SIGIR conference on Research and Development in Information Retrieval. <a href="https://doi.org/10.1145/3404835.3463019" rel="noopener noreferrer">https://doi.org/10.1145/3404835.3463019</a></li>
+    </ul>
+
+    <h2>Texto das licenças (como está nos README originais)</h2>
+    <h3>MovieLens 32M (ml-32m) — trecho “Usage License” do README.txt</h3>
+    <blockquote>
+      <p>Neither the University of Minnesota nor any of the researchers involved can guarantee the correctness of the data, its suitability for any particular purpose, or the validity of results based on the use of the data set. The data set may be used for any research purposes under the following conditions:</p>
+      <ul>
+        <li>The user may not state or imply any endorsement from the University of Minnesota or the GroupLens Research Group.</li>
+        <li>The user must acknowledge the use of the data set in publications resulting from the use of the data set (see below for citation information).</li>
+        <li>The user may redistribute the data set, including transformations, so long as it is distributed under these same license conditions.</li>
+        <li>The user may not use this information for any commercial or revenue-bearing purposes without first obtaining permission from a faculty member of the GroupLens Research Project at the University of Minnesota.</li>
+        <li>The executable software scripts are provided "as is" without warranty of any kind, either expressed or implied, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose. The entire risk as to the quality and performance of them is with you. Should the program prove defective, you assume the cost of all necessary servicing, repair or correction.</li>
+      </ul>
+      <p>In no event shall the University of Minnesota, its affiliates or employees be liable to you for any damages arising out of the use or inability to use these programs (including but not limited to loss of data or data being rendered inaccurate).</p>
+      <p>If you have any further questions or comments, please email &lt;grouplens-info@umn.edu&gt;</p>
+    </blockquote>
+    <p>Citação pedida no README: “To acknowledge use of the dataset in publications, please cite the following paper: F. Maxwell Harper and Joseph A. Konstan. 2015. The MovieLens Datasets: History and Context. ACM Transactions on Interactive Intelligent Systems (TiiS) 5, 4: 19:1–19:19. https://doi.org/10.1145/2827872”</p>
+
+    <h3>MovieLens Tag Genome 2021 — trecho “Usage License” do genome_2021_readme.txt</h3>
+    <blockquote><p>This work is licensed under the Creative Commons Attribution-NonCommercial 3.0 License.</p></blockquote>
+    <p>Licença completa: <a href="https://creativecommons.org/licenses/by-nc/3.0/" rel="noopener noreferrer">https://creativecommons.org/licenses/by-nc/3.0/</a></p>
+    <p>Citação pedida no README: “To acknowledge use of the dataset in publications, please cite both of the following papers:” Kotkov et al. (2021) e Vig et al. (2012), listados acima.</p>
+
+    <h2>Resumo em português simples</h2>
+    <ul>
+      <li><strong>ml-32m:</strong> pode ser usado para pesquisa e redistribuído, inclusive transformado, desde que nas mesmas condições: sem uso comercial ou com receita sem permissão do GroupLens, citando Harper &amp; Konstan (2015) e sem sugerir endosso da Universidade de Minnesota. Os dados vêm “como estão”, sem garantia.</li>
+      <li><strong>Tag Genome 2021 (CC BY-NC 3.0):</strong> pode ser compartilhado e adaptado, com crédito aos autores, sem uso comercial.</li>
+    </ul>
+  </main>
+  <footer class="rodape"><p><a href="index.html">← Voltar para o site</a></p></footer>
+  <script>
+    fetch("data/versao.json", { cache: "no-cache" }).then((r) => r.json()).then((v) => {
+      document.getElementById("data-dados").textContent = "Dados atualizados em " + v.dados_tmdb_baixados_em.slice(0, 7) +
+        " (filmes, onde assistir e endereços das capas, baixados do TMDB; o TMDB permite guardar esses dados por no máximo 6 meses). " +
+        "As capas são exibidas direto dos servidores do TMDB. Os botões “Onde assistir” levam à página do filme no TMDB, com dados de streaming do JustWatch.";
+    }).catch(() => { document.getElementById("data-dados").textContent = "Data dos dados indisponível."; });
+  </script>
+</body>
+</html>
